@@ -23,7 +23,7 @@ header{
 }
 
 .profilePicture{
-    margin-left: 1vw;
+    margin-left: 3vw;
     margin-top: 1vw;
     align-self: center;
 }
@@ -34,6 +34,7 @@ header{
     border-style:solid;
     border-color: #ffffff;
     border-radius: 999px;
+    align-self: center; 
 }
 
 .statusPanel{
@@ -43,7 +44,7 @@ header{
 }
 
 .statusPanel *{
-    margin: 0px 15px;
+    margin: 0px 5px;
 }
 
 .statusPanel i{
@@ -61,5 +62,53 @@ header{
 .location{
     font-size: 30px;
     font-weight: bolder;
+}
+
+.button{
+    border : 5px;
+    border-style:solid;
+    border-radius: 999px;
+    display: flex;
+    /* make border transparent by default*/
+    border-color: #33a7a700;
+}
+
+.button:hover {
+    border-color: #33a7a7;
+}
+
+.button ~ h3{
+    color: #33a7a700;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+}
+
+.button:hover ~ h3{
+    color: #33a7a7;
+}
+
+
+#projectCarousel{
+    margin: 5vh 10vh;
+    display: flex;
+    flex-direction: row;
+}
+
+.projectIcon{
+    display: flex;
+    flex-direction :column-reverse;
+    margin: 0px 5px;
+}
+
+.projectIcon img{
+    width : 400px;
+    height: 400px;
+    border-radius: 2px;
+}
+
+.projectIcon .button{
+    border-radius: 2px;
+    display: flex;
 }
 
