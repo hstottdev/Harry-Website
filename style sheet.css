@@ -90,7 +90,7 @@ header{
 
 
 #projectCarousel{
-    margin: 5vh 10vh;
+    margin: 1vh 10vh;
     display: flex;
     flex-direction: row;
 }
