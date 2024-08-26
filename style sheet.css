@@ -17,13 +17,13 @@ body {
 }
 
 .element-shadow{
-    box-shadow: 0px 0px 3px black;
+    box-shadow: 0px 0px 3px rgba(0, 0, 0, 0.67);
 }
 
 header{
     flex-direction: row;
     display: flex;
-    width : 100vw;
+    width : 100%;
     justify-content: space-between;
 }
 
@@ -43,11 +43,10 @@ header{
 
 .button ~ h3{
     color: #33a7a700;
-    font-size: 30px;
     width: 100%;
     text-align: center;
     text-decoration: none;
-    margin: 1vh 0px;
+    margin: 3px 0px;
 }
 
 
@@ -111,12 +110,19 @@ header{
     font-weight: bolder;
 }
 
+.location i{
+    color: rgb(84, 135, 229);
+    text-shadow: 1px 1px  rgb(49, 71, 133);
+}
+
 .online{
-    color: rgb(84, 229, 132);
+    color: rgb(56, 188, 100);
+    text-shadow: 1px 1px  rgb(45, 153, 81);
 }
 
 .offline{
-    color: rgb(92, 92, 92);
+    color: rgb(151, 151, 151);
+    text-shadow: 1px 1px  rgb(105, 105, 105);
 }
 
 .status{
@@ -126,13 +132,12 @@ header{
     align-items: center;
 }
 
-
-
-
 #projectCarousel{
     margin: 1vh 10vh;
     display: flex;
     flex-direction: row;
+    overflow:scroll;
+    width: 100%
 }
 
 .projectIcon{
@@ -150,5 +155,37 @@ header{
 .projectIcon .button{
     border-radius: 2px;
     display: flex;
+}
+
+.projectIcon h3{
+    font-size: 35px;
+}
+
+.navButtons{
+    margin-top: 5vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.navIcon{
+    align-self: center; 
+    margin: 0px 0.5vw;
+}
+
+.navIcon .element-shadow{
+    background-color:rgb(243, 242, 242);
+    width: 100px;
+    height: 100px;
+    border-radius: 999px;
+    display: flex;
+    justify-content: center;
+}
+
+.navIcon i{
+    align-self: center;
+    text-align: center;
+    font-size: 200%;
+    color:rgb(153, 153, 153);
 }
 

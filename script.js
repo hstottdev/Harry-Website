@@ -41,6 +41,11 @@ function buttonHover(){
     clickSound.play();
 }
 
+function statusHover(){
+    let clickSound = new Audio('sounds/clicking-interface-select-201946.mp3');
+    clickSound.play();
+}
+
 
 function getDiscordData(){
 	const ID = '398842457250463764';
@@ -89,7 +94,7 @@ function setDiscordStatus(data){
     
     document.getElementById("statusTask").innerHTML = myStatus.task;
 
-    if(myStatus.online == "online"){
+    if(myStatus.online != "offline"){
         document.getElementById("statusIcon").classList.add('online');
         document.getElementById("statusIcon").classList.remove('offline');
     }
