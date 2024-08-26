@@ -4,6 +4,11 @@
     src: url(fonts/NINTENDOSWITCHUI.TTF);
 }
 
+@font-face {
+    font-family: Clock Font;
+    src: url(fonts/JetJaneMono\ Bold.ttf);
+}
+
 body {
     background-color: #e1e1e1;
     color:#000000;
@@ -22,6 +27,34 @@ header{
     justify-content: space-between;
 }
 
+.button{
+    border : 8px;
+    border-style:solid;
+    border-radius: 999px;
+    display: flex;
+    width: fit-content;
+    /* make border transparent by default*/
+    border-color: #33a7a700;
+}
+
+.button:hover {
+    border-color: #33a7a7;
+}
+
+.button ~ h3{
+    color: #33a7a700;
+    font-size: 30px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    margin: 1vh 0px;
+}
+
+
+.button:hover ~ h3{
+    color: #33a7a7;
+}
+
 .profilePicture{
     margin-left: 3vw;
     margin-top: 1vw;
@@ -37,10 +70,15 @@ header{
     align-self: center; 
 }
 
+.profilePicture a {
+    text-decoration: none;
+}
+
 .statusPanel{
     align-self: center;  
     margin-right: 6vw;
     display: flex;
+    flex-direction: column;
 }
 
 .statusPanel *{
@@ -49,12 +87,21 @@ header{
 
 .statusPanel i{
     font-size: 40px;
-    padding: 10px 10px
+    padding: 10px 10px;
+}
+
+.statusPanel .button:hover{
+    border-color: #0000004c;
+}
+
+.statusPanel .button:hover ~ h3{
+    color: #0000004c;
 }
 
 .clock{
-    font-size: 35px;
-    font-weight: bolder;
+    font-family: Clock Font;
+    font-size: 40px;
+    font-weight:bolder;
     display: inline;
     align-self: center;  
 }
@@ -64,29 +111,22 @@ header{
     font-weight: bolder;
 }
 
-.button{
-    border : 5px;
-    border-style:solid;
-    border-radius: 999px;
-    display: flex;
-    /* make border transparent by default*/
-    border-color: #33a7a700;
+.online{
+    color: rgb(84, 229, 132);
 }
 
-.button:hover {
-    border-color: #33a7a7;
+.offline{
+    color: rgb(92, 92, 92);
 }
 
-.button ~ h3{
-    color: #33a7a700;
+.status{
     font-size: 30px;
-    width: 100%;
-    text-align: center;
+    font-weight: bolder;
+    display: flex;
+    align-items: center;
 }
 
-.button:hover ~ h3{
-    color: #33a7a7;
-}
+
 
 
 #projectCarousel{
