@@ -58,10 +58,11 @@ header{
     margin-left: 3vw;
     margin-top: 1vw;
     align-self: center;
+    display: flex;
 }
 
 .profilePicture img{   
-    width: 100px;
+    width: 70px;
     border : 5px;
     border-style:solid;
     border-color: #ffffff;
