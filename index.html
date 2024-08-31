@@ -21,24 +21,36 @@
                 </a>
                 
                 <a href = "https://www.linkedin.com/in/harrystottdev/">
-                    <div class = "button">
-                        <img src = "assets/social icons/linkedIn.jpg" class = "element-shadow" onmouseover="buttonHover()">
-                    </div>    
-                    <h3>LinkedIn</h3>                                         
+                    <div class = "navIcon" >
+                        <div class = "button">
+                            <div class = "element-shadow" onpointerenter="buttonHover()">
+                                <i class="fa-brands fa-linkedin"></i>
+                            </div>
+                        </div>
+                        <h3>LinkedIn</h3>
+                    </div>                                      
                 </a>   
 
                 <a href = "https://github.com/hstottdev">
-                    <div class = "button">
-                        <img src = "assets/social icons/GitHub_Invertocat_Logo.svg.png" class = "element-shadow" onmouseover="buttonHover()">
-                    </div>    
-                    <h3>Github</h3>                                            
+                    <div class = "navIcon" >
+                        <div class = "button">
+                            <div class = "element-shadow" onpointerenter="buttonHover()">
+                                <i class="fa-brands fa-github"></i>
+                            </div>
+                        </div>
+                        <h3>Github</h3>
+                    </div>                                         
                 </a>
 
                 <a href = "https://x.com/harrystottdev">
-                    <div class = "button">
-                        <img src = "assets/social icons/x-social-media-round-icon.png" class = "element-shadow" onmouseover="buttonHover()">
-                    </div>    
-                    <h3>X</h3>
+                    <div class = "navIcon" >
+                        <div class = "button">
+                            <div class = "element-shadow" onpointerenter="buttonHover()">
+                                <i class="fa-brands fa-x-twitter"></i>
+                            </div>
+                        </div>
+                        <h3>X</h3>
+                    </div> 
                 </a>   
             </div>
             
@@ -65,36 +77,43 @@
         <div id = "projectCarousel">
 
             <div class = "projectIcon">           
-                <div class = "button">
-                    <img src = "assets/intro.png" class = "element-shadow" onmouseover="buttonHover()">
+                <div class = "button" id = "proj1">
+                    <img src = "assets/intro.png" class = "element-shadow" onmouseover="buttonHover('proj1')">
                 </div>
                 <h3>Hello.</h3>
             </div>
 
             <div class = "projectIcon">           
-                <div class = "button">
-                    <img src = "assets/arjybeasts.png" class = "element-shadow" onmouseover="buttonHover()">
+                <div class = "button" id = "proj2">
+                    <img src = "assets/bfscover.png" class = "element-shadow" onmouseover="buttonHover('proj2')">
+                </div>
+                <h3>Banana For Scale</h3>
+            </div>
+
+            <div class = "projectIcon">           
+                <div class = "button" id = "proj3">
+                    <img src = "assets/arjybeasts.png" class = "element-shadow" onmouseover="buttonHover('proj3')">
                 </div>
                 <h3>Arjybeasts</h3>
             </div>
 
             <div class = "projectIcon">           
-                <div class = "button">
-                    <img src = "assets/whaleCheesecover.png" class = "element-shadow" onmouseover="buttonHover()">
+                <div class = "button" id = "proj4">
+                    <img src = "assets/whaleCheesecover.png" class = "element-shadow" onmouseover="buttonHover('proj4')">
                 </div>
                 <h3>Whale Cheese</h3>
             </div>
 
             <div class = "projectIcon">           
-                <div class = "button">
-                    <img src = "assets/Whatever cover.png" class = "element-shadow" onmouseover="buttonHover()">
+                <div class = "button" id = "proj5">
+                    <img src = "assets/Whatever cover.png" class = "element-shadow" onmouseover="buttonHover('proj5')">
                 </div>
                 <h3>Whatever Continuum</h3>
             </div>
 
             <div class = "projectIcon">           
-                <div class = "button">
-                    <img src = "assets/spwrong cover 2.png" class = "element-shadow" onmouseover="buttonHover()">
+                <div class = "button" id = "proj6">
+                    <img src = "assets/spwrong cover 2.png" class = "element-shadow" onmouseover="buttonHover('proj6')">
                 </div>
                 <h3>Spwrong</h3>
             </div>
@@ -104,7 +123,7 @@
             <div class = "navIcon" >
                 <div class = "button">
                     <div class = "element-shadow" onpointerenter="buttonHover()">
-                        <i class="fa-solid fa-circle-user"></i>
+                        <i class="fa-solid fa-circle-user" style = "color:rgb(126, 118, 202);"></i>
                     </div>
                 </div>
                 <h3>About Me</h3>
@@ -113,7 +132,7 @@
             <div class = "navIcon" >
                 <div class = "button">
                     <div class = "element-shadow" onpointerenter="buttonHover()">
-                        <i class="fa-solid fa-certificate"></i>
+                        <i class="fa-solid fa-certificate" style = "color:rgb(189, 202, 118);"></i>
                     </div>
                 </div>
                 <h3>Certificates</h3>
@@ -122,7 +141,7 @@
             <div class = "navIcon" >
                 <div class = "button">
                     <div class = "element-shadow" onpointerenter="buttonHover()">
-                        <i class="fa-solid fa-gamepad"></i>
+                        <i class="fa-solid fa-gamepad" style = "color:rgb(202, 118, 126);"></i>
                     </div>
                 </div>
                 <h3>Games</h3>
@@ -131,7 +150,7 @@
             <div class = "navIcon" >
                 <div class = "button">
                     <div class = "element-shadow" onpointerenter="buttonHover()">
-                        <i class="fa-solid fa-address-book"></i>
+                        <i class="fa-solid fa-address-book" style = "color:rgb(118, 202, 159);"></i>
                     </div>
                 </div>
                 <h3>Contact</h3>

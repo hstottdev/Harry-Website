@@ -36,16 +36,16 @@ function updateTime(){
     document.getElementById("time").innerHTML = time;
 }
 
-function buttonHover(){
+function buttonHover(element){
     let clickSound = new Audio('sounds/interface-button-154180.mp3');
     clickSound.play();
 }
+
 
 function statusHover(){
     let clickSound = new Audio('sounds/clicking-interface-select-201946.mp3');
     clickSound.play();
 }
-
 
 function getDiscordData(){
 	const ID = '398842457250463764';
@@ -89,7 +89,6 @@ class discord_status {
 }
 
 function setDiscordStatus(data){     
-    console.log(data.activities[0]);
     myStatus =  new discord_status(data);
     
     document.getElementById("statusTask").innerHTML = myStatus.task;

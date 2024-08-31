@@ -74,6 +74,20 @@ header{
     text-decoration: none;
 }
 
+.profilePicture .element-shadow{
+    width: 70px;
+    height: 70px;
+    border : 5px;
+    border-style:solid;
+    border-color: #ffffff;
+    border-radius: 999px;
+    align-self: center; 
+}
+
+.profilePicture .navIcon i{
+    color:rgb(58, 58, 58);
+}
+
 .statusPanel{
     align-self: center;  
     margin-right: 6vw;
@@ -176,17 +190,24 @@ header{
 
 .navIcon .element-shadow{
     background-color:rgb(243, 242, 242);
-    width: 100px;
-    height: 100px;
     border-radius: 999px;
     display: flex;
     justify-content: center;
+}
+
+.navButtons .navIcon .element-shadow{
+    width: 100px;
+    height: 100px;
 }
 
 .navIcon i{
     align-self: center;
     text-align: center;
     font-size: 200%;
-    color:rgb(153, 153, 153);
+    text-shadow: 1px 1px  rgb(105, 105, 105);
+}
+
+.navButtons .navIcon i{
+    color: rgba(0, 0, 0, 0.543);
 }
 
