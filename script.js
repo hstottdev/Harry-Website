@@ -2,7 +2,7 @@
 window.onload = function() {
     function update() {
         updateTime();
-        getDiscordData();
+        getDiscordData();   
     }
         update();
         setInterval(update, 1000);
@@ -104,4 +104,34 @@ function setDiscordStatus(data){
 }
 //discord user id
 // https://api.lanyard.rest/v1/users/
+
+
+$(document).ready(function(){
+    const $element = $("#projectCarousel");
+    const el = document.getElementById("projectCarousel");
+    console.log("hello");
+    // Get the window width, the width of our scrolling element, and the distance the element needs to scroll for us to reach its ending
+    const windowWidth = $(window).width();
+    const scrollWidth = $element.outerWidth();
+    const scrollDistance = scrollWidth - windowWidth; 
+    // How far away from the screen edge to trigger our scroll
+    const distanceFromEdge = 200;
+    
+    // Get the mouse position while it's over our element
+    $element.on("mousemove", function (e) {
+      const mouseX = e.pageX;        
+      console.log(mouseX);
+      // If it gets within x distance from the left, animate the timeline backwards
+      if (mouseX < distanceFromEdge) {
+        strength = -(mouseX - distanceFromEdge);   
+        el.scrollLeft -= 40;   
+      }
+  
+      // If it gets within x distance from the right, animate the timeline forward
+      if (mouseX > windowWidth - distanceFromEdge) {
+        strength = -(windowWidth - distanceFromEdge - mouseX);
+        el.scrollLeft += 40; 
+      }
+    });
+})
 

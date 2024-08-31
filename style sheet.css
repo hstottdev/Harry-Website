@@ -151,8 +151,8 @@ header{
     margin: 1vh 10vh;
     display: flex;
     flex-direction: row;
-    overflow:scroll;
-    width: 100%
+    width: 100%;
+    overflow:hidden;
 }
 
 .projectIcon{
