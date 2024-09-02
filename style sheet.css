@@ -14,6 +14,8 @@ body {
     color:#000000;
     font-size: 2vh;  
     font-family: Nintendo Switch;
+    height: 100vh;
+    overflow: hidden;
 }
 
 .element-shadow{
@@ -28,7 +30,7 @@ header{
 }
 
 .button{
-    border : 8px;
+    border : 0.8vh;
     border-style:solid;
     border-radius: 999px;
     display: flex;
@@ -54,6 +56,19 @@ header{
     color: #33a7a7;
 }
 
+.panel{
+    align-self: center;  
+    display: flex;
+}
+
+.panel > .button:hover{
+    border-color: #0000004c;
+}
+
+.panel > .button:hover ~ h3{
+    color: #0000004c;
+}
+
 .profilePicture{
     margin-left: 3vw;
     margin-top: 1vw;
@@ -62,12 +77,9 @@ header{
 }
 
 .profilePicture img{   
-    width: 70px;
-    border : 5px;
-    border-style:solid;
-    border-color: #ffffff;
-    border-radius: 999px;
+    width: 60%;
     align-self: center; 
+    filter:drop-shadow(1px 1px  rgb(105, 105, 105));
 }
 
 a {
@@ -80,37 +92,32 @@ a {
     border : 5px;
     border-style:solid;
     border-color: #ffffff;
+    background-color:rgb(243, 242, 242);
     border-radius: 999px;
-    align-self: center; 
+    align-self: center;
+    justify-content: center;
+    display: flex; 
 }
 
 .profilePicture .navIcon i{
     color:rgb(58, 58, 58);
 }
 
-.statusPanel{
-    align-self: center;  
-    margin-right: 6vw;
-    display: flex;
+
+#status-panel{
     flex-direction: column;
+    margin-right: 6vw;
 }
 
-.statusPanel *{
-    margin: 0px 5px;
-}
-
-.statusPanel i{
+#status-panel i{
     font-size: 40px;
     padding: 10px 10px;
 }
 
-.statusPanel .button:hover{
-    border-color: #0000004c;
+#status-panel *{
+    margin: 0px 1vh;
 }
 
-.statusPanel .button:hover ~ h3{
-    color: #0000004c;
-}
 
 .clock{
     font-family: Clock Font;
@@ -189,7 +196,7 @@ a {
 
 
 .navButtons{
-    margin-top: 5vh;
+    margin-top: 3vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -208,18 +215,82 @@ a {
 }
 
 .navButtons .navIcon .element-shadow{
-    width: 100px;
-    height: 100px;
+    width: 5vw;
+    height: 5vw;
 }
 
 .navIcon i{
     align-self: center;
     text-align: center;
-    font-size: 200%;
-    text-shadow: 1px 1px  rgb(105, 105, 105);
+    font-size: 5vh;
 }
 
 .navButtons .navIcon i{
     color: rgba(0, 0, 0, 0.543);
+    font-weight: bold;
+    font-size: 6vh;
 }
 
+footer{
+    width : 100%;
+    bottom: 0px;
+    position: absolute;
+    margin-bottom: 2vh;
+}
+
+footer > div{
+    width: 100%;
+}
+
+#bottom-line{
+    border-width: 1px;
+    border-color: #00000086;
+    margin: 1vh 3vh;
+}
+
+#bottom-bar{
+    flex-direction: row;
+    display: flex;
+    width : 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#bottom-bar h3{
+    font-size: 3vh;
+    padding: 0.5vh 1vh;
+    margin: 0px 0px;
+}
+
+#system-icon{
+    font-size: 4vh;
+    color: #00000076;
+    margin: 0px 1vh;
+    align-items: center;
+    display: flex;
+}
+
+#system-icon i{
+    padding: 0.5vh 1vh;
+}
+
+.control-panel{
+    font-size: 4vh;
+    color: #000000b7;
+    display: flex;
+    align-items: center;
+    margin: 0px 1vh;
+}
+
+.control-panel i{
+    padding: 0.5vh 0.5vh;
+}
+
+.control-button{
+    margin: 0px 0.5vh;
+    display: flex;
+}
+
+#back-arrow{
+    margin: 0vh 1vh;
+}

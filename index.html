@@ -6,6 +6,7 @@
         <meta charset="UTF-8">
         <meta name="description" content="Hello. I'm Harry.">
         <link rel="stylesheet" href="style sheet.css">
+        <link rel= "stylesheet" href= "https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css" >
         <script src="https://kit.fontawesome.com/2c1ca0161c.js" crossorigin="anonymous"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
         <script src="script.js"></script>
@@ -16,7 +17,9 @@
             <div class = "profilePicture">
                 <a href = "https://linktr.ee/harrystott">
                     <div class = "button">
-                        <img src = "assets/social icons/linktree.webp" class = "element-shadow" onmouseover="buttonHover()">
+                        <div class = "element-shadow">
+                            <img src = "assets/social icons/linktree.webp">
+                        </div>
                     </div>    
                     <h3>Linktree</h3>                                         
                 </a>
@@ -25,7 +28,7 @@
                     <div class = "navIcon" >
                         <div class = "button">
                             <div class = "element-shadow" onpointerenter="buttonHover()">
-                                <i class="fa-brands fa-linkedin"></i>
+                                <i class="lab la-linkedin"></i>
                             </div>
                         </div>
                         <h3>LinkedIn</h3>
@@ -36,7 +39,7 @@
                     <div class = "navIcon" >
                         <div class = "button">
                             <div class = "element-shadow" onpointerenter="buttonHover()">
-                                <i class="fa-brands fa-github"></i>
+                                <i class="lab la-github"></i>
                             </div>
                         </div>
                         <h3>Github</h3>
@@ -57,12 +60,12 @@
             
 
 
-            <div class = "statusPanel" >
+            <div class = "panel" id="status-panel">
                 <div class = "button">
                     <div id = "time" class = "clock">5 : 34 PM</div>
                     
                     <div class = "location">
-                        <small><i class="fa-solid fa-location-dot"></small></i>London, UK                
+                        <small><i class="las la-map-marker"></small></i>London, UK          
                     </div>
 
                     <div class = "status"> 
@@ -126,7 +129,7 @@
             <div class = "navIcon" >
                 <div class = "button">
                     <div class = "element-shadow clickable">
-                        <i class="fa-solid fa-circle-user" style = "color:rgb(126, 118, 202);"></i>
+                        <i class="las la-user-circle" style = "color:rgb(168, 118, 202);"></i>
                     </div>
                 </div>
                 <h3>About Me</h3>
@@ -135,7 +138,7 @@
             <div class = "navIcon" >
                 <div class = "button">
                     <div class = "element-shadow clickable">
-                        <i class="fa-solid fa-certificate" style = "color:rgb(189, 202, 118);"></i>
+                        <i class="las la-certificate" style = "color:rgb(202, 163, 118);"></i>
                     </div>
                 </div>
                 <h3>Certificates</h3>
@@ -144,7 +147,7 @@
             <div class = "navIcon" >
                 <div class = "button">
                     <div class = "element-shadow clickable">
-                        <i class="fa-solid fa-gamepad" style = "color:rgb(202, 118, 126);"></i>
+                        <i class="las la-gamepad" style = "color:rgb(202, 118, 118);"></i>
                     </div>
                 </div>
                 <h3>Games</h3>
@@ -153,7 +156,7 @@
             <div class = "navIcon" >
                 <div class = "button">
                     <div class = "element-shadow clickable">
-                        <i class="fa-solid fa-address-book" style = "color:rgb(118, 202, 159);"></i>
+                        <i class="las la-address-book" style = "color:rgb(202, 118, 191);"></i>
                     </div>
                 </div>
                 <h3>Contact</h3>
@@ -161,5 +164,68 @@
 
         </nav>
 
+        <footer>
+            <div>
+                <hr id = "bottom-line">
+                <div id = "bottom-bar">
+                    <div class = "control-panel">                       
+                        <div id = "system-icon" class = "panel">
+                            <div class = "button">
+                                <i class="fa-solid fa-computer"></i>
+                            </div>
+                            <h3>Your System</h3> 
+                        </div>                
+                    </div>
+
+                    <div class = "control-panel">
+                        
+                        <div class = "control-button clickable" id="back-arrow">
+                            <div class = "button">
+                                <i class="fa-solid fa-arrow-left"></i>
+                            </div>
+                        </div>
+
+                        <div class = "control-button clickable" id="forward-arrow">
+                            <div class = "button">
+                                <i class="fa-solid fa-arrow-right"></i>
+                            </div>
+                        </div>
+
+                        <a href="index.html">
+                            <div class = "control-button clickable">
+                                <div class = "button">
+                                    <i class="las la-home"></i>
+                                </div>
+                            </div>
+                        </a>
+
+                        <div class = "control-button clickable">
+                            <div class = "button">
+                                <i class="las la-user-circle"></i>
+                            </div>
+                        </div>
+
+                        <div class = "control-button clickable">
+                            <div class = "button">
+                                <i class="las la-certificate"></i>
+                            </div>
+                        </div>
+
+                        
+                        <div class = "control-button clickable">
+                            <div class = "button">
+                                <i class="las la-gamepad"></i>
+                            </div>
+                        </div>
+
+                        <div class = "control-button clickable">
+                            <div class = "button">
+                                <i class="las la-address-book"></i>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
     </body>
 </html>
