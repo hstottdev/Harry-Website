@@ -36,15 +36,18 @@ function updateTime(){
     document.getElementById("time").innerHTML = time;
 }
 
+function playSound(filePath){
+    let sound = new Audio(filePath);
+    sound.play();
+}
+
 function buttonHover(){
-    let clickSound = new Audio('sounds/interface-button-154180.mp3');
-    clickSound.play();
+    playSound('sounds/interface-button-154180.mp3');
 }
 
 
 function statusHover(){
-    let clickSound = new Audio('sounds/clicking-interface-select-201946.mp3');
-    clickSound.play();
+    playSound('sounds/clicking-interface-select-201946.mp3');
 }
 
 function getDiscordData(){
@@ -137,6 +140,10 @@ $(document).ready(function(){
     
     $(".clickable").on("pointerenter",function (e) {
         buttonHover();
+    })
+
+    $(".clickable").click(function (e) {
+        playSound('sounds/button click.wav');
     })
 
     $(".statusPanel .button").on("pointerenter",function (e) {

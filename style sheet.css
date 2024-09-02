@@ -70,7 +70,7 @@ header{
     align-self: center; 
 }
 
-.profilePicture a {
+a {
     text-decoration: none;
 }
 
@@ -148,22 +148,25 @@ header{
 }
 
 #projectCarousel{
-    margin: 1vh 10vh;
+    margin: 1vh 3vw;
     display: flex;
     flex-direction: row;
     width: 100%;
     overflow:hidden;
 }
 
+
+
 .projectIcon{
     display: flex;
     flex-direction :column-reverse;
-    margin: 0px 5px;
+    width : 42vh;
+    text-overflow: clip;
 }
 
 .projectIcon img{
-    width : 400px;
-    height: 400px;
+    width : 40vh;
+    height: 40vh;
     border-radius: 2px;
 }
 
@@ -173,8 +176,17 @@ header{
 }
 
 .projectIcon h3{
+    width: 100%;
     font-size: 35px;
+    white-space: nowrap;
+    text-align: center;
 }
+
+/*defines the space after the final project icon*/
+#projectCarousel > *:last-child{
+    padding-right: 20vh;
+}
+
 
 .navButtons{
     margin-top: 5vh;
