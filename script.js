@@ -36,7 +36,7 @@ function updateTime(){
     document.getElementById("time").innerHTML = time;
 }
 
-function buttonHover(element){
+function buttonHover(){
     let clickSound = new Audio('sounds/interface-button-154180.mp3');
     clickSound.play();
 }
@@ -133,5 +133,14 @@ $(document).ready(function(){
         el.scrollLeft += 40; 
       }
     });
+
+    
+    $(".clickable").on("pointerenter",function (e) {
+        buttonHover();
+    })
+
+    $(".statusPanel .button").on("pointerenter",function (e) {
+        statusHover();
+    })
 })
 
