@@ -311,6 +311,16 @@ footer > div{
     margin: 2vh 4vh;
 }
 
+.description-box{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding: 1% 0;
+    font-size: 3vh;
+    text-wrap:wrap;
+}
+
 #nav-menu{
     height: 80%;
     width: 25vw;
@@ -348,7 +358,7 @@ footer > div{
     margin-left: auto;
     margin-right: auto;
     display: flex;
-    padding: 5% 0;
+    padding: 2% 0;
 }
 
 #id-card ul{
