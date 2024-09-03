@@ -15,6 +15,7 @@ body {
     font-size: 2vh;  
     font-family: Nintendo Switch;
     height: 100vh;
+    margin-left: 0px;
     overflow: hidden;
 }
 
@@ -79,8 +80,8 @@ header{
 
 .profilePicture img{   
     width: 60%;
-    align-self: center; 
-    filter:drop-shadow(1px 1px  rgb(105, 105, 105));
+    align-self: center;
+    opacity: 80%;
 }
 
 a {
@@ -243,7 +244,7 @@ footer > div{
     width: 100%;
 }
 
-#bottom-line{
+.thick-line{
     border-width: 1px;
     border-color: #00000086;
     margin: 1vh 3vh;
@@ -287,6 +288,10 @@ footer > div{
     padding: 0.5vh 0.5vh;
 }
 
+.control-panel a{
+    color: #000000b7;
+}
+
 .control-button{
     margin: 0px 0.5vh;
     display: flex;
@@ -296,13 +301,46 @@ footer > div{
     margin: 0vh 1vh;
 }
 
-#about-section{
-    background-color: white;
+#title-header{
+   width: 100%;
+   margin-left: auto;
+   margin-right: auto;
+}
+
+#title-header h1{
+    margin: 2vh 4vh;
+}
+
+#nav-menu{
+    height: 80%;
+    width: 25vw;
+    position: fixed;
+    margin: 0px 0px;
+    background-color: #ebeaea;
+    background-image: linear-gradient(#e1e1e1,#ebeaea,#e1e1e1);
+}
+
+#nav-menu .button{
+    border-radius: 1vh;
+    display: flex;
+}
+
+#nav-menu h3{
+    font-size: 3vh;
+    margin: 2vh 1vh;   
+}
+
+#nav-menu > *{
+    width: 70%;
+    margin-left: 20%;
+}
+
+#profile-section{
     width:fit-content;
     height: 75vh;
+    margin-right: 10vw;
     margin-left: auto;
-    margin-right: auto;
-    margin-top: 10vh;
+    margin-top: 1vh;
 }
 
 #id-card{
@@ -335,10 +373,11 @@ footer > div{
 }
 
 #id-photo{
-    width: 30%;
+    width: 30vw;
     border-radius: 1vh;
 }
 
 #id-photo img {
-    width: 100%
+    width: 100%;
+    height: 100%;
 }

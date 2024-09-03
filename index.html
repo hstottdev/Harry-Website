@@ -79,15 +79,13 @@
 
         <!--Project Carousel -->
         <div id = "projectCarousel" class = "scrollingElement">
-
-            <a href = "about.html">
-                <div class = "projectIcon">           
-                    <div class = "button">
+         
+                <div class = "projectIcon">                         
+                    <a href = "about.html" class = "button">
                         <img src = "assets/me.png" class = "element-shadow clickable">
-                    </div>
+                    </a>               
                     <h3>Me.</h3>
                 </div>
-            </a>
 
             <div class = "projectIcon">           
                 <div class = "button">
@@ -127,11 +125,11 @@
 
         <nav class = "navButtons">
             <div class = "navIcon" >
-                <div class = "button">
+                <a href = "about.html" class = "button">
                     <div class = "element-shadow clickable">
                         <i class="las la-user-circle" style = "color:rgb(168, 118, 202);"></i>
                     </div>
-                </div>
+                </a>
                 <h3>About Me</h3>
             </div>   
             
@@ -166,7 +164,7 @@
 
         <footer>
             <div>
-                <hr id = "bottom-line">
+                <hr class = "thick-line">
                 <div id = "bottom-bar">
                     <div class = "control-panel">                       
                         <div id = "system-icon" class = "panel">
@@ -179,14 +177,14 @@
 
                     <div class = "control-panel">
     
-                        <div class = "control-button clickable" id="back-arrow">
-                            <div class = "button">
+                        <div class = "control-button clickable">
+                            <div class = "button back-arrow">
                                 <i class="las la-arrow-left"></i>
                             </div>
                         </div>
 
-                        <div class = "control-button clickable" id="forward-arrow">
-                            <div class = "button">
+                        <div class = "control-button clickable">
+                            <div class = "button forward-arrow">
                                 <i class="las la-arrow-right"></i>
                             </div>
                         </div>
@@ -199,11 +197,13 @@
                             </div>
                         </a>
 
-                        <div class = "control-button clickable">
-                            <div class = "button">
-                                <i class="las la-user-circle"></i>
+                        <a href="about.html">
+                            <div class = "control-button clickable">
+                                <div class = "button">
+                                    <i class="las la-user-circle"></i>
+                                </div>
                             </div>
-                        </div>
+                        </a>
 
                         <div class = "control-button clickable">
                             <div class = "button">

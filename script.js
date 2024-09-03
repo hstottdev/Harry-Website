@@ -44,11 +44,11 @@ $(document).ready(function(){
         statusHover();
     })
 
-    $("#back-arrow").click(function (e) {
+    $(".back-arrow").click(function (e) {
         window.history.back();
     })
 
-    $("#forward-arrow").click(function (e) {
+    $(".forward-arrow").click(function (e) {
         window.history.forward();
     })
     
