@@ -27,6 +27,7 @@ header{
     display: flex;
     width : 100%;
     justify-content: space-between;
+    align-items: top;
 }
 
 .button{
@@ -235,7 +236,7 @@ footer{
     width : 100%;
     bottom: 0px;
     position: absolute;
-    margin-bottom: 2vh;
+    margin-bottom: 0.5vh;
 }
 
 footer > div{
@@ -293,4 +294,51 @@ footer > div{
 
 #back-arrow{
     margin: 0vh 1vh;
+}
+
+#about-section{
+    background-color: white;
+    width:fit-content;
+    height: 75vh;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10vh;
+}
+
+#id-card{
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    padding: 5% 0;
+}
+
+#id-card ul{
+    list-style-type:none;
+}
+
+#id-card button{
+    border-color: #434343;
+}
+
+.id-info{
+    border-radius: 1vh;
+    width: 30vw;
+    text-align: center;
+    font-size: 1.5vw;
+    align-items: center;
+    margin-left: 2vw;
+}
+
+.id-info #statusIcon{
+    margin-right: 1vw;
+}
+
+#id-photo{
+    width: 30%;
+    border-radius: 1vh;
+}
+
+#id-photo img {
+    width: 100%
 }

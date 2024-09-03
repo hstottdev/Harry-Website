@@ -11,11 +11,8 @@ window.onload = function() {
 $(document).ready(function(){
     const $element = $("#projectCarousel");
     const el = document.getElementById("projectCarousel");
-    console.log("hello");
-    // Get the window width, the width of our scrolling element, and the distance the element needs to scroll for us to reach its ending
+   
     const windowWidth = $(window).width();
-    const scrollWidth = $element.outerWidth();
-    const scrollDistance = scrollWidth - windowWidth; 
     // How far away from the screen edge to trigger our scroll
     const distanceFromEdge = 200;
     
@@ -23,15 +20,13 @@ $(document).ready(function(){
     $element.on("mousemove", function (e) {
       const mouseX = e.pageX;        
       console.log(mouseX);
-      // If it gets within x distance from the left, animate the timeline backwards
-      if (mouseX < distanceFromEdge) {
-        strength = -(mouseX - distanceFromEdge);   
+      // If it gets within x distance from the left, scroll left
+      if (mouseX < distanceFromEdge) { 
         el.scrollLeft -= 40;   
       }
   
-      // If it gets within x distance from the right, animate the timeline forward
+      // If it gets within x distance from the right, scroll right
       if (mouseX > windowWidth - distanceFromEdge) {
-        strength = -(windowWidth - distanceFromEdge - mouseX);
         el.scrollLeft += 40; 
       }
     });
@@ -84,8 +79,13 @@ function updateTime(){
 
     var time = timeStringToTwelveHour(londonTime);
 
-    //set text as time string
-    document.getElementById("time").innerHTML = time;
+    timeElement = document.getElementById("time");
+    
+    //check time element is in document
+    if(timeElement){
+        //set text as time string
+        timeElement.innerHTML = time;
+    }
 }
 
 //checking the users system type
