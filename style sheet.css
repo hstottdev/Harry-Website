@@ -9,7 +9,7 @@
     src: url(fonts/JetJaneMono\ Bold.ttf);
 }
 
-@media screen and (min-width: 320px) and (max-width: 767px) and (orientation: portrait) {
+@media (orientation: portrait) {
     html {
       transform: rotate(-90deg);
       transform-origin: left top;
