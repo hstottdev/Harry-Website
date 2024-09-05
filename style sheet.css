@@ -169,8 +169,6 @@ a {
 .projectIcon{
     display: flex;
     flex-direction :column-reverse;
-    width : 42vh;
-    text-overflow: clip;
 }
 
 .projectIcon img{
@@ -185,10 +183,11 @@ a {
 }
 
 .projectIcon h3{
-    width: 100%;
+    width: 18vw;
     font-size: 2vw;
     white-space: nowrap;
     text-align: center;
+    overflow:visible;
 }
 
 /*defines the space after the final project icon*/
