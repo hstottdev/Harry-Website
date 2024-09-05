@@ -1,0 +1,11 @@
+{
+  "name": "Harry Stott",
+  "description": "Harry Stott's Portfolio and Skills",
+  "short_name": "hstottdev",
+  "start_url": "https://hstottdev.github.io/Harry-Website/",
+  "lang": "en-GB",
+  "theme_color": "#ffffff",
+  "display": "standalone",
+  "background_color": "#e1e1e1",
+  "orientation": "landscape"
+}
