@@ -3,10 +3,11 @@ window.onload = function() {
     function update() {
         updateTime();
         getDiscordData();   
-        screen.orientation.lock('landscape');
+        deviceCheck();
     }
         update();
         setInterval(update, 1000);
+        
 };
 
 $(document).ready(function(){
@@ -106,6 +107,16 @@ function buttonHover(){
 
 function statusHover(){
     playSound('sounds/clicking-interface-select-201946.mp3');
+}
+
+function deviceCheck(){
+
+    try {
+        screen.orientation.lock('landscape');
+    } catch (error) {
+        //nevermind
+    }
+
 }
 
 function getDiscordData(){
