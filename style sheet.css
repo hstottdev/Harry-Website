@@ -76,7 +76,7 @@ header{
 
 .profilePicture{
     margin-left: 3vw;
-    margin-top: 1vw;
+    margin-top: 2vh;
     align-self: center;
     justify-content: center;
     display: flex;
@@ -169,7 +169,7 @@ a {
 }
 
 #home-page{
-    height: 60vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -221,7 +221,7 @@ a {
 
 .projectIcon h3{
     width: 36vh;
-    font-size: 2vw;
+    font-size: 4vh;
     text-align: center;
 }
 
