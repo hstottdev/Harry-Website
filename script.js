@@ -3,7 +3,7 @@ window.onload = function() {
     function update() {
         updateTime();
         getDiscordData();   
-        //deviceCheck();
+        deviceCheck();
     }
         update();
         setInterval(update, 1000);
@@ -111,12 +111,9 @@ function statusHover(){
 
 function deviceCheck(){
 
-    try {
-        //screen.orientation.lock('landscape');
-    } catch (error) {
-        //nevermind
+    if (window.matchMedia("(orientation: portrait)").matches) {
+        screen.orientation.lock('landscape');
     }
-
 }
 
 function getDiscordData(){
