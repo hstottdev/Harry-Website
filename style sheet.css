@@ -174,7 +174,14 @@ a {
     display: flex;
     flex-direction: row;
     width: 100%;
+    overflow: scroll;
+}
+
+
+@media (pointer: fine){
+    #projectCarousel {
     overflow:hidden;
+    }
 }
 
 @media (max-height: 600px) {
