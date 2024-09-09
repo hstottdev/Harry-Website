@@ -191,13 +191,12 @@ a {
 }
 
 @media (max-height: 600px) {
+   #home-page{
+    height: 55vh;
+   }
+    
     #projectCarousel {
         margin-top: 0vh;
-    }
-
-    .projectIcon img{
-        width : 25vh;
-        height: 25vh;
     }
   }
   
@@ -277,13 +276,14 @@ a {
 .navButtons .navIcon i{
     color: rgba(0, 0, 0, 0.543);
     font-weight: bold;
-    font-size: 3vw;
+    font-size: 5.5vh;
 }
 
 footer{
     width : 100%;
     bottom: 0px;
     position: fixed;
+    background-color: #e1e1e1;
 }
 
 footer > div{
