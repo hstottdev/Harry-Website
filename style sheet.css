@@ -436,3 +436,15 @@ footer > div{
     width: 100%;
     height: 100%;
 }
+
+#orientation-warning {
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    position: fixed;
+    background-color: #e1e1e1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 5vw;
+}
