@@ -9,18 +9,6 @@
     src: url(fonts/JetJaneMono\ Bold.ttf);
 }
 
-@media (orientation: portrait) {
-    html {
-      transform: rotate(-90deg);
-      transform-origin: left top;
-      width: 100vh;
-      height: 100vw;
-      overflow-x: hidden;
-      position: absolute;
-      top: 100%;
-      left: 0;
-    }
-  }
 
 body {
     background-color: #e1e1e1;
@@ -64,6 +52,8 @@ header{
     text-align: center;
     text-decoration: none;
     margin: 3px 0px;
+    overflow: visible;
+    white-space: nowrap;
 }
 
 
@@ -88,7 +78,13 @@ header{
     margin-left: 3vw;
     margin-top: 1vw;
     align-self: center;
+    justify-content: center;
     display: flex;
+}
+
+.profilePicture a{
+    width: 6vw;
+    height: 6vw;
 }
 
 .profilePicture img{   
@@ -116,12 +112,18 @@ a {
 
 .profilePicture .navIcon i{
     color:rgb(58, 58, 58);
+    font-size: 2.5vw;
+}
+.profilePicture > h1{
+    font-size: 2vw;
+    margin-left: 1vw;
 }
 
 
 #status-panel{
     flex-direction: column;
     margin-right: 6vw;
+    height: 4vw;
 }
 
 #status-panel i{
@@ -167,7 +169,8 @@ a {
 }
 
 #projectCarousel{
-    margin: 1vh 3vw;
+    margin-left: 3vw;
+    margin-top: 6vh;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -182,8 +185,8 @@ a {
 }
 
 .projectIcon img{
-    width : 18vw;
-    height: 18vw;
+    width : 36vh;
+    height: 36vh;
     border-radius: 2px;
 }
 
@@ -195,9 +198,7 @@ a {
 .projectIcon h3{
     width: 18vw;
     font-size: 2vw;
-    white-space: nowrap;
     text-align: center;
-    overflow:visible;
 }
 
 .miniProjectIcon img{
@@ -227,6 +228,8 @@ a {
 .navIcon{
     align-self: center; 
     margin: 0px 0.5vw;
+    width: 5vw;
+    height: 5vw;
 }
 
 .navIcon .element-shadow{
@@ -250,7 +253,7 @@ a {
 .navButtons .navIcon i{
     color: rgba(0, 0, 0, 0.543);
     font-weight: bold;
-    font-size: 6vh;
+    font-size: 3vw;
 }
 
 footer{
@@ -414,6 +417,7 @@ footer > div{
 
 #id-photo{
     height:14vw;
+    width:14vw;
     border-radius: 1vh;
 }
 
