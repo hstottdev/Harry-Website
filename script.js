@@ -3,6 +3,7 @@ window.onload = function() {
     function update() {
         updateTime();
         getDiscordData();   
+        screen.orientation.lock('landscape');
     }
         update();
         setInterval(update, 1000);
