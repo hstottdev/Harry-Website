@@ -181,6 +181,12 @@ a {
     #projectCarousel {
         margin-top: 0vh;
     }
+
+    .projectIcon img{
+        width : 25vh;
+        height: 25vh;
+        border-radius: 2px;
+    }
   }
   
 
