@@ -446,5 +446,10 @@ footer > div{
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 5vw;
+    font-size: 3vh;
+    visibility: hidden;
+}
+
+#orientation-warning i{
+    font-size: 20vh;
 }
