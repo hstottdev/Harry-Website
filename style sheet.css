@@ -169,7 +169,7 @@ a {
 }
 
 #home-page{
-    height: 70vh;
+    height: 65vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -243,7 +243,7 @@ a {
 
 
 .navButtons{
-    margin-top: 3vh;
+    margin-top: 2vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -252,8 +252,8 @@ a {
 .navIcon{
     align-self: center; 
     margin: 0px 0.5vw;
-    width: 5vw;
-    height: 5vw;
+    width: 10vh;
+    height: 10vh;
 }
 
 .navIcon .element-shadow{
@@ -264,8 +264,8 @@ a {
 }
 
 .navButtons .navIcon .element-shadow{
-    width: 5vw;
-    height: 5vw;
+    width: 10vh;
+    height: 10vh;
 }
 
 .navIcon i{
