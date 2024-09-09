@@ -450,22 +450,30 @@ footer > div{
     position: fixed;
     background-color: #e1e1e1;
     display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 3vh;
+    flex-direction: column;
+    justify-content:center;
     visibility: hidden;
+    text-align: center;
+    font-size: 2vh;
 }
 
 #orientation-warning i{
     font-size: 20vh;
 }
 
+#orientation-warning h1{
+    font-size: 3vh;
+}
+
+#orientation-message{
+    margin-top: 10vh;
+}
+
 @media (orientation: landscape) {
     #orientation-warning{
         visibility: hidden;
     }
-  }
-  
+  } 
   @media (orientation: portrait) {
     #orientation-warning{
         visibility:visible;

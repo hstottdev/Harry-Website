@@ -3,7 +3,6 @@ window.onload = function() {
     function update() {
         updateTime();
         getDiscordData();   
-        //orientationCheck();
     }
         update();
         setInterval(update, 1000);
@@ -107,17 +106,6 @@ function buttonHover(){
 
 function statusHover(){
     playSound('sounds/clicking-interface-select-201946.mp3');
-}
-
-function orientationCheck(){
-
-    if (window.matchMedia("(orientation: portrait)").matches) {
-        document.getElementById('orientation-warning').style.visibility = "visible";
-    }
-    else{
-        document.getElementById('orientation-warning').style.visibility = "hidden";
-    }
-
 }
 
 function getDiscordData(){
