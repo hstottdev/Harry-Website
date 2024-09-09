@@ -177,6 +177,12 @@ a {
     overflow:hidden;
 }
 
+@media (max-height: 600px) {
+    #projectCarousel {
+        margin-top: 0vh;
+    }
+  }
+  
 
 
 .projectIcon{
@@ -437,7 +443,7 @@ footer > div{
     height: 100%;
 }
 
-#orientation-warning {
+#orientation-warning{
     width: 100%;
     height: 100%;
     z-index: 9999;
@@ -453,3 +459,15 @@ footer > div{
 #orientation-warning i{
     font-size: 20vh;
 }
+
+@media (orientation: landscape) {
+    #orientation-warning{
+        visibility: hidden;
+    }
+  }
+  
+  @media (orientation: portrait) {
+    #orientation-warning{
+        visibility:visible;
+    }
+  }

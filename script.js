@@ -3,7 +3,7 @@ window.onload = function() {
     function update() {
         updateTime();
         getDiscordData();   
-        orientationCheck();
+        //orientationCheck();
     }
         update();
         setInterval(update, 1000);
