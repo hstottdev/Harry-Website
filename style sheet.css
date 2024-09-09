@@ -168,9 +168,15 @@ a {
     align-items: center;
 }
 
+#home-page{
+    height: 60vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
 #projectCarousel{
     margin-left: 3vw;
-    margin-top: 6vh;
     display: flex;
     flex-direction: row;
     width: 100%;
@@ -214,7 +220,7 @@ a {
 }
 
 .projectIcon h3{
-    width: 18vw;
+    width: 36vh;
     font-size: 2vw;
     text-align: center;
 }
