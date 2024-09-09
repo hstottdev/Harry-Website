@@ -16,8 +16,7 @@ body {
     font-size: 2vh;  
     font-family: Nintendo Switch;
     height: 100vh;
-    margin-left: 0px;
-    margin-bottom: 0px;
+    margin: 0px 0px;
     overflow: hidden;
 }
 
@@ -197,8 +196,8 @@ a {
     }
 
     .projectIcon img{
-        width : 30vh;
-        height: 30vh;
+        width : 25vh;
+        height: 25vh;
     }
   }
   
@@ -284,8 +283,7 @@ a {
 footer{
     width : 100%;
     bottom: 0px;
-    position: absolute;
-    margin-bottom: 5px;
+    position: fixed;
 }
 
 footer > div{
