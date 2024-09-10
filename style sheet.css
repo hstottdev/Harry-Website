@@ -83,8 +83,8 @@ header{
 }
 
 .profilePicture a{
-    width: 6vw;
-    height: 6vw;
+    width: 4.5vw;
+    height: 4.5vw;
 }
 
 .profilePicture img{   
@@ -98,8 +98,8 @@ a {
 }
 
 .profilePicture .element-shadow{
-    width: 4vw;
-    height: 4vw;
+    width: 3vw;
+    height: 3vw;
     border : 5px;
     border-style:solid;
     border-color: #ffffff;
@@ -112,10 +112,10 @@ a {
 
 .profilePicture .navIcon i{
     color:rgb(58, 58, 58);
-    font-size: 2.5vw;
+    font-size: 2vw;
 }
 .profilePicture > h1{
-    font-size: 2vw;
+    font-size: 1.5vw;
     margin-left: 1vw;
 }
 
@@ -169,7 +169,7 @@ a {
 }
 
 #home-page{
-    height: 65vh;
+    height: 70vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -192,11 +192,20 @@ a {
 
 @media (max-height: 600px) {
    #home-page{
-    height: 55vh;
+    height: 65vh;
    }
     
     #projectCarousel {
-        margin-top: 0vh;
+        margin-top: 5vh;
+    }
+
+    .projectIcon img{
+        width : 40vh;
+        height: 40vh;
+    }
+
+    .projectIcon h3{
+        width: 40vh;
     }
   }
   
@@ -242,7 +251,7 @@ a {
 
 
 .navButtons{
-    margin-top: 2vh;
+    margin-top: 4vh;
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -251,8 +260,8 @@ a {
 .navIcon{
     align-self: center; 
     margin: 0px 0.5vw;
-    width: 10vh;
-    height: 10vh;
+    width: 12vh;
+    height: 12vh;
 }
 
 .navIcon .element-shadow{
@@ -263,14 +272,14 @@ a {
 }
 
 .navButtons .navIcon .element-shadow{
-    width: 10vh;
-    height: 10vh;
+    width: 12vh;
+    height: 12vh;
 }
 
 .navIcon i{
     align-self: center;
     text-align: center;
-    font-size: 5vh;
+    font-size: 7vh;
 }
 
 .navButtons .navIcon i{
