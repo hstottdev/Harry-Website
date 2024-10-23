@@ -483,6 +483,11 @@ footer > div{
     font-size: 2vh;
 }
 
+#orientation-warning img{
+    width: 10vw;
+    height: 10vw;
+}
+
 #orientation-warning i{
     font-size: 20vh;
 }
