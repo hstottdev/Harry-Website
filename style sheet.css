@@ -371,12 +371,12 @@ footer > div{
     width:100%;
     display: flex;
     justify-content: center;
+    font-size: 2.5vh;
 }
 
 .description-box p{
     width: 50vw;
     padding: 1% 0;
-    font-size: 2.5vh;
     text-wrap:wrap;
 }
 
