@@ -469,6 +469,15 @@ footer > div{
     height: 100%;
 }
 
+.screenshot-carousel{
+    display: flex;
+    overflow-x: scroll;
+}
+
+.screenshot-carousel img{
+    width: 20vw;
+}
+
 #orientation-warning{
     width: 100%;
     height: 100%;
@@ -510,3 +519,5 @@ footer > div{
         visibility:visible;
     }
   }
+
+
