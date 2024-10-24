@@ -380,6 +380,10 @@ footer > div{
     text-wrap:wrap;
 }
 
+.key-list{
+    font-size: 6vh;
+}
+
 #nav-menu{
     height: 80%;
     width: 25vw;
