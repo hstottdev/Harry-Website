@@ -206,8 +206,8 @@ a {
         height: 40vh;
     }
 
-    .projectIcon h3{
-        width: 40vh;
+    .projectIcon h3 {
+
     }
   }
   
@@ -229,9 +229,11 @@ a {
     display: flex;
 }
 
-.projectIcon h3{
-    width: 36vh;
+.projectIcon h3 {
+    width: 60vh;
     font-size: 4vh;
+    margin-left: -10vh;
+    margin-right: -10vh;
     text-align: center;
 }
 
@@ -261,8 +263,13 @@ a {
 .navIcon{
     align-self: center; 
     margin: 0px 0.5vw;
-    width: 12vh;
-    height: 12vh;
+    width: 11vh;
+    height: 11vh;
+}
+
+.currentNav {
+    width: 14vh;
+    height: 14vh;
 }
 
 .navIcon .element-shadow{
@@ -272,15 +279,27 @@ a {
     justify-content: center;
 }
 
-.navButtons .navIcon .element-shadow{
-    width: 12vh;
-    height: 12vh;
+.navButtons .navIcon .element-shadow {
+    width: 11vh;
+    height: 11vh;
+    display: flex;
+    align-items: center;
+}
+
+.navButtons .currentNav .element-shadow {
+    width: 14vh;
+    height: 14vh;
 }
 
 .navIcon i{
     align-self: center;
     text-align: center;
     font-size: 7vh;
+}
+
+.navIcon img {
+    width: 70%;
+    height: 70%;
 }
 
 .navButtons .navIcon i{
@@ -394,6 +413,11 @@ footer > div{
     background-image: linear-gradient(#ffffff0b,#fffcfc6c,#ffffff0b);
 }
 
+#nav-menu img{
+    width: 7vh;
+    height: 7vh;
+}
+
 #nav-menu .button{
     border-radius: 1vh;
     display: flex;
@@ -474,14 +498,19 @@ footer > div{
     height: 100%;
 }
 
+
 .screenshot-carousel{
     display: flex;
     flex-direction: row;
     overflow-x: scroll;
 }
 
-.screenshot-carousel img{
+.game-screenshot{
     width: 30vw;
+}
+
+.screenshot-carousel img{
+    width: 20vw;
 }
 
 #orientation-warning{
