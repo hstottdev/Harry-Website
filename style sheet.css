@@ -30,6 +30,7 @@ header{
     flex-direction: row;
     display: flex;
     width : 100%;
+    height:15vh;
     justify-content: space-between;
     align-items: top;
 }
@@ -85,8 +86,9 @@ header{
 }
 
 .profilePicture a{
-    width: 4.5vw;
-    height: 4.5vw;
+    width: 10vh;
+    height: 10vh;
+    margin-left: 1vh;
 }
 
 .profilePicture img{   
@@ -100,8 +102,8 @@ a {
 }
 
 .profilePicture .element-shadow{
-    width: 3vw;
-    height: 3vw;
+    width: 7vh;
+    height: 7vh;
     border : 5px;
     border-style:solid;
     border-color: #ffffff;
@@ -114,22 +116,21 @@ a {
 
 .profilePicture .navIcon i{
     color:rgb(58, 58, 58);
-    font-size: 2vw;
+    font-size: 5vh;
 }
 .profilePicture > h1{
-    font-size: 1.5vw;
-    margin-left: 1vw;
+    font-size: 3vh;
+    margin-left: 3vh;
 }
 
 
 #status-panel{
     flex-direction: column;
-    margin-right: 6vw;
-    height: 4vw;
+    height: 6vh;
 }
 
 #status-panel i{
-    font-size: 2vw;
+    font-size: 4vh;
     padding: 10px 10px;
 }
 
@@ -140,14 +141,14 @@ a {
 
 .clock{
     font-family: Clock Font;
-    font-size: 2vw;
+    font-size: 4vh;
     font-weight:bolder;
     display: inline;
     align-self: center;  
 }
 
 .location{
-    font-size: 1.5vw;
+    font-size: 3vh;
     font-weight: bolder;
 }
 
@@ -164,7 +165,7 @@ a {
 }
 
 .status{
-    font-size: 1.5vw;
+    font-size: 3vh;
     font-weight: bolder;
     display: flex;
     align-items: center;
@@ -210,12 +211,12 @@ a {
 
     }
   }
-  
 
 
-.projectIcon{
+
+.projectIcon {
     display: flex;
-    flex-direction :column-reverse;
+    flex-direction: column-reverse;
 }
 
 .projectIcon img{
@@ -308,11 +309,11 @@ a {
     font-size: 5.5vh;
 }
 
-footer{
-    width : 100%;
+footer {
+    width: 100%;
     bottom: 0px;
     position: fixed;
-    background-color: #e1e1e130;
+    background-color: #ffffff78;
 }
 
 footer > div{
@@ -386,13 +387,17 @@ footer > div{
     margin: 2vh 4vh;
 }
 
-.description-box{
-    height:fit-content;
-    width:100%;
-    display: flex;
-    justify-content: center;
-    font-size: 2.5vh;
+#title-header img{
+    height: 12vh;
 }
+
+.description-box {
+        height: fit-content;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        font-size: 2.5vh;
+    }
 
 .description-box p{
     width: 50vw;
