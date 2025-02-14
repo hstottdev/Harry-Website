@@ -400,8 +400,10 @@ footer > div{
     text-wrap:wrap;
 }
 
-.key-list{
+.key-list {
     font-size: 3vh;
+    margin-inline-start: 3vw;
+    font-weight:600;
 }
 
 #nav-menu{
@@ -498,6 +500,27 @@ footer > div{
     height: 100%;
 }
 
+.game-buttons {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.game-buttons img {
+    width: 20vw;
+}
+
+.game-trailer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.game-trailer iframe {
+    width: 55vw;
+    height: 30.9375vw;
+}
 
 .screenshot-carousel{
     display: flex;
@@ -511,6 +534,21 @@ footer > div{
 
 .screenshot-carousel img{
     width: 20vw;
+}
+
+.grid-descriptions{
+    display:flex;
+    flex-wrap:wrap;
+    justify-content:space-evenly;
+}
+
+.grid-descriptions > div{
+    width: 25vw;
+}
+
+.grid-descriptions img{
+    width: 25vw;
+    height:18vw;
 }
 
 #orientation-warning{
