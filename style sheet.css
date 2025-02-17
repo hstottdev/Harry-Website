@@ -385,10 +385,12 @@ footer > div{
 
 #title-header h1{
     margin: 2vh 4vh;
+    height: 8vh;
+    font-size: 4.5vh;
 }
 
 #title-header img{
-    height: 12vh;
+    height: 10vh;
 }
 
 .description-box {
