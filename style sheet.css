@@ -321,6 +321,7 @@ footer > div{
 }
 
 .thick-line{
+    width:100%;
     border-width: 1px;
     border-color: #00000086;
     margin: 1vh 3vh;
@@ -384,14 +385,26 @@ footer > div{
 }
 
 #title-header h1{
-    margin: 2vh 4vh;
-    height: 8vh;
+    margin: 2vh 8vh;
     font-size: 4.5vh;
 }
 
-#title-header img{
-    height: 10vh;
+#game-header {
+    align-self:end;
+    width: 100vw;
+    font-size: 4.5vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
+
+#game-header img {
+    align-self:center;
+    margin-top: 2vh;
+    height: 12vh;
+}
+
+
 
 .description-box {
         height: fit-content;
@@ -511,7 +524,6 @@ footer > div{
     width: 100%;
     display: flex;
     flex-direction: row;
-    justify-content: center;
 }
 
 .game-buttons img {
@@ -527,6 +539,18 @@ footer > div{
 .game-trailer iframe {
     width: 55vw;
     height: 30.9375vw;
+}
+
+.game-embed {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.game-embed iframe {
+    border: 0.8vh;
+    border-style: solid;
+    border-radius: 8px;
+    border-color:blue;
 }
 
 .screenshot-carousel{
