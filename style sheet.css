@@ -446,6 +446,7 @@ footer > div{
     margin-bottom: 5vh;
     background-color: #f5f5f51e;
     background-image: linear-gradient(#ffffff0b,#fffcfc6c,#ffffff0b);
+    overflow-y:scroll;
 }
 
 #nav-menu img{
