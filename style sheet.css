@@ -439,7 +439,7 @@ footer > div{
 }
 
 #nav-menu {
-    height: 75vh;
+    height: 70vh;
     width: 25vw;
     position: fixed;
     margin: 0px 0px;
@@ -474,7 +474,7 @@ footer > div{
 
 #profile-section{
     width:  60vw;
-    height: 75vh;
+    height: 70vh;
     margin-left: 30vw;
     margin-top: 1vh;
     margin-bottom:5vh;
