@@ -17,6 +17,7 @@ body {
     color:#000000;
     font-size: 2vh;  
     font-family: Nintendo Switch;
+    margin-bottom:30vh;
     height: 100vh;
     overflow: hidden;
 }
@@ -437,11 +438,12 @@ footer > div{
     font-weight:600;
 }
 
-#nav-menu{
-    height: 80%;
+#nav-menu {
+    height: 75vh;
     width: 25vw;
     position: fixed;
     margin: 0px 0px;
+    margin-bottom: 5vh;
     background-color: #f5f5f51e;
     background-image: linear-gradient(#ffffff0b,#fffcfc6c,#ffffff0b);
 }
@@ -475,6 +477,7 @@ footer > div{
     height: 75vh;
     margin-left: 30vw;
     margin-top: 1vh;
+    margin-bottom:5vh;
     align-items: center;
     overflow-y: scroll;
 }
