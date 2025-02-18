@@ -121,6 +121,7 @@ a {
 .profilePicture > h1{
     font-size: 3vh;
     margin-left: 3vh;
+    font-weight:bolder;
 }
 
 
@@ -412,6 +413,7 @@ footer > div{
         display: flex;
         justify-content: center;
         font-size: 2.5vh;
+        font-weight:500;
     }
 
 .description-box p{
@@ -524,10 +526,11 @@ footer > div{
     width: 100%;
     display: flex;
     flex-direction: row;
+    justify-content:center;
 }
 
 .game-buttons img {
-    width: 20vw;
+    width: 15vw;
 }
 
 .game-trailer{
@@ -539,6 +542,10 @@ footer > div{
 .game-trailer iframe {
     width: 55vw;
     height: 30.9375vw;
+}
+
+.game-trailer img {
+    width: 40vw;
 }
 
 .game-embed {
