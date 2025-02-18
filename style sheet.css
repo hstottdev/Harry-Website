@@ -311,10 +311,20 @@ a {
 footer {
     width: 100%;
     background-color: #ffffff00;
+    background-color: #ffffff00;
+    position: absolute;
+    bottom: -500px;
 }
 
 footer > div{
     width: 100%;
+}
+
+@media (pointer: fine) {
+
+    footer {
+        position: static;
+    }
 }
 
 .thick-line{
