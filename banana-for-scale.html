@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Arjybeasts - Harry Stott</title>
+    <title>Banana For Scale - Harry Stott</title>
     <meta charset="UTF-8">
     <meta name="description" content="'Banana For Scale' is a mobile game, where all the objects in the world are the wrong size, and the only thing left correct is a banana.">
     <link rel="stylesheet" href="style sheet.css">
@@ -12,7 +12,8 @@
     <script src="script.js"></script>
     <style>
         html {
-            background-image: url("assets/arjybeasts background.png");
+            background-image: url("assets/banana/background.png");
+            background-size: 100vw 100vh;
         }
     </style>
 
@@ -33,7 +34,8 @@
 
     <header>
         <div id="game-header">
-            <i class="las la-user-certificate"></i> <img src="assets/arjybeasts logo.gif" alt="Arjybeasts">
+
+            <i class="las la-user-certificate"></i> <img src="assets/banana/banner.gif" alt="Banana For Scale">
             <hr class="thick-line">
         </div>
     </header>
@@ -76,27 +78,27 @@
                 <img src="assets/slimey button.png">
             </a>
 
-            <a href="https://store.steampowered.com/app/3245190/Arjybeasts/" class="button clickable">
-                <img src="assets/steam.png">
+            <a href="https://sambamuel.itch.io/banana-for-scale-remastered" class="button clickable">
+                <img src="assets/itchio.png" />
             </a>
         </div>
         <hr>
         <!--TRAILER-->
         <h1>
-            Trailer
+            Play
         </h1>
         <hr>
 
-        <div class="game-trailer">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/u3LksJVYPis?si=kFsOL_fcLsJkU9Z0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="game-embed">
+            <iframe frameborder="0" src="https://itch.io/embed-upload/12866170?color=7bc7ff" allowfullscreen="" width="960" height="650"><a href="https://sambamuel.itch.io/banana-for-scale-remastered">Play Banana For Scale on itch.io</a></iframe>
         </div>
         <hr>
 
         <div class="screenshot-carousel">
-            <img src="assets/arjybeasts/beasts screenshot 2.jpg">
-            <img src="assets/arjybeasts/beasts screenshot 1.jpg">
-            <img src="assets/arjybeasts/beasts screenshot 3.jpg">
-            <img src="assets/arjybeasts/beasts screenshot 4.jpg">
+            <img src="assets/banana/screenshot 1.png">
+            <img src="assets/banana/screenshot 2.png">
+            <img src="assets/banana/screenshot 3.png">
+            <img src="assets/banana/screenshot 4.png">
         </div>
         <hr>
 
@@ -109,11 +111,9 @@
         <div class="description-box">
             <p>
                 <b>
-                    When viewed through playful eyes, a normal desktop computer becomes a game called 'Arjybeasts', a one-of-a-kind Turn-Based RPG where creativity meets strategy.
+                    'Banana For Scale' is a mobile game, where all the objects in the world are the wrong size, and the only thing left correct is a banana. The player must scale a wide range of objects to fix their size using only a banana for scale.
                     <br><br>
-                    Image files on your computer refuse to be deleted! Yet, you must find a way to fight them with your image (or Arjybeast) to un-clog the computer.
-                    <br> <br>
-                    This started as a solo passion project which I created for a university project, and soon became something a bit more ambitious. Now, still a passion project with a small team of 3, the game is being developed in full.
+                    This was one of my first larger-scale projects, it was officially published to the Google Play store under 'Slimey Hatch Studios', and we even attempted to do our own marketing for it to spread the word. There were only 2 of us and one composer, but we really achieved something.
                 </b>
             </p>
         </div>
@@ -143,6 +143,12 @@
                     C#
                 </li>
                 <li>
+                    Mobile Development
+                </li>
+                <li>
+                    Responsive Design
+                </li>
+                <li>
                     Version Control (Plastic SCM)
                 </li>
                 <li>
@@ -153,9 +159,6 @@
                 </li>
                 <li>
                     Trello
-                </li>
-                <li>
-                    2D Art
                 </li>
             </ul>
         </div>
@@ -170,52 +173,58 @@
 
         <div class="grid-descriptions">
             <div>
-                <img src="assets/arjybeasts/file system.jpg">
-                <h3>File System</h3>
+                <img src="assets/banana/sizing-accuracy.png">
+                <h3>Sizing Accuracy</h3>
                 <div>
                     <p>
                         <b>
-                            I'm responsible for the design, and programming of the in-depth file system of the game. This is in a sense, the "Level Design" of the game. Players navigate through file windows, 
-                            deleting files to gain storage. Due to the linear nature of the game, files are placed carefully to ensure a balance in difficulty and rewards.
+                            As part of development, I was responsible for ensuring that objects had the correct 'real size'. Due to the use of an asset pack, 
+                            we discovered that all the objects within the pack were already to scale. However, this meant all the objects were different sizes at scale 1 in Unity, so 
+                            we needed a way to find the real size. Which I discovered you could do using the bounds of the meshes. Which we then used for various things such as the 
+                            positioning of the banana next to our scaled objects.
                         </b>
                     </p>
                 </div>
             </div>
 
             <div>
-                <img src="assets/arjybeasts/text files.png">
-                <h3>Text Files</h3>
+                <img src="assets/banana/opeels.png">
+                <h3>O' Peels Shop'</h3>
                 <div>
                     <p>
                         <b>
-                            It's my job to write the many text files throughout the game, these act as dialogue to break up time between battles. They are used both to tell a complex underlying narrative, and to surprise and make the
-                            player laugh. Each text file acts as if you are talking to them like a character, which I felt added more life to the game rather than reading a wall of text.
+                            I was also responsible for the management and balancing of the O'Peels shop, a place where the player could buy new skins for their banana, new maps, 
+                            and new modes. I had to design the UI in a way that it would work on all Android devices, and we also had to work around figuring out how to get 
+                            3D objects onto the UI in Unity, which was feasible with extra cameras. I also had to try and balance the earning of peels, I mostly tried to 
+                            take the approach of a positive feedback loop, where new items increased your 'peel rating' which in turn makes it easier to afford more new items.
                         </b>
                     </p>
                 </div>
             </div>
 
             <div>
-                <img src="assets/arjybeasts/pear.png">
-                <h3>Enemy Design</h3>
+                <img src="assets/banana/tutorial.png">
+                <h3>Tutorial</h3>
                 <div>
                     <p>
                         <b>
-                            Throughout the single-player mode of the game, players must delete image files, which in turn begin battles. It's my task to draw new enemies and give them assigned moves etc. 
-                            I try my best to make certain enemies have unique abilities which change the game completely so that players are constantly encountering new things as they play, even perhaps many many hours in.
+                            For a mobile game such as this with such a broad target audience, it was important that we had a really clear and, what we described as a 
+                            'hand holding' tutorial. I created my own dialogue system which checks for symbols such as # in order to run functions. This was mostly a 
+                            section where 'Dr, O'Peel would give the player various instructions and they wouldn't be allowed to proceed until they had completed them.
                         </b>
                     </p>
                 </div>
             </div>
 
             <div>
-                <img src="assets/arjybeasts/everything.gif">
-                <h3>Everything Else</h3>
+                <img src="assets/banana/maps.png">
+                <h3>Skins, Maps & More</h3>
                 <div>
                     <p>
                         <b>
-                            I'm the Lead Designer, and I hold the vision. Many things in this game originated as visions in my brain. I decide the game's structure, and the overall experience.
-                            I couldn't do it alone though, I work with my two talented team members who help me realise these ideas, and often, shut me down when needed.
+                            In between all this, we had plenty of 'fun' tasks, like adding new objects to scale, new skins to unlock, and new maps. Objects were 
+                            what we needed most, and we ended up coining the term 'object shifts' for adding them, just because it was so much work to add them
+                            and we needed so many so that the game would keep fresh.
                         </b>
                     </p>
                 </div>
