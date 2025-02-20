@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Whatever Continuum - Harry Stott</title>
+    <title>Spwrong - Harry Stott</title>
     <meta charset="UTF-8">
     <meta name="description" content="Arjybeasts is a Turn-based RPG where colour means everything! Draw your own PNG, battle and delete other images, open chests and make space so that HE can install things.">
     <link rel="stylesheet" href="style sheet.css">
@@ -12,7 +12,7 @@
     <script src="script.js"></script>
     <style>
         html {
-            background-image: url("assets/whatever/whatever background.png");
+            background-image: url("assets/spwrong/background.png");
         }
     </style>
 
@@ -33,7 +33,7 @@
 
     <header>
         <div id="game-header">
-            <img src="assets/whatever/whatever header.gif" alt="Whatever Continuum">
+            <img src="assets/spwrong/spwrong header.gif" alt="Spwrong">
             <hr class="thick-line">
         </div>
     </header>
@@ -88,16 +88,15 @@
         <hr>
 
         <div class="game-embed">
-            <iframe frameborder="0" src="https://itch.io/embed-upload/12493811?color=2600b5" allowfullscreen="" width="940" height="650"><a href="https://purplpup.itch.io/whatever-continuum">Play Whatever Continuum on itch.io</a></iframe>
+            <iframe frameborder="0" src="https://itch.io/embed-upload/8531217?color=d767d6" allowfullscreen="" width="965" height="650"><a href="https://purplpup.itch.io/spwrong">Play SPWRONG on itch.io</a></iframe>
         </div>
         <hr>
 
         <div class="screenshot-carousel">
-            <img src="assets/whatever/screenshot 1.png">
-            <img src="assets/whatever/screenshot 2.png">
-            <img src="assets/whatever/screenshot 3.png">
-            <img src="assets/whatever/screenshot 4.png">
-            <img src="assets/whatever/screenshot 5.png">
+            <img src="assets/spwrong/screenshot1.png">
+            <img src="assets/spwrong/screenshot2.png">
+            <img src="assets/spwrong/screenshot3.png">
+            <img src="assets/spwrong/screenshot4.png">
         </div>
         <hr>
 
@@ -110,11 +109,12 @@
         <div class="description-box">
             <p>
                 <b>
-                    'Whatever Continuum' is a reality-bending 2D sandbox platformer. Each platforming challenge may have a vast number of solutions, and the player must use characters and objects from other worlds to solve challenges.
-                    <br> <br>
-                    Although this was a project made entirely by myself, the practices, workflows, and software were in keeping with professional, collaborative environments.
+                    Spwrong is a 2D Platformer in which the player must fix visual errors in their sprite at each level. The player can check their hitbox, 
+                    and swap sprites with other objects to find the correct one. The player must also avoid physical errors in the form of moving spike blocks. 
+                    Swapping with an incorrect sprite or touching an error causes the player to lose hearts.
                     <br><br>
-                    This is still an ongoing project, and I will likely continue updating the Game Design Document and Development Diary in the future.
+                    This was a solo project for a 4-day summer game jam, in which this game won. I felt as though this was my first project in a while 
+                    that I was really proud of, and I still learned a lesson or two in such a short time.
                 </b>
             </p>
         </div>
@@ -138,6 +138,9 @@
                     Unity
                 </li>
                 <li>
+                    UI/UX
+                </li>
+                <li>
                     C#
                 </li>
                 <li>
@@ -145,9 +148,6 @@
                 </li>
                 <li>
                     Visual Studio Community
-                </li>
-                <li>
-                    Documentation (Confluence)
                 </li>
                 <li>
                     Trello
@@ -168,58 +168,66 @@
 
         <div class="grid-descriptions">
             <div>
-                <img src="assets/whatever/level design screenshot.png">
+                <img src="assets/spwrong/hitbox-revealing.png">
+                <h3>Hitbox Revealing</h3>
+                <div>
+                    <p>
+                        <b>
+                            One initial realisation that nearly stopped me with this idea was that the player 
+                            being visually incorrect would likely result in annoyance with your hitbox not 
+                            matching your sprite. So, with this game, I added a system whereby the player 
+                            can check their hitbox by pressing 'Shift'. This was a modular system which was 
+                            referring to the size of the actual collider in Unity, and then setting a 
+                            sliced sprite rectangle to be the same size.
+                        </b>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/spwrong/visual-style.png">
+                <h3>Striking Visual Style</h3>
+                <div>
+                    <p>
+                        <b>
+                            Initially, the game started by looking very normal, this change can even be seen 
+                            in the fake-out main menu of 'Normal Farming Game'. But, after playing around with the 
+                            'Convolution Matrix' on Aseprite, I managed to warp all the art to adopt a greenish-pink style which 
+                            I felt was retro and indicative of the 'buggy' nature of the game. The game was almost entirely shades 
+                            of green and pink, except for the use of red in order to stand out and represent errors to the player!
+                        </b>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/spwrong/simple-ui.png">
+                <h3>Simple UI</h3>
+                <div>
+                    <p>
+                        <b>
+                            I had to create a simple UI, that would show to the player in a simple but stylistic way, that their sprite was incorrect.
+                            Some players may not be familiar with the term 'sprite', so I also referred to this as an 'image' error. Due to this being 
+                            a project on my own, I had the challenge and worry of players not understanding such a concept. I had no access to playtesters, 
+                            and had to hope that people would understand the concept through only the clarity of the UI, and the beginning instruction 
+                            of 'Fix the Sprite of your Character!'
+                        </b>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/spwrong/level-design.png">
                 <h3>Level Design</h3>
                 <div>
                     <p>
                         <b>
-                            For all level design, I attempted to take an open-ended, emergent approach. I worked iteratively 
-                            and made constant changes based on personal testing and most importantly, playtesting. I also took 
-                            approaches such as adding multiple exits to the level and then using AB testing to find out which 
-                            exit was most commonly found.
-                        </b>
-                    </p>
-                </div>
-            </div>
-
-            <div>
-                <img src="assets/whatever/emmergent gameplay screenshot.png">
-                <h3>Emmergent Gameplay</h3>
-                <div>
-                    <p>
-                        <b>
-                            When designing the gameplay for Whatever Continuum, I wanted players to be curious and try different 
-                            things. I made an effort to make every object, from chickens to crates even the abilities of the player, 
-                            all having the ability to change and have different gameplay effects in different worlds.
-                        </b>
-                    </p>
-                </div>
-            </div>
-
-            <div>
-                <img src="assets/whatever/mechanics screenshot.gif">
-                <h3>In-Depth Mechanics</h3>
-                <div>
-                    <p>
-                        <b>
-                            I demonstrated both technical abilities, and design knowledge to perfect in-depth platforming mechanics. 
-                            I exercised past muscles of Maths and Physics, while still keeping a focus on the experience of play.
-                            For many mechanics, Physics had to be rewritten, and I had to work out what felt right through playtesting,
-                            and other's opinions.
-                        </b>
-                    </p>
-                </div>
-            </div>
-
-            <div>
-                <img src="assets/whatever/visual style screenshot.png">
-                <h3>Visual Style</h3>
-                <div>
-                    <p>
-                        <b>
-                            I created each character in the game to differ highly in its visuals, highlighting to the player how the 
-                            game changes and possibly encouraging them to view the same level differently for different characters. 
-                            I also practised colour theory, making objects of importance such as the player, and 'Rupture Zones' visually more striking.
+                            This game is significantly lacking in levels & content due to the minimal time that I had. However, 
+                            I spent a good amount of time getting the levels I had to be just right. I ensured the player would
+                            be taught that they aren't always a person, the player visually looks like a cow to begin with to 
+                            get the player familiar with this. Levels also show various objects to the player along the way, 
+                            some are red herrings and are used to fool the player. They must check their hitbox and compare 
+                            it with other objects to find the correct one.
                         </b>
                     </p>
                 </div>
