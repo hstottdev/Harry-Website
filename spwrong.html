@@ -110,16 +110,91 @@
         <div class="description-box">
             <p>
                 <b>
-                    Spwrong is a 2D Platformer in which the player must fix visual errors in their sprite at each level. The player can check their hitbox, 
-                    and swap sprites with other objects to find the correct one. The player must also avoid physical errors in the form of moving spike blocks. 
+                    Spwrong is a 2D Platformer in which the player must fix visual errors in their sprite at each level. The player can check their hitbox,
+                    and swap sprites with other objects to find the correct one. The player must also avoid physical errors in the form of moving spike blocks.
                     Swapping with an incorrect sprite or touching an error causes the player to lose hearts.
                     <br><br>
-                    This was a solo project for a 4-day summer game jam, in which this game won. I felt as though this was my first project in a while 
+                    This was a solo project for a 4-day summer game jam, in which this game won. I felt as though this was my first project in a while
                     that I was really proud of, and I still learned a lesson or two in such a short time.
                 </b>
             </p>
         </div>
 
+        <hr>
+
+        <!--RESPONSIBILITIES-->
+        <h1>
+            Responsibilities
+        </h1>
+        <hr>
+
+        <div class="grid-descriptions">
+            <div>
+                <img src="assets/spwrong/hitbox-revealing.png">
+                <h3>Hitbox Revealing</h3>
+                <div>
+                    <p>
+                        <b>
+                            One initial realisation that nearly stopped me with this idea was that the player
+                            being visually incorrect would likely result in annoyance with your hitbox not
+                            matching your sprite. So, with this game, I added a system whereby the player
+                            can check their hitbox by pressing 'Shift'. This was a modular system which was
+                            referring to the size of the actual collider in Unity, and then setting a
+                            sliced sprite rectangle to be the same size.
+                        </b>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/spwrong/visual-style.png">
+                <h3>Striking Visual Style</h3>
+                <div>
+                    <p>
+                        <b>
+                            Initially, the game started by looking very normal, this change can even be seen
+                            in the fake-out main menu of 'Normal Farming Game'. But, after playing around with the
+                            'Convolution Matrix' on Aseprite, I managed to warp all the art to adopt a greenish-pink style which
+                            I felt was retro and indicative of the 'buggy' nature of the game. The game was almost entirely shades
+                            of green and pink, except for the use of red in order to stand out and represent errors to the player!
+                        </b>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/spwrong/simple-ui.png">
+                <h3>Simple UI</h3>
+                <div>
+                    <p>
+                        <b>
+                            I had to create a simple UI, that would show to the player in a simple but stylistic way, that their sprite was incorrect.
+                            Some players may not be familiar with the term 'sprite', so I also referred to this as an 'image' error. Due to this being
+                            a project on my own, I had the challenge and worry of players not understanding such a concept. I had no access to playtesters,
+                            and had to hope that people would understand the concept through only the clarity of the UI, and the beginning instruction
+                            of 'Fix the Sprite of your Character!'
+                        </b>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/spwrong/level-design.png">
+                <h3>Level Design</h3>
+                <div>
+                    <p>
+                        <b>
+                            This game is significantly lacking in levels & content due to the minimal time that I had. However,
+                            I spent a good amount of time getting the levels I had to be just right. I ensured the player would
+                            be taught that they aren't always a person, the player visually looks like a cow to begin with to
+                            get the player familiar with this. Levels also show various objects to the player along the way,
+                            some are red herrings and are used to fool the player. They must check their hitbox and compare
+                            it with other objects to find the correct one.
+                        </b>
+                    </p>
+                </div>
+            </div>
+        </div>
         <hr>
 
         <!--KEY SKILLS-->
@@ -158,83 +233,6 @@
                 </li>
             </ul>
         </div>
-
-        <hr>
-
-        <!--RESPONSIBILITIES-->
-        <h1>
-            Responsibilities
-        </h1>
-        <hr>
-
-        <div class="grid-descriptions">
-            <div>
-                <img src="assets/spwrong/hitbox-revealing.png">
-                <h3>Hitbox Revealing</h3>
-                <div>
-                    <p>
-                        <b>
-                            One initial realisation that nearly stopped me with this idea was that the player 
-                            being visually incorrect would likely result in annoyance with your hitbox not 
-                            matching your sprite. So, with this game, I added a system whereby the player 
-                            can check their hitbox by pressing 'Shift'. This was a modular system which was 
-                            referring to the size of the actual collider in Unity, and then setting a 
-                            sliced sprite rectangle to be the same size.
-                        </b>
-                    </p>
-                </div>
-            </div>
-
-            <div>
-                <img src="assets/spwrong/visual-style.png">
-                <h3>Striking Visual Style</h3>
-                <div>
-                    <p>
-                        <b>
-                            Initially, the game started by looking very normal, this change can even be seen 
-                            in the fake-out main menu of 'Normal Farming Game'. But, after playing around with the 
-                            'Convolution Matrix' on Aseprite, I managed to warp all the art to adopt a greenish-pink style which 
-                            I felt was retro and indicative of the 'buggy' nature of the game. The game was almost entirely shades 
-                            of green and pink, except for the use of red in order to stand out and represent errors to the player!
-                        </b>
-                    </p>
-                </div>
-            </div>
-
-            <div>
-                <img src="assets/spwrong/simple-ui.png">
-                <h3>Simple UI</h3>
-                <div>
-                    <p>
-                        <b>
-                            I had to create a simple UI, that would show to the player in a simple but stylistic way, that their sprite was incorrect.
-                            Some players may not be familiar with the term 'sprite', so I also referred to this as an 'image' error. Due to this being 
-                            a project on my own, I had the challenge and worry of players not understanding such a concept. I had no access to playtesters, 
-                            and had to hope that people would understand the concept through only the clarity of the UI, and the beginning instruction 
-                            of 'Fix the Sprite of your Character!'
-                        </b>
-                    </p>
-                </div>
-            </div>
-
-            <div>
-                <img src="assets/spwrong/level-design.png">
-                <h3>Level Design</h3>
-                <div>
-                    <p>
-                        <b>
-                            This game is significantly lacking in levels & content due to the minimal time that I had. However, 
-                            I spent a good amount of time getting the levels I had to be just right. I ensured the player would
-                            be taught that they aren't always a person, the player visually looks like a cow to begin with to 
-                            get the player familiar with this. Levels also show various objects to the player along the way, 
-                            some are red herrings and are used to fool the player. They must check their hitbox and compare 
-                            it with other objects to find the correct one.
-                        </b>
-                    </p>
-                </div>
-            </div>
-        </div>
-
     </div>
         <footer>
             <div>
