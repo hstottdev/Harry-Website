@@ -11,257 +11,234 @@
     <script src="https://kit.fontawesome.com/2c1ca0161c.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="script.js"></script>
-
+    <style>
+        header {
+            height:10vh;
+        }
+    </style>
 </head>
-    <body>
-        <div id="orientation-warning">
-            <div>
-                <img src = "assets/headshot.png" class = "element-shadow">
-                <h1>HARRY STOTT</h1>
-                Portfolio Website
+<body>
+    <div id="orientation-warning">
+        <div>
+            <img src="assets/headshot.png" class="element-shadow">
+            <h1>HARRY STOTT</h1>
+            Portfolio Website
+        </div>
+        <div id="orientation-message">
+            <i class="las la-sync"></i>
+            <h1>Please rotate your device.</h1>
+            <div>This site is best viewed in landscape.</div>
+        </div>
+    </div>
+
+    <!--The Top Bar of the UI -->
+    <header>
+        <div class="profilePicture">
+            <a href="https://linktr.ee/harrystott">
+                <div class="button">
+                    <div class="element-shadow">
+                        <img src="assets/social icons/linktree.webp">
+                    </div>
+                </div>
+                <h3>Linktree</h3>
+            </a>
+
+            <a href="https://www.linkedin.com/in/harrystottdev/">
+                <div class="navIcon">
+                    <div class="button">
+                        <div class="element-shadow" onpointerenter="buttonHover()">
+                            <i class="lab la-linkedin"></i>
+                        </div>
+                    </div>
+                    <h3>LinkedIn</h3>
+                </div>
+            </a>
+
+            <a href="https://github.com/hstottdev">
+                <div class="navIcon">
+                    <div class="button">
+                        <div class="element-shadow" onpointerenter="buttonHover()">
+                            <i class="lab la-github"></i>
+                        </div>
+                    </div>
+                    <h3>Github</h3>
+                </div>
+            </a>
+
+            <a href="https://x.com/harrystottdev">
+                <div class="navIcon">
+                    <div class="button">
+                        <div class="element-shadow" onpointerenter="buttonHover()">
+                            <i class="fa-brands fa-x-twitter"></i>
+                        </div>
+                    </div>
+                    <h3>X</h3>
+                </div>
+            </a>
+
+            <h1>HARRY STOTT</h1>
+        </div>
+
+        <div class="panel" id="status-panel">
+            <div class="button">
+                <div id="time" class="clock">5 : 34 PM</div>
+
+                <div class="location">
+                    <small><i class="fa-solid fa-location-dot"></i></small>London, UK
+                </div>
+
+                <div class="status">
+                    <i id="statusIcon" class="fa-solid fa-globe"></i>
+                    <div id="statusTask">Offline</div>
+                </div>
             </div>
-            <div id="orientation-message">
-                <i class="las la-sync"></i>
-                <h1>Please rotate your device.</h1>
-                <div>This site is best viewed in landscape.</div>
+            <h3>Harry's Status</h3>
+        </div>
+    </header>
+
+    <div id="home-page">
+        <!--Project Carousel -->
+        <div id="projectCarousel" class="scrollingElement">
+
+            <div class="projectIcon">
+                <a href="arjybeasts.html" class="button">
+                    <img src="assets/arjybeasts.png" class="element-shadow clickable">
+                </a>
+                <h3>Arjybeasts</h3>
+            </div>
+
+            <div class="projectIcon">
+                <a href="whatever-continuum.html" class="button">
+                    <img src="assets/Whatever cover.gif" class="element-shadow clickable">
+                </a>
+                <h3>Whatever Continuum</h3>
+            </div>
+
+            <div class="projectIcon">
+                <a href="spwrong.html" class="button">
+                    <img src="assets/spwrong cover.gif" class="element-shadow clickable">
+                </a>
+                <h3>Spwrong</h3>
+            </div>
+
+            <div class="projectIcon">
+                <a href="banana-for-scale.html" class="button">
+                    <img src="assets/bfscover.png" class="element-shadow clickable">
+                </a>
+                <h3>Banana For Scale</h3>
+            </div>
+
+            <div class="projectIcon">
+                <a href="scatterbody.html" class="button">
+                    <img src="assets/scatterbody cover.png" class="element-shadow clickable">
+                </a>
+                <h3>Scatterbody</h3>
+            </div>
+
+            <div class="projectIcon">
+                <a href="https://purplpup.itch.io/marlas-balloon" class="button">
+                    <img src="assets/marlas balloon cover.png" class="element-shadow clickable">
+                </a>
+                <h3>Marla's Balloon</h3>
+            </div>
+
+            <div class="projectIcon">
+                <a href="https://hstottdev.github.io/Javascript-Brain" class="button">
+                    <img src="assets/js brain.png" class="element-shadow clickable">
+                </a>
+                <h3>My Brain <i class="las la-brain"></i></h3>
             </div>
         </div>
-        
-        <!--The Top Bar of the UI -->
-        <header>
-            <div class = "profilePicture">
-                <a href = "https://linktr.ee/harrystott">
-                    <div class = "button">
-                        <div class = "element-shadow">
-                            <img src = "assets/social icons/linktree.webp">
-                        </div>
-                    </div>    
-                    <h3>Linktree</h3>                                         
-                </a>
-                
-                <a href = "https://www.linkedin.com/in/harrystottdev/">
-                    <div class = "navIcon" >
-                        <div class = "button">
-                            <div class = "element-shadow" onpointerenter="buttonHover()">
-                                <i class="lab la-linkedin"></i>
-                            </div>
-                        </div>
-                        <h3>LinkedIn</h3>
-                    </div>                                      
-                </a>   
 
-                <a href = "https://github.com/hstottdev">
-                    <div class = "navIcon" >
-                        <div class = "button">
-                            <div class = "element-shadow" onpointerenter="buttonHover()">
-                                <i class="lab la-github"></i>
-                            </div>
-                        </div>
-                        <h3>Github</h3>
-                    </div>                                         
-                </a>
 
-                <a href = "https://x.com/harrystottdev">
-                    <div class = "navIcon" >
-                        <div class = "button">
-                            <div class = "element-shadow" onpointerenter="buttonHover()">
-                                <i class="fa-brands fa-x-twitter"></i>
-                            </div>
-                        </div>
-                        <h3>X</h3>
-                    </div> 
-                </a>  
-                
-                <h1>HARRY STOTT</h1>
+
+        <nav class="navButtons">
+
+            <div class="navIcon">
+                <a href="about.html" class="button">
+                    <div class="element-shadow clickable">
+                        <img src="assets/nav icons/headshot.gif">
+                    </div>
+                </a>
+                <h3>About Me</h3>
             </div>
 
-            <div class = "panel" id="status-panel">
-                <div class = "button">
-                    <div id = "time" class = "clock">5 : 34 PM</div>
-                    
-                    <div class = "location">                    
-                        <small><i class="fa-solid fa-location-dot"></i></small>London, UK          
+            <div class="navIcon">
+                <a href="https://purplpup.itch.io" class="button">
+                    <div class="element-shadow clickable">
+                        <img src="assets/nav icons/purplpup.png">
+                    </div>
+                </a>
+                <h3>Purpl Pup</h3>
+            </div>
+
+            <div class="navIcon">
+                <a href="https://www.slimeyhatch.com/slimey-hatch" class="button">
+                    <div class="element-shadow clickable">
+                        <img src="assets/nav icons/slimey.png">
+                    </div>
+                </a>
+                <h3>Slimey Hatch</h3>
+            </div>
+
+            <div class="navIcon">
+                <a href="skills.html" class="button">
+                    <div class="element-shadow clickable">
+                        <img src="assets/nav icons/star.gif">
+                    </div>
+                </a>
+                <h3>Skills</h3>
+            </div>
+
+            <div class="navIcon">
+                <a href="mailto:harrystott.dev@gmail.com" class="button">
+                    <div class="element-shadow clickable">
+                        <img src="assets/nav icons/mr plonky.gif">
+                    </div>
+                </a>
+                <h3>Contact</h3>
+            </div>
+
+        </nav>
+    </div>
+    <footer>
+        <div>
+            <hr class="thick-line">
+            <div id="bottom-bar">
+                <div class="control-panel">
+                    <div id="system-icon" class="panel">
+                        <div class="button">
+                            <i class="fa-solid fa-computer"></i>
+                        </div>
+                        <!--<h3>Your System</h3>-->
+                    </div>
+                </div>
+
+                <div class="control-panel">
+
+                    <div class="control-button clickable">
+                        <div class="button back-arrow">
+                            <i class="las la-arrow-left"></i>
+                        </div>
                     </div>
 
-                    <div class = "status"> 
-                        <i id = "statusIcon" class="fa-solid fa-globe"></i>
-                        <div id = "statusTask">Offline</div>
-                    </div>                    
-                </div>
-                <h3>Harry's Status</h3>  
-            </div>
-        </header>
+                    <div class="control-button clickable">
+                        <div class="button forward-arrow">
+                            <i class="las la-arrow-right"></i>
+                        </div>
+                    </div>
 
-        <div id = "home-page">
-            <!--Project Carousel -->
-            <div id="projectCarousel" class="scrollingElement">
-
-                <div class="projectIcon">
-                    <a href="arjybeasts.html" class="button">
-                        <img src="assets/arjybeasts.png" class="element-shadow clickable">
+                    <a href="index.html">
+                        <div class="control-button clickable">
+                            <div class="button">
+                                <i class="las la-home"></i>
+                            </div>
+                        </div>
                     </a>
-                    <h3>Arjybeasts</h3>
-                </div>
 
-                <div class="projectIcon">
-                    <a href="whatever-continuum.html" class="button">
-                        <img src="assets/Whatever cover.gif" class="element-shadow clickable">
-                    </a>
-                    <h3>Whatever Continuum</h3>
-                </div>
-
-                <div class="projectIcon">
-                    <a href="spwrong.html" class="button">
-                        <img src="assets/spwrong cover.gif" class="element-shadow clickable">
-                    </a>
-                    <h3>Spwrong</h3>
-                </div>
-
-                <div class="projectIcon">
-                    <a href="banana-for-scale.html" class="button">
-                        <img src="assets/bfscover.png" class="element-shadow clickable">
-                    </a>
-                    <h3>Banana For Scale</h3>
-                </div>
-
-                <div class="projectIcon">
-                    <a href="scatterbody.html" class="button">
-                        <img src="assets/scatterbody cover.png" class="element-shadow clickable">
-                    </a>
-                    <h3>Scatterbody</h3>
-                </div>
-
-                <div class="projectIcon">
-                    <a href="https://purplpup.itch.io/marlas-balloon" class="button">
-                        <img src="assets/marlas balloon cover.png" class="element-shadow clickable">
-                    </a>
-                    <h3>Marla's Balloon</h3>
-                </div>
-
-                <div class="projectIcon">
-                    <a href="https://hstottdev.github.io/Javascript-Brain" class="button">
-                        <img src="assets/js brain.png" class="element-shadow clickable">
-                    </a>
-                    <h3>My Brain <i class="las la-brain"></i></h3>
                 </div>
             </div>
-
-
-
-            <nav class="navButtons">
-
-                <div class="navIcon">
-                    <a href="about.html" class="button">
-                        <div class="element-shadow clickable">
-                            <img src="assets/nav icons/headshot.gif">
-                        </div>
-                    </a>
-                    <h3>About Me</h3>
-                </div>
-
-                <div class="navIcon">
-                    <a href="https://purplpup.itch.io" class="button">
-                        <div class="element-shadow clickable">
-                            <img src="assets/nav icons/purplpup.png">
-                        </div>
-                    </a>
-                    <h3>Purpl Pup</h3>
-                </div>
-
-                <div class="navIcon">
-                    <a href="https://www.slimeyhatch.com/slimey-hatch" class="button">
-                        <div class="element-shadow clickable">
-                            <img src="assets/nav icons/slimey.png">
-                        </div>
-                    </a>
-                    <h3>Slimey Hatch</h3>
-                </div>
-
-                <div class="navIcon">
-                    <a href="skills.html" class="button">
-                        <div class="element-shadow clickable">
-                            <img src="assets/nav icons/star.gif">
-                        </div>
-                    </a>
-                    <h3>Skills</h3>
-                </div>
-
-                <div class="navIcon">
-                    <a href="mailto:harrystott.dev@gmail.com" class="button">
-                        <div class="element-shadow clickable">
-                            <img src="assets/nav icons/mr plonky.gif">
-                        </div>
-                    </a>
-                    <h3>Contact</h3>
-                </div>
-
-            </nav>
         </div>
-        <footer>
-            <div>
-                <hr class = "thick-line">
-                <div id = "bottom-bar">
-                    <div class = "control-panel">                       
-                        <div id = "system-icon" class = "panel">
-                            <div class = "button">
-                                <i class="fa-solid fa-computer"></i>
-                            </div>
-                            <!--<h3>Your System</h3>-->
-                        </div>                
-                    </div>
-
-                    <div class = "control-panel">
-    
-                        <div class = "control-button clickable">
-                            <div class = "button back-arrow">
-                                <i class="las la-arrow-left"></i>
-                            </div>
-                        </div>
-
-                        <div class = "control-button clickable">
-                            <div class = "button forward-arrow">
-                                <i class="las la-arrow-right"></i>
-                            </div>
-                        </div>
-
-                        <a href="index.html">
-                            <div class = "control-button clickable">
-                                <div class = "button">
-                                    <i class="las la-home"></i>
-                                </div>
-                            </div>
-                        </a>
-
-                        <a href="about.html">
-                            <div class = "control-button clickable">
-                                <div class = "button">
-                                    <i class="las la-user-circle"></i>
-                                </div>
-                            </div>
-                        </a>
-
-                        <div class = "control-button clickable">
-                            <a href="skills.html" class = "button">
-                                <i class="las la-certificate"></i>
-                            </a>
-                        </div>
-
-                        <!--
-                        <div class = "control-button clickable">
-                            <div class = "button">
-                                <i class="las la-gamepad"></i>
-                            </div>
-                        </div>
-                        -->
-
-                        <div class = "control-button clickable">
-                            <a href="mailto:harrystott.dev@gmail.com" class = "button">
-                                <i class="las la-envelope"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </footer>
-    </body>
+    </footer>
+</body>
 </html>

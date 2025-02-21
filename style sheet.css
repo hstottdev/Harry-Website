@@ -30,7 +30,7 @@ header{
     flex-direction: row;
     display: flex;
     width : 100%;
-    height:12vh;
+    height: 15vh;
     justify-content: space-between;
     align-items: top;
 }
@@ -173,7 +173,7 @@ a {
 }
 
 #home-page{
-    height: 70vh;
+    height: 72vh;
     display: flex;
     flex-direction: column;
     justify-content: space-around;
@@ -393,6 +393,7 @@ footer > div{
     display:flex;
     flex-direction:column;
     align-items:center;
+    margin-top: 2vh;
 }
 
 #game-header img {
