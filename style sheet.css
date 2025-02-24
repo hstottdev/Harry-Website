@@ -613,35 +613,44 @@ footer > div{
     height:18vw;
 }
 
-#orientation-warning{
+#orientation-warning {
     width: 100%;
     height: 100%;
     z-index: 9999;
     position: fixed;
+    color:#000000cb;
     background-color: #e1e1e1;
+    background-image: url("assets/background.png");
     display: flex;
     flex-direction: column;
-    justify-content:center;
+    justify-content: center;
     visibility: hidden;
     text-align: center;
-    font-size: 2vh;
-}
-
-#orientation-warning img{
-    width: 65vw;
-    height: 65vw;
-}
-
-#orientation-warning i{
-    font-size: 20vh;
-}
-
-#orientation-warning h1{
     font-size: 3vh;
 }
 
+#orientation-warning img{
+    width: 65vh;
+    height: 65vh;
+    border-radius: 5vh;
+}
+
+#orientation-warning i {
+    font-size: 25vh;
+    color: #0000004c;
+}
+
+#orientation-warning h1{
+    font-size: 5vh;
+    font-weight:bolder;
+}
+
+#orientation-warning h2{
+    font-size: 4vh;
+}
+
 #orientation-message{
-    margin-top: 10vh;
+    margin-top: 7vh;
 }
 
 @media (orientation: landscape) {
