@@ -78,7 +78,7 @@
                 <img src="assets/purpl button.png">
             </a>
 
-            <a href="https://purplpup.itch.io/spwrong" class="button clickable">
+            <a href="https://purplpup.itch.io/marlas-balloon" class="button clickable">
                 <img src="assets/itchio.png" />
             </a>
         </div>
@@ -135,66 +135,48 @@
 
         <div class="grid-descriptions">
             <div>
-                <img src="assets/spwrong/hitbox-revealing.png">
-                <h3>Hitbox Revealing</h3>
-                <div>
-                    <p>
-                        <b>
-                            One initial realisation that nearly stopped me with this idea was that the player
-                            being visually incorrect would likely result in annoyance with your hitbox not
-                            matching your sprite. So, with this game, I added a system whereby the player
-                            can check their hitbox by pressing 'Shift'. This was a modular system which was
-                            referring to the size of the actual collider in Unity, and then setting a
-                            sliced sprite rectangle to be the same size.
-                        </b>
-                    </p>
-                </div>
-            </div>
-
-            <div>
-                <img src="assets/spwrong/visual-style.png">
-                <h3>Striking Visual Style</h3>
-                <div>
-                    <p>
-                        <b>
-                            Initially, the game started by looking very normal, this change can even be seen
-                            in the fake-out main menu of 'Normal Farming Game'. But, after playing around with the
-                            'Convolution Matrix' on Aseprite, I managed to warp all the art to adopt a greenish-pink style which
-                            I felt was retro and indicative of the 'buggy' nature of the game. The game was almost entirely shades
-                            of green and pink, except for the use of red in order to stand out and represent errors to the player!
-                        </b>
-                    </p>
-                </div>
-            </div>
-
-            <div>
-                <img src="assets/spwrong/simple-ui.png">
-                <h3>Simple UI</h3>
-                <div>
-                    <p>
-                        <b>
-                            I had to create a simple UI, that would show to the player in a simple but stylistic way, that their sprite was incorrect.
-                            Some players may not be familiar with the term 'sprite', so I also referred to this as an 'image' error. Due to this being
-                            a project on my own, I had the challenge and worry of players not understanding such a concept. I had no access to playtesters,
-                            and had to hope that people would understand the concept through only the clarity of the UI, and the beginning instruction
-                            of 'Fix the Sprite of your Character!'
-                        </b>
-                    </p>
-                </div>
-            </div>
-
-            <div>
-                <img src="assets/spwrong/level-design.png">
+                <img src="assets/mb/level design.png">
                 <h3>Level Design</h3>
                 <div>
                     <p>
                         <b>
-                            This game is significantly lacking in levels & content due to the minimal time that I had. However,
-                            I spent a good amount of time getting the levels I had to be just right. I ensured the player would
-                            be taught that they aren't always a person, the player visually looks like a cow to begin with to
-                            get the player familiar with this. Levels also show various objects to the player along the way,
-                            some are red herrings and are used to fool the player. They must check their hitbox and compare
-                            it with other objects to find the correct one.
+                            Levels were designed with very specific goals in mind of not allowing the player to progress until they had learned something specific. They were also designed to be harsh, but beatable. Players who failed knew what they did wrong, and they sometimes needed to be a bit more careful with their balloons to give themselves a few extra hits. There were three sections to the game, the city, the sewers, and the boss encounter. Once reaching the sewers, the player would get a new ability, the hammer. This meant they could now destroy any glass objects they found, which helped to keep the gameplay fresh and different from the first part.
+                        </b>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/mb/enemy design.png">
+                <h3>Enemy Design</h3>
+                <div>
+                    <p>
+                        <b>
+                            Many of the enemies were relatively simple, but there was somewhat of a focus on them being highly 'inanimate' as they were made from glass (Which also helped my bad animation skills). The two main enemies' actions were only to lean or fall into players to attack them. I also had enemies on skateboards which moved from left to right, which in the second half of the game can be killed and reaped off their boards! There were also flying enemies, which spawned from nests, these could also be broken once in the sewer part of the game.
+                        </b>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/mb/balloon mechanics.png">
+                <h3>Balloon Mechanics</h3>
+                <div>
+                    <p>
+                        <b>
+                            The balloon mechanics were designed to be simple, but realistic. The balloon would behave with a certain amount of drag, acting at an offset to the player which was slightly delayed in its movement. The player had 2 separate fail conditions. When hit directly they lost one of their 2 hearts, which could be replenished by finding health. The balloon acted as a 'lives' counter, damage to the balloon would pop it lowering the number until all were gone. This was created in a way where the player had to manage both losing balloons and damage to themselves to make it through the level.
+                        </b>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/mb/boss fight.png">
+                <h3>Boss Fight</h3>
+                <div>
+                    <p>
+                        <b>
+                            One key thing this game has that not many of my others do is a comprehensive boss encounter! A truck that the player passes over starts moving, and the player has to attack the 'skateboarding glass giraffe' by getting close with the hammer and smashing it to pieces! The rule of three was used here, each time the giraffe would hit, more sets of enemies would start spawning, and getting in the way of the player! Upon hitting for the third time, the giraffe would fall to bits and the player would win. This also involves a difficult system of a scrolling city in the background while the player is riding on top of the truck. This was accomplished through an image that perfectly joined together at each end and then moved accordingly with code.
                         </b>
                     </p>
                 </div>
