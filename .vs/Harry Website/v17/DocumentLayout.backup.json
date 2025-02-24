@@ -80,8 +80,7 @@
               "ViewState": "AgIAAE8CAAAAAAAAAAAewHkCAAAOAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-02-11T12:27:22.781Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -91,7 +90,7 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAYAAABTAAAAAAAAAA==",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAABJAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-02-11T11:59:01.179Z",
               "IsPinned": true,
