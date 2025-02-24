@@ -590,6 +590,21 @@ footer > div{
     overflow-x: scroll;
 }
 
+.mini-project-carousel {
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+}
+
+.mini-project-carousel img {
+    height: 20vh;
+    width: 20vh;
+}
+
+.mini-project-carousel .button {
+    border-radius: 2px;
+}
+
 .game-screenshot{
     width: 30vw;
 }
