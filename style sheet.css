@@ -69,7 +69,6 @@ header{
     align-self: center;  
     display: flex;
 }
-
 .panel > .button:hover{
     border-color: #0000004c;
 }
@@ -78,18 +77,22 @@ header{
     color: #0000004c;
 }
 
+.panel > .button ~ h3 {
+    color: #ffffff00;
+}
+
 .profilePicture{
-    margin-left: 3vw;
-    margin-top: 3vh;
+    margin-left: 3vh;
+    margin-top: 2vh;
     align-self: center;
     justify-content: center;
     display: flex;
 }
 
 .profilePicture a{
-    width: 10vh;
-    height: 10vh;
-    margin-left: 1vh;
+    width: 8vh;
+    height: 8vh;
+    margin-left: 2vh;
 }
 
 .profilePicture img{   
@@ -106,27 +109,29 @@ a {
     text-decoration: none;
 }
 
-.profilePicture .element-shadow{
-    width: 7vh;
-    height: 7vh;
-    border : 5px;
-    border-style:solid;
+.profilePicture .element-shadow {
+    width: 6vh;
+    height: 6vh;
+    border: 5px;
+    border-style: solid;
     border-color: #ffffff;
-    background-color:rgb(243, 242, 242);
+    background-color: rgb(243, 242, 242);
     border-radius: 999px;
     align-self: center;
     justify-content: center;
-    display: flex; 
+    display: flex;
 }
 
 .profilePicture .navIcon i{
     color:rgb(58, 58, 58);
-    font-size: 5vh;
+    font-size: 4vh;
 }
-.profilePicture > h1{
+.profilePicture > h1 {
     font-size: 3vh;
-    margin-left: 3vh;
-    font-weight:bolder;
+    margin: 0px 1vh 0px 0px;
+    padding-top: 2vh;
+    font-weight: bolder;
+    color: #00000096
 }
 
 
@@ -135,17 +140,14 @@ a {
     height: 6vh;
 }
 
-#status-panel i{
+
+i{
     font-size: 4vh;
     padding: 10px 10px;
 }
 
 #status-panel *{
     margin: 0px 1vh;
-}
-
-#status-panel h3 {
-    color: #ffffff00;
 }
 
 
@@ -189,6 +191,7 @@ a {
     padding-bottom: 5vh;
     overflow-y:scroll;
     overflow-x:hidden;
+    align-items:center;
 }
 
 #projectCarousel{
@@ -258,12 +261,14 @@ a {
 .navButtons{
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    justify-content: space-around;
+    width:80vh;
+
 }
 
 .navIcon{
     align-self: center; 
-    margin: 0.1vh 1.5vw;
+    margin: 0.1vh 0.2vw;
     width: 11vh;
     height: 11vh;
 }
