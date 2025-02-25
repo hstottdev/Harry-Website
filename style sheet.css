@@ -251,7 +251,13 @@ i{
     flex-direction: row;
     justify-content: space-around;
     width:80vh;
+}
 
+.navButtons h3 {
+    color: rgb(83, 83, 83, 0.54);
+    width: 19vh;
+    margin-left: -4vh;
+    margin-right: -4vh;
 }
 
 .navIcon{
@@ -259,11 +265,14 @@ i{
     margin: 0.1vh 0.2vw;
     width: 11vh;
     height: 11vh;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
 }
 
 .currentNav {
-    width: 14vh;
-    height: 14vh;
+    width: 15vh;
+    height: 15vh;
 }
 
 .navIcon .element-shadow{
@@ -549,6 +558,10 @@ footer > div{
     width: 15vw;
 }
 
+.game-buttons a {
+    margin: 0vw 1vw 0vw 1vw;
+}
+
 .game-trailer{
     width: 100%;
     display: flex;
@@ -679,6 +692,10 @@ footer > div{
 
     .button ~ h3 {
         color: #33a7a700;
+    }
+
+    .navButtons h3 {
+        color: rgb(83, 83, 83, 0.54);
     }
 
     #profile-section {
