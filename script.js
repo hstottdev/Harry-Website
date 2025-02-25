@@ -96,7 +96,7 @@ function platformCheck(){
 
 function playSound(filePath){
     let sound = new Audio(filePath);
-    sound.play();
+    //sound.play();
 }
 
 function buttonHover(){
