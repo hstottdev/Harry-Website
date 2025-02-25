@@ -641,31 +641,31 @@ footer > div{
     justify-content: center;
     visibility: hidden;
     text-align: center;
-    font-size: 3vh;
+    font-size: 6vw;
 }
 
 #orientation-warning img{
-    width: 60vh;
-    height: 60vh;
-    border-radius: 5vh;
+    width: 80vw;
+    height: 80vw;
+    border-radius: 5vw;
 }
 
 #orientation-warning i {
-    font-size: 25vh;
+    font-size: 20vw;
     color: #0000004c;
 }
 
 #orientation-warning h1{
-    font-size: 5vh;
+    font-size: 10vw;
     font-weight:bolder;
 }
 
 #orientation-warning h2{
-    font-size: 4vh;
+    font-size: 7vw;
 }
 
 #orientation-message{
-    margin-top: 7vh;
+    margin-top: 7vw;
 }
 
 @media (orientation: landscape) {
