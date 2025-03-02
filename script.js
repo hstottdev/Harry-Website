@@ -165,5 +165,3 @@ function setDiscordStatus(data){
 }
 //discord user id
 // https://api.lanyard.rest/v1/users/
-
-

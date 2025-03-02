@@ -455,6 +455,7 @@ footer > div{
     background-color: #f5f5f51e;
     background-image: linear-gradient(#ffffff00,#fffcfc6c,#ffffff00);
     overflow-y:scroll;
+    overflow-x:hidden;
 }
 
 #nav-menu img{
@@ -492,6 +493,7 @@ footer > div{
     align-items: center;
     overflow-y: scroll;
 }
+
 
 #id-card{
     width: 90%;
@@ -633,12 +635,85 @@ footer > div{
     height:18vw;
 }
 
+#contact-man {
+    width: 25vw;
+    display: flex;
+    justify-content: center;
+    margin-left: 0px;
+}
+
+#contact-man img {
+    height: 55vh;
+    width: 30vh
+}
+
+#dialogue {
+    width: 100vh;
+    max-width: 55vw;
+    height: 30vh;
+    border: 0.5vh solid #0000006f;
+    background-color: #00000039;
+    border-radius: 5vh;
+    padding: 1vh 4vh 1vh 4vh;
+    margin-left: 3vh;
+    font-size: 4vh;
+    font-family: 'Clock Font', Consolas;
+    color: #00000099;
+}
+
+#fcf-form-id {
+    margin-left: 3vh;
+    margin-top: 2vh;
+    font-size: 3vh;
+    font-family: 'Clock Font', Consolas;
+    color: #00000099;
+}
+.fcf-form-row{
+    display:flex;
+}
+
+.fcf-form-group{
+    margin-right: 3vh;
+}
+
+#fcf-form-id input {
+    width: 45vh;
+    max-width: 27.5vw;
+    height: 4vh;
+    font-size: 3vh;
+    font-family: 'Clock Font', Consolas;
+    border: 0.5vh solid #0000006f;
+    background-color: #ffffff39;
+    border-radius: 1vh;
+}
+
+#fcf-form-id textarea {
+    width: 100vh;
+    max-width: 55vw;
+    font-size: 3vh;
+    font-family: 'Clock Font', Consolas;
+    border: 0.5vh solid #0000006f;
+    background-color: #ffffff39;
+    border-radius: 1vh;
+}
+
+#fcf-form-id button {
+    font-size: 2.5vh;
+    font-family: 'Clock Font', Consolas;
+    border: 0.5vh solid #0000006f;
+    border-radius: 1vh;
+    color: #00000099;
+    border-radius: 1vh;
+    min-width:25vh;
+    height: 4vh;
+}
+
 #orientation-warning {
     width: 100%;
     height: 100%;
     z-index: 9999;
     position: fixed;
-    color:#000000cb;
+    color: #000000cb;
     background-color: #e1e1e1;
     background-image: url("assets/background.png");
     display: flex;
