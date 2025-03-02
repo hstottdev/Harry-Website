@@ -3,6 +3,18 @@
   "WorkspaceRootPath": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\slimey-hatch.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:slimey-hatch.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\style sheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:style sheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -15,14 +27,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dialogue.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:script.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
@@ -33,10 +37,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\slimey-hatch.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:slimey-hatch.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\skills.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -74,11 +74,11 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "script.js",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\script.js",
               "RelativeDocumentMoniker": "script.js",
@@ -91,13 +91,13 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 0,
               "Title": "index.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\index.html",
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAGAAAAAAAAAAAAAAAPgAAAAlAAAAAAAAAA==",
+              "ViewState": "AgIAAL0AAAAAAAAAAAAAAMUAAAA4AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-02-11T11:59:01.179Z",
               "IsPinned": true,
@@ -105,7 +105,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "style sheet.css",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\style sheet.css",
               "RelativeDocumentMoniker": "style sheet.css",
@@ -123,7 +123,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 4,
               "Title": "form script.php",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\form script.php",
               "RelativeDocumentMoniker": "form script.php",
@@ -131,25 +131,24 @@
               "RelativeToolTip": "form script.php",
               "ViewState": "AgIAACEAAAAAAAAAAAAAAFIAAAACAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
-              "WhenOpened": "2025-03-02T12:00:48.029Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-02T12:00:48.029Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 2,
               "Title": "contact.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\contact.html",
               "RelativeDocumentMoniker": "contact.html",
               "ToolTip": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\contact.html",
               "RelativeToolTip": "contact.html",
-              "ViewState": "AgIAADkAAAAAAAAAAAAAAE4AAACEAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAAAAAE4AAACEAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-02-26T15:59:30.106Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 5,
               "Title": "dialogue.js",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\dialogue.js",
               "RelativeDocumentMoniker": "dialogue.js",
@@ -157,24 +156,24 @@
               "RelativeToolTip": "dialogue.js",
               "ViewState": "AgIAAHwAAAAAAAAAAAAgwIsAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-02-27T17:35:29.69Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-27T17:35:29.69Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 1,
               "Title": "slimey-hatch.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\slimey-hatch.html",
               "RelativeDocumentMoniker": "slimey-hatch.html",
               "ToolTip": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\slimey-hatch.html",
               "RelativeToolTip": "slimey-hatch.html",
-              "ViewState": "AgIAAGEAAAAAAAAAAAAawH4AAAAyAAAAAAAAAA==",
+              "ViewState": "AgIAADoAAAAAAAAAAAAawEMAAAARAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-24T23:08:05.936Z"
+              "WhenOpened": "2025-02-24T23:08:05.936Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "purplpup.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\purplpup.html",
               "RelativeDocumentMoniker": "purplpup.html",
@@ -234,7 +233,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "about.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\about.html",
               "RelativeDocumentMoniker": "about.html",
