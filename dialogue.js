@@ -11,6 +11,7 @@ class DialogueTextPrinter {
     constructor(dialogueId, paragraphs) {
         // Find or create the dialogue element
         this.dialogueElement = document.getElementById(dialogueId);
+        this.dialogueBox = document.getElementById('dialogue-box');
         if (!this.dialogueElement) {
             this.dialogueElement = document.createElement('div');
             this.dialogueElement.id = dialogueId;
@@ -26,7 +27,7 @@ class DialogueTextPrinter {
         this.indicatorElement = null;
 
         // Set up click event
-        this.dialogueElement.addEventListener('click', () => this.handleClick());
+        this.dialogueBox.addEventListener('click', () => this.handleClick());
 
         // Start the first paragraph
         this.startParagraph();
@@ -139,10 +140,11 @@ class DialogueTextPrinter {
 document.addEventListener('DOMContentLoaded', () => {
     let dialogueContent = [
         "Pssst... come closer...",
-        "So, you wanna reach out to Harry yeah?",
+        "So, you took a look at Harry's work?",
         "Well, I'm his agent, Mr. Plonky...",
-        "Anything you wanna pass on it's gotta go through me... capeesh?",
+        "If you'd like to contact him about an opportunity... I can take a message for him...",
         "Just fill out the form below and I'll make sure he gets it.",
+        "If not, you can also reach out using the social links at the bottom, got it?",
     ];
 
     const dialogueBox = new DialogueTextPrinter('dialogue', dialogueContent);

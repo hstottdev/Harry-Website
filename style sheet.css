@@ -89,12 +89,12 @@ header{
     display: flex;
 }
 
-.profilePicture a{
+.profilePicture a {
     width: 8vh;
     height: 8vh;
-    margin-left: 2vh;
+    overflow:visible;
+    margin-left:3vh;
 }
-
 .profilePicture img{   
     width: 60%;
     align-self: center;
@@ -647,16 +647,33 @@ footer > div{
     width: 30vh
 }
 
-#dialogue {
-    width: 100vh;
-    max-width: 55vw;
+#contact-man-name {
+    margin: 1vh 1vh 1vh 2vh;
+    font-size: 4vh;
+    color: #00000099;
+    font-weight: bolder;
+}
+
+#dialogue-box {
+    width: 60vw;
+    max-width: 70vw;
     height: 30vh;
     border: 0.5vh solid #0000006f;
     background-color: #00000039;
     border-radius: 5vh;
+    cursor: pointer;
+    display:flex;
+}
+
+#dialogue-box img{
+    width: 15vw;
+}
+
+#dialogue {
+    width:70%;
     padding: 1vh 4vh 1vh 4vh;
     margin-left: 3vh;
-    font-size: 4vh;
+    font-size: 3.5vh;
     font-family: 'Clock Font', Consolas;
     color: #00000099;
 }

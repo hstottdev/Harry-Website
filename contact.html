@@ -41,14 +41,44 @@
             <h3><i class="las la-arrow-left"></i>  Back</h3>
         </div>
         <hr>
-
-        <div id="contact-man">
-            <img src="assets/mr contact.gif">
-        </div>
+        <a href="index.html" class="button clickable">
+            <img src="assets/nav icons/home.png">
+            <h3>Home</h3>
+        </a>
+        <a href="about.html" class="button clickable">
+            <img src="assets/nav icons/headshot.gif">
+            <h3>About Me</h3>
+        </a>
+        <a href="purplpup.html" class="button clickable">
+            <img src="assets/nav icons/purplpup.png">
+            <h3>Purpl Pup</h3>
+        </a>
+        <a href="slimey-hatch.html" class="button clickable">
+            <img src="assets/nav icons/slimey.png">
+            <h3>Slimey Hatch</h3>
+        </a>
+        <a href="skills.html" class="button clickable">
+            <img src="assets/nav icons/star.gif">
+            <h3>Skills</h3>
+        </a>
+        <a href="contact.html" class="button clickable">
+            <img src="assets/nav icons/mr plonky.gif">
+            <h3>Contact</h3>
+        </a>
     </nav>
 
     <div id="profile-section">
-        <div id="dialogue"></div>
+        <hr>
+
+        <div id="dialogue-box">
+            <img src="assets/mr contact portrait.gif" />
+            <div>
+                <h2 id="contact-man-name">
+                    Mr. Plonky
+                </h2>
+                <div id="dialogue"></div>
+            </div>
+        </div>
 
         <form id="fcf-form-id" class="fcf-form-class" method="POST" action="https://formspree.io/f/mgvoglzj">
             <div class="fcf-form-row">
@@ -78,8 +108,56 @@
             <div class="fcf-form-group">
                 <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
             </div>
-</form>
-</div>
+        </form>
+        <hr>
+        <div class="profilePicture" style="justify-content:left;">
+            <a href="https://linktr.ee/harrystott">
+                <div class="navIcon">
+                    <div class="button">
+                        <div class="element-shadow">
+                            <img src="assets/social icons/linktree.webp">
+                        </div>
+                    </div>
+                    <h3>Linktree</h3>
+                </div>
+            </a>
+
+            <a href="https://www.linkedin.com/in/harrystottdev/">
+                <div class="navIcon">
+                    <div class="button">
+                        <div class="element-shadow" onpointerenter="buttonHover()">
+                            <i class="lab la-linkedin"></i>
+                        </div>
+                    </div>
+                    <h3>LinkedIn</h3>
+                </div>
+            </a>
+
+            <a href="https://github.com/hstottdev">
+                <div class="navIcon">
+                    <div class="button">
+                        <div class="element-shadow" onpointerenter="buttonHover()">
+                            <i class="lab la-github"></i>
+                        </div>
+                    </div>
+                    <h3>Github</h3>
+                </div>
+            </a>
+
+            <a href="mailto:contact@harrystott.dev">
+                <div class="navIcon">
+                    <div class="button">
+                        <div class="element-shadow" onpointerenter="buttonHover()">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
+                    </div>
+                    <h3>Email Me</h3>
+                </div>
+            </a>
+        </div>
+
+        <br><br><br><br><br>
+    </div>
     <footer>
         <div>
             <hr class="thick-line">
