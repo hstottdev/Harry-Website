@@ -124,9 +124,9 @@ class DialogueTextPrinter {
         this.indicatorElement = document.createElement('div');
         this.indicatorElement.textContent = this.currentParagraphIndex < this.paragraphs.length ?
             'Click to continue...' : 'Click to restart...';
-        this.indicatorElement.style.fontSize = '12px';
+        this.indicatorElement.style.fontSize = '2vh';
         this.indicatorElement.style.color = '#777';
-        this.indicatorElement.style.marginTop = '15px';
+        this.indicatorElement.style.marginTop = '1.5vh';
         this.indicatorElement.style.textAlign = 'right';
 
         // Add it to the dialogue
@@ -148,7 +148,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactDialogueBox = new DialogueTextPrinter('contact-dialogue', contactDialogue);
 
     let aboutDialogue = [
-        "Hi, I'm Harry - A Game Designer, Programmer, and Web Developer based in London.",
+        "Hi, I'm Harry - A Game Designer, Programmer, and Web Developer currently based in South-East London.",
         "I'm passionate about my work, hopefully you can tell by exploring my Portfolio.",
         "I love being creative and making projects that challenge my abilities...",
         "I have a First-Class Honours degree in Game Development, and I'm skilled in Unity, Game Design, and Web Development.",

@@ -680,6 +680,10 @@ footer > div{
     color: #000000a6;
 }
 
+.dialogue-text p{
+    margin:0px;
+}
+
 #fcf-form-id {
     margin-left: 3vh;
     margin-top: 2vh;
