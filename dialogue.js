@@ -13,9 +13,7 @@ class DialogueTextPrinter {
         this.dialogueElement = document.getElementById(dialogueId);
         this.dialogueBox = document.getElementById('dialogue-box');
         if (!this.dialogueElement) {
-            this.dialogueElement = document.createElement('div');
-            this.dialogueElement.id = dialogueId;
-            document.body.appendChild(this.dialogueElement);
+            return;
         }
 
         // Initialize variables
@@ -138,7 +136,7 @@ class DialogueTextPrinter {
 
 // Example usage:
 document.addEventListener('DOMContentLoaded', () => {
-    let dialogueContent = [
+    let contactDialogue = [
         "Pssst... come closer...",
         "So, you took a look at Harry's work?",
         "Well, I'm his agent, Mr. Plonky...",
@@ -147,5 +145,15 @@ document.addEventListener('DOMContentLoaded', () => {
         "If not, you can also reach out using the social links at the bottom, got it?",
     ];
 
-    const dialogueBox = new DialogueTextPrinter('dialogue', dialogueContent);
+    const contactDialogueBox = new DialogueTextPrinter('contact-dialogue', contactDialogue);
+
+    let aboutDialogue = [
+        "Hi, I'm Harry - A Game Designer, Programmer, and Web Developer based in London.",
+        "I'm passionate about my work, hopefully you can tell by exploring my Portfolio.",
+        "I love being creative and making projects that challenge my abilities...",
+        "I have a First-Class Honours degree in Game Development, and I'm skilled in Unity, Game Design, and Web Development.",
+        "I find enjoyment in solo projects, but I get much further when collaborating with others.",
+        "So, sit back, relax, and explore my work on this site.",
+    ];
+    const aboutDialogueBox = new DialogueTextPrinter('about-dialogue', aboutDialogue);
 });

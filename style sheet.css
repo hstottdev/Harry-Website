@@ -652,6 +652,7 @@ footer > div{
     font-size: 4vh;
     color: #00000099;
     font-weight: bolder;
+    text-decoration:underline;
 }
 
 #dialogue-box {
@@ -665,17 +666,18 @@ footer > div{
     display:flex;
 }
 
-#dialogue-box img{
+#dialogue-box img {
     width: 15vw;
+    border-radius: 5vh;
 }
 
-#dialogue {
-    width:70%;
+.dialogue-text {
+    width:35vw;
     padding: 1vh 4vh 1vh 4vh;
     margin-left: 3vh;
     font-size: 3.5vh;
     font-family: 'Clock Font', Consolas;
-    color: #00000099;
+    color: #000000a6;
 }
 
 #fcf-form-id {
