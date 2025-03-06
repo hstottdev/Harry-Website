@@ -50,7 +50,7 @@ header{
 }
 
 .button ~ h3{
-    color: rgb(83, 83, 83, 0.54);
+    color: rgb(83, 83, 83, 0);
     font-weight: bolder;
     width: 100%;
     text-align: center;
