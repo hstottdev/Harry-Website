@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Arjybeasts - Harry Stott</title>
+    <title>Magno Sheep - Harry Stott</title>
     <meta charset="UTF-8">
     <meta name="description" content="Arjybeasts is a Turn-based RPG where colour means everything! Draw your own PNG, battle and delete other images, open chests and make space so that HE can install things.">
     <link rel="stylesheet" href="style sheet.css">
@@ -13,8 +13,7 @@
     <script src="script.js"></script>
     <style>
         html {
-            background-image: url("assets/arjybeasts background.png");
-            background-size: 100vw 100vh;
+            background-image: url("assets/magno/background.png");
         }
     </style>
 
@@ -35,7 +34,7 @@
 
     <header>
         <div id="game-header">
-            <i class="las la-user-certificate"></i> <img src="assets/arjybeasts logo.gif" alt="Arjybeasts">
+            <img src="assets/magno/magno header.gif" alt="Magno Sheep">
             <hr class="thick-line">
         </div>
     </header>
@@ -74,38 +73,35 @@
     <div id="profile-section">
 
         <div class="game-buttons">
-
-            <a href="https://github.com/hstottdev/arjybeasts-code/tree/main" class="button clickable">
+            <a href="https://github.com/hstottdev/magno-sheep-code/tree/main" class="button clickable">
                 <img src="assets/github code button.png">
             </a>
 
-            <a href="https://store.steampowered.com/app/3245190/Arjybeasts/" class="button clickable">
-                <img src="assets/steam.png">
+            <a href="purplpup.html" class="button clickable">
+                <img src="assets/purpl button.png">
             </a>
 
-            <a href="slimey-hatch.html" class="button clickable">
-                <img src="assets/slimey button.png">
+            <a href="https://purplpup.itch.io/magno-sheep" class="button clickable">
+                <img src="assets/itchio.png" />
             </a>
-
-
         </div>
         <hr>
-        <!--TRAILER-->
+        <!--Play-->
         <h1>
-            Trailer
+            Play
         </h1>
         <hr>
 
-        <div class="game-trailer">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/u3LksJVYPis?si=kFsOL_fcLsJkU9Z0" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+        <div class="game-embed">
+            <iframe frameborder="0" src="https://itch.io/embed-upload/12626399?color=327345" allowfullscreen="" width="960" height="660"><a href="https://purplpup.itch.io/magno-sheep">Play Magno Sheep on itch.io</a></iframe>
         </div>
         <hr>
 
         <div class="screenshot-carousel">
-            <img src="assets/arjybeasts/beasts screenshot 2.jpg">
-            <img src="assets/arjybeasts/beasts screenshot 1.jpg">
-            <img src="assets/arjybeasts/beasts screenshot 3.jpg">
-            <img src="assets/arjybeasts/beasts screenshot 4.jpg">
+            <img src="assets/magno/screenshot1.png">
+            <img src="assets/magno/screenshot2.png">
+            <img src="assets/magno/screenshot3.png">
+            <img src="assets/magno/screenshot4.png">
         </div>
         <hr>
 
@@ -118,11 +114,9 @@
         <div class="description-box">
             <p>
                 <b>
-                    When viewed through playful eyes, a normal desktop computer becomes a game called 'Arjybeasts', a one-of-a-kind Turn-Based RPG where creativity meets strategy.
+                    'Magno Sheep' is a Sumo style game where you must push all other Magno Sheep off to win. HOWEVER, You have Magnetic Abilities, allowing you to switch polarities, and create magnetic impulse blasts.
                     <br><br>
-                    Image files on your computer refuse to be deleted! Yet, you must find a way to fight them with your image (or Arjybeast) to un-clog the computer.
-                    <br> <br>
-                    This started as a solo passion project which I created for a university project, and soon became something a bit more ambitious. Now, still a passion project with a small team of 3, the game is being developed in full.
+                    This was a solo project that I created in 3 days as part of a job application. Although this was another short term project, I really learned a lot from the experience given the feedback I recieved.
                 </b>
             </p>
         </div>
@@ -137,60 +131,74 @@
 
         <div class="grid-descriptions">
             <div>
-                <img src="assets/arjybeasts/file system.jpg">
-                <h3>File System</h3>
+                <img src="assets/magno/enemies.png">
+                <h3>Enemy AI</h3>
                 <div>
                     <p>
                         <b>
-                            I'm responsible for the design, and programming of the in-depth file system of the game. This is in a sense, the "Level Design" of the game. Players navigate through file windows,
-                            deleting files to gain storage. Due to the linear nature of the game, files are placed carefully to ensure a balance in difficulty and rewards.
+                            When I realised I would be doing a PVP game, I quickly realised I would
+                            have to create functional Enemy AI for singleplayer. I first thought to use Unity's
+                            Navmesh agents, yet this came with a problem... NavMesh Agents can't be affected by Physics in
+                            Unity. This wouldn't work for a game that is highly physics based and involved blasting enemies
+                            off the edge. Enemies still need to navigate around obstacles though, so I developed a system
+                            whereby each enemy has a NavMesh Agent that it is loosly moving towards. This way, enemies can be
+                            pushed around a lot, but they still loosely find there way around.
                         </b>
                     </p>
                 </div>
             </div>
 
             <div>
-                <img src="assets/arjybeasts/text files.png">
-                <h3>Text Files</h3>
+                <img src="assets/magno/magnetism.png">
+                <h3>Magnetic Chaos</h3>
                 <div>
                     <p>
                         <b>
-                            It's my job to write the many text files throughout the game, these act as dialogue to break up time between battles. They are used both to tell a complex underlying narrative, and to surprise and make the
-                            player laugh. Each text file acts as if you are talking to them like a character, which I felt added more life to the game rather than reading a wall of text.
+                            For this game, I knew I wanted the player to have an arsenal of magnetic abilities to take down
+                            foes. So, the player can switch polarities, and impulse blast. So, this meant I had to create
+                            a physics system whereby all sheep are magnetic, and opposites attract, and so on. So for this
+                            I just used Explosion Forces in Unity and Physics Overlaps to find the other nearby magnets.
+                            Impulse blasts dramatically increase the force and range of the current magnetic interaction. 
+                            Switching polarities simply swaps round the magnetism of the player, resulting in a game of 
+                            cat and mouse with some players trying to repel each other and others attempting to attract to
+                            stay alive.
                         </b>
                     </p>
                 </div>
             </div>
 
             <div>
-                <img src="assets/arjybeasts/pear.png">
-                <h3>Enemy Design</h3>
+                <img src="assets/magno/stages.png">
+                <h3>Stage Design</h3>
                 <div>
                     <p>
                         <b>
-                            Throughout the single-player mode of the game, players must delete image files, which in turn begin battles. It's my task to draw new enemies and give them assigned moves etc.
-                            I try my best to make certain enemies have unique abilities which change the game completely so that players are constantly encountering new things as they play, even perhaps many many hours in.
+                            For this game, I also had to design stages in a short time. During this process, I had a few limitations to consider.
+                            My enemy AI system worked in a way where the stage had to be circular, because the enemies stop moving towards their navmesh
+                            agent when outside the range of the stage. So I created a few stages that contained varied obstacles and enemy types, I also
+                            had static magnets to play with, which made for a few interesting interactions.
                         </b>
                     </p>
                 </div>
             </div>
 
             <div>
-                <img src="assets/arjybeasts/everything.gif">
-                <h3>Everything Else</h3>
+                <img src="assets/magno/local.png">
+                <h3>Local Multiplayer!</h3>
                 <div>
                     <p>
                         <b>
-                            I'm the Lead Designer, and I hold the vision. Many things in this game originated as visions in my brain. I decide the game's structure, and the overall experience.
-                            I couldn't do it alone though, I work with my two talented team members who help me realise these ideas, and often, shut me down when needed.
+                            For this game I added local multiplayer, so you can player against your friends (or your enemies if you need to settle a feud).
+                            This was surprisingly simple to acheive, I just needed to define a position for player 2 to start on for each stage rather than
+                            the enemies, then a variable in my Game Manager to check which mode you're in when a stage is loaded. I also just created a simple
+                            "share one keyboard" system, where player two's controls mirror player 1's but on the right hand side of the keyboard.
                         </b>
                     </p>
                 </div>
             </div>
         </div>
-
-
         <hr>
+
         <!--KEY SKILLS-->
         <h1>
             Key Skills
@@ -211,6 +219,9 @@
                     UI/UX
                 </li>
                 <li>
+                    AI/Navigation
+                </li>
+                <li>
                     C#
                 </li>
                 <li>
@@ -220,9 +231,6 @@
                     Visual Studio Community
                 </li>
                 <li>
-                    Documentation (Confluence)
-                </li>
-                <li>
                     Trello
                 </li>
                 <li>
@@ -230,6 +238,7 @@
                 </li>
             </ul>
         </div>
+
         <br><br><br><br><br>
     </div>
     <footer>
