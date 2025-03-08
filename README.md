@@ -1,5 +1,5 @@
 <h3> Personal Website </h3>
-This is the code for my work-in-progress Portfolio Website.
+This is the code for my Portfolio Website.
 <be>
 <br>
 I love Nintendo games. So, I've chosen to mimic the design of the Nintendo Switch Menus for my site.
