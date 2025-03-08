@@ -14,12 +14,12 @@ html {
 }
 
 body {
-    color:#000000;
-    font-size: 2vh;  
+    color: #000000;
+    font-size: 2vh;
     font-family: Nintendo Switch, Verdana;
     height: 100vh;
     overflow: hidden;
-    margin-top:0px;
+    margin-top: 0px;
 }
 
 .element-shadow{
@@ -192,6 +192,13 @@ i{
     overflow-y:scroll;
     overflow-x:hidden;
     align-items:center;
+}
+
+#project-area{
+    width: 100vw;
+    height:50vh;
+    overflow-y:hidden;
+    overflow-x:hidden;
 }
 
 #projectCarousel{
@@ -635,6 +642,86 @@ footer > div{
     height:18vw;
 }
 
+
+#script-buttons {
+    width: 100%;
+    overflow-x: scroll;
+    overflow-y:hidden;
+    padding-bottom: 1vh;
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+}
+
+#script-buttons img {
+    width: 15vw;
+}
+
+#script-buttons > * {
+    border: 0.6vh;
+    border-style: solid;
+    border-radius: 8px;
+    margin: 0vw 1vw 0vw 1vw;
+    font-size: 2vh;
+    padding: 1vh 1vw 1vh 1vw;
+    font-family: "Clock Font";
+    cursor: pointer;
+}
+
+#script-buttons button {
+    border-color: #494949ff;
+}
+
+#script-buttons > *:hover {
+    border-color: #bababaff;
+}
+
+#script-buttons i {
+    font-size: 2.5vh;
+    padding:0px;
+    margin: 0px 0.2vh 0px 0.2vh;
+}
+
+.repo-button {
+    background-color: #121212c5;
+    color: white;
+    border-style: solid;
+    border-color: #bababaff;
+    display:flex;
+    
+}
+
+.repo-button:hover {
+    border-color: #494949ff;
+}
+
+.code-viewer {
+    width: 60vw;
+    margin-top: 2vh;
+    font-family: "Clock Font";
+    border: 0.8vh;
+    border-style: solid;
+    border-radius: 8px;
+    border-color: #121212c5;
+    color: white;
+    background-color: #c4c4d1;
+    overflow: hidden;
+}
+
+#script-name {
+    font-size: 2.5vh;
+    padding: 2vh 2vw 2vh 2vw;
+    background-color: #121212c5;
+}
+
+.code-viewer pre {
+    height: 50vh;
+    width: 60vw;
+    margin: 0px;
+    overflow: scroll;
+}
+
+
 #contact-man {
     width: 25vw;
     display: flex;
@@ -783,14 +870,6 @@ footer > div{
   }
 
 @media (pointer: fine) {
-    #projectCarousel {
-        overflow: hidden;
-        margin-top: 0vh;
-    }
-
-    .button ~ h3 {
-        color: #33a7a700;
-    }
 
     .navButtons h3 {
         color: rgb(83, 83, 83, 0.54);

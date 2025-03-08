@@ -8,13 +8,11 @@
     <link rel="stylesheet" href="style sheet.css">
     <link rel="icon" type="image/x-icon" href="assets/nav icons/headshot.gif">
     <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
-    <script src="https://kit.fontawesome.com/2c1ca0161c.js" crossorigin="anonymous"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
-    <script src="script.js"></script>
     <style>
         html {
             background-image: url("assets/arjybeasts background.png");
             background-size: 100vw 100vh;
+            scroll-behavior: smooth;
         }
     </style>
 
@@ -74,10 +72,6 @@
     <div id="profile-section">
 
         <div class="game-buttons">
-
-            <a href="https://github.com/hstottdev/arjybeasts-code/tree/main" class="button clickable">
-                <img src="assets/github code button.png">
-            </a>
 
             <a href="https://store.steampowered.com/app/3245190/Arjybeasts/" class="button clickable">
                 <img src="assets/steam.png">
@@ -189,6 +183,31 @@
             </div>
         </div>
 
+        <!--Code-->
+        <h1>
+            <i class="fa-solid fa-code"></i> Code
+        </h1>
+        <hr>
+        <div id="code-section">
+
+            <div id="script-buttons">
+                <button class="button clickable">DraggableWindow.cs</button>
+                <button class="button clickable">RandomRGB.cs</button>
+                <button class="button clickable">FileManager.cs</button>
+                <button class="button clickable">FileUI.cs</button>
+                <a href="https://github.com/hstottdev/arjybeasts-code/tree/main" target="_blank" class="repo-button">
+                    <i class="fa-brands fa-github"></i> Repo
+                </a>
+            </div>
+
+            <div class="code-viewer">
+                <div id="script-name">DraggableWindow.cs</div>
+                <pre>
+                <code id="code" class="language-csharp"></code>
+                </pre>
+            </div>
+            <hr>
+        </div>
 
         <hr>
         <!--KEY SKILLS-->
@@ -214,6 +233,9 @@
                     C#
                 </li>
                 <li>
+                    Game Programming
+                </li>
+                <li>
                     Version Control (Plastic SCM)
                 </li>
                 <li>
@@ -230,6 +252,8 @@
                 </li>
             </ul>
         </div>
+        <hr>
+        <!--bottom of game page-->
         <br><br><br><br><br>
     </div>
     <footer>
@@ -271,6 +295,17 @@
             </div>
         </div>
     </footer>
+
+    <script src="https://kit.fontawesome.com/2c1ca0161c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+    <script src="code-viewer.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/csharp.js"></script>
+
 </body>
 </html>
 

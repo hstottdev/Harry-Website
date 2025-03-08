@@ -166,6 +166,3 @@ function setDiscordStatus(data){
 //discord user id
 // https://api.lanyard.rest/v1/users/
 
-fetch("https://raw.githubusercontent.com/Ayanmullick/test/master/AutomationAcc/test1.ps1")
-    .then(response => response.text())
-    .then(data => document.getElementById('code').textContent = data)
