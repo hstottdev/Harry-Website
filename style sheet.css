@@ -254,8 +254,8 @@ i{
 #carousel-view {
     margin-top: 7vh;
     height: 38vh;
-    overflow-y: scroll;
-    overflow-x: scroll;
+    overflow-y: hidden;
+    overflow-x: hidden;
     scroll-behavior: smooth;
 }
 
