@@ -1,3 +1,4 @@
+//default variables that get overridden in each HTML file:
 let file = "DraggableWindow.cs";
 let repoPath = "https://raw.githubusercontent.com/hstottdev/arjybeasts-code/refs/heads/main/";
 

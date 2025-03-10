@@ -131,7 +131,7 @@ a {
     margin: 0px 1vh 0px 0px;
     padding-top: 2vh;
     font-weight: bolder;
-    color: #00000096
+    color: #00000055
 }
 
 
@@ -187,30 +187,90 @@ i{
     height: 72vh;
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
+    justify-content: space-evenly;
     padding-bottom: 5vh;
     overflow-y:scroll;
     overflow-x:hidden;
     align-items:center;
 }
 
-#project-area{
+#project-view {
     width: 100vw;
-    height:50vh;
-    overflow-y:hidden;
-    overflow-x:hidden;
+    height: 52vh;
+    position: relative;
+    border-radius: 5vh;
+    background-image: linear-gradient(#89898900,#a4a4a4ca,#89898900);
 }
 
-#projectCarousel{
-    margin-top:1vh;
-    margin-left: 3vw;
+#carousel-nav button {
+    border-radius: 40vh;
+    border-color: #1a1a1a44;
+    margin: 0vh 1vh;
+    width: 15vw;
+    height: 5vh;
+    cursor: pointer;
+}
+
+#carousel-nav i {
+    font-size: 3vh;
+    padding: 0.5vh;
+    color: #1a1a1a44;
+}
+
+#carousel-nav {
+    height: 4vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+
+    position: absolute;
+    z-index: 1;
+    bottom: 1vh;
+}
+
+#carousel-nav-top {
+    height: 4vh;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    z-index: 1;
+    top: 10vh;
+}
+
+#carousel-header {
+    width: 100%;
+    height: 10vh;
+    position: absolute;
+    z-index: -1;
+    top: 0%;
+    color: black;
+    display: flex;
+    justify-content: center;
+    color: #1a1a1a44;
+    font-size:2.5vh;
+}
+
+#carousel-view{
+    margin-top: 7vh;
+    height:38vh;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    scroll-behavior:smooth;
+}
+
+.projectCarousel {
+    margin-top: 1vh;
+    margin-bottom: 10vh;
+    padding-left: 3vw;
+    margin-left: 100vw;
+    scroll-margin-left: 10vh;
     display: flex;
     flex-direction: row;
     width: 100%;
-    overflow: scroll;
+    overflow-x: scroll;
+    overflow-y: visible;
 }
-
-
 
 .projectIcon {
     display: flex;
@@ -218,8 +278,8 @@ i{
 }
 
 .projectIcon img{
-    width : 40vh;
-    height: 40vh;
+    width : 30vh;
+    height: 30vh;
     border-radius: 2px;
 }
 
@@ -229,10 +289,10 @@ i{
 }
 
 .projectIcon h3 {
-    width: 60vh;
-    font-size: 4vh;
-    margin-left: -10vh;
-    margin-right: -10vh;
+    width: 40vh;
+    font-size: 3vh;
+    margin-left: -5vh;
+    margin-right: -5vh;
     text-align: center;
 }
 
@@ -248,8 +308,8 @@ i{
 }
 
 /*defines the space after the final project icon*/
-#projectCarousel > *:last-child{
-    padding-right: 20vh;
+.projectCarousel > *:last-child{
+    padding-right: 10vh;
 }
 
 
@@ -257,11 +317,11 @@ i{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width:80vh;
+    width:83vh;
 }
 
 .navButtons h3 {
-    color: rgb(83, 83, 83, 0.54);
+    color: rgb(83, 83, 83, 0.30);
     width: 19vh;
     margin-left: -4vh;
     margin-right: -4vh;
@@ -270,17 +330,13 @@ i{
 .navIcon{
     align-self: center; 
     margin: 0.1vh 0.2vw;
-    width: 11vh;
-    height: 11vh;
+    width: 10vh;
+    height: 10vh;
     display:flex;
     flex-direction:column;
     align-items:center;
 }
 
-.currentNav {
-    width: 15vh;
-    height: 15vh;
-}
 
 .navIcon .element-shadow{
     background-color:rgb(243, 242, 242);
@@ -290,15 +346,10 @@ i{
 }
 
 .navButtons .navIcon .element-shadow {
-    width: 11vh;
-    height: 11vh;
+    width: 10vh;
+    height: 10vh;
     display: flex;
     align-items: center;
-}
-
-.navButtons .currentNav .element-shadow {
-    width: 14vh;
-    height: 14vh;
 }
 
 .navIcon i{
@@ -316,6 +367,11 @@ i{
     color: rgba(0, 0, 0, 0.543);
     font-weight: bold;
     font-size: 5.5vh;
+}
+
+.currentNav {
+    width: 15vh;
+    height: 15vh;
 }
 
 footer {
@@ -346,9 +402,9 @@ footer > div{
 }
 
 .thick-line{
-    width:100%;
+    width:97%;
     border-width: 1px;
-    border-color: #00000086;
+    border-color: #00000048;
     margin: 1vh 3vh;
 }
 
@@ -719,6 +775,7 @@ footer > div{
     width: 60vw;
     margin: 0px;
     overflow: scroll;
+    scroll-behavior:smooth;
 }
 
 
@@ -831,12 +888,12 @@ footer > div{
     justify-content: center;
     visibility: hidden;
     text-align: center;
-    font-size: 6vw;
+    font-size: 5vw;
 }
 
 #orientation-warning img{
-    width: 80vw;
-    height: 80vw;
+    width: 55vw;
+    height: 55vw;
     border-radius: 5vw;
 }
 
@@ -845,17 +902,19 @@ footer > div{
     color: #0000004c;
 }
 
-#orientation-warning h1{
-    font-size: 10vw;
-    font-weight:bolder;
+#orientation-warning h1 {
+    font-size: 8vw;
+    font-weight: bolder;
+    margin: 1vh 0vh;
 }
 
 #orientation-warning h2{
-    font-size: 7vw;
+    font-size: 6vw;
+    margin: 1vh 0vh;
 }
 
 #orientation-message{
-    margin-top: 7vw;
+    margin: 1vh 0vh;
 }
 
 @media (orientation: landscape) {
@@ -871,8 +930,8 @@ footer > div{
 
 @media (pointer: fine) {
 
-    .navButtons h3 {
-        color: rgb(83, 83, 83, 0.54);
+    .projectCarousel {
+        overflow-x: hidden;
     }
 
     #profile-section {

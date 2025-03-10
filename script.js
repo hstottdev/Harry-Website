@@ -1,50 +1,30 @@
-
-window.onload = function() {
+$(document).ready(function () {
     function update() {
         updateTime();
-        getDiscordData();   
+        getDiscordData();
     }
-        update();
-        setInterval(update, 1000);
-        
-};
+    update();
+    setInterval(update, 1000);
 
-$(document).ready(function(){
-    const $element = $("#projectCarousel");
-    const el = document.getElementById("projectCarousel");
-   
-    const windowWidth = $(window).width();
-    // How far away from the screen edge to trigger our scroll
-    const distanceFromEdge = 200;
-    
-    // Get the mouse position while it's over our element
-    $element.on("mousemove", function (e) {
-      const mouseX = e.pageX;        
-      console.log(mouseX);
-      // If it gets within x distance from the left, scroll left
-      if (mouseX < distanceFromEdge) { 
-        el.scrollLeft -= 40;   
-      }
-  
-      // If it gets within x distance from the right, scroll right
-      if (mouseX > windowWidth - distanceFromEdge) {
-        el.scrollLeft += 40; 
-      }
-    });
+    browserHistoryButtonHandler();
+    //soundEffectHandler();
+})
 
-    
-    $(".clickable").on("pointerenter",function (e) {
-        buttonHover();
+function soundEffectHandler() {
+    $(".clickable").on("pointerdown", function (e) {
+        playSound('sounds/button click.wav');
     })
 
-    $(".clickable").on("pointerdown",function (e) {
-        //playSound('sounds/button click.wav');
+    $(".clickable").on("pointerenter", function (e) {
+        buttonHoverSound();
     })
 
-    $(".panel .button").on("pointerenter",function (e) {
-        statusHover();
+    $(".panel .button").on("pointerenter", function (e) {
+        statusHoverSound();
     })
+}
 
+function browserHistoryButtonHandler() {
     $(".back-arrow").click(function (e) {
         window.history.back();
     })
@@ -52,9 +32,7 @@ $(document).ready(function(){
     $(".forward-arrow").click(function (e) {
         window.history.forward();
     })
-    
-
-})
+}
 
 function timeStringToTwelveHour(timeString){
     var hour = Number(timeString.split(':')[0]);
@@ -73,7 +51,7 @@ function timeStringToTwelveHour(timeString){
     return time;
 }
 
-function updateTime(){
+function updateTime() {
     var date = new Date();
     //define time string
     const londonTime = date.toLocaleTimeString("en-GB", {timeZone: "Europe/London"});
@@ -99,12 +77,12 @@ function playSound(filePath){
     //sound.play();
 }
 
-function buttonHover(){
+function buttonHoverSound(){
     playSound('sounds/interface-button-154180.mp3');
 }
 
 
-function statusHover(){
+function statusHoverSound(){
     playSound('sounds/clicking-interface-select-201946.mp3');
 }
 

@@ -7,7 +7,7 @@
     <meta name="title" property="og:title" content="Harry Stott - Portfolio Website">
     <meta content="https://www.harrystott.dev" property="og:url" />
     <meta name="og:site_name" content="Portfolio Website">
-    <meta name="description" property="og:description" content="Hello. I'm Harry – a passionate Game Developer, Web Developer, and Artist.">
+    <meta name="description" property="og:description" content="Hello. I'm Harry – a passionate Unity Game Developer, and Web Developer">
     <meta name="image" property="og:image" content="https://www.harrystott.dev/assets/meta cover.png">
     <meta name="twitter:card" property="og:image" content="https://www.harrystott.dev/assets/meta cover.png">
     <meta content="#bb8de3" data-react-helmet="true" name="theme-color"/>
@@ -40,49 +40,49 @@
         <div class="profilePicture">
             <h1>Harry Stott</h1>
 
-        <a href="https://linktr.ee/harrystott">
-            <div class="navIcon">
-                <div class="button">
-                    <div class="element-shadow">
-                        <img src="assets/social icons/linktree.webp">
+            <a href="https://linktr.ee/harrystott">
+                <div class="navIcon">
+                    <div class="button">
+                        <div class="element-shadow">
+                            <img src="assets/social icons/linktree.webp">
+                        </div>
                     </div>
+                    <h3>Linktree</h3>
                 </div>
-                <h3>Linktree</h3>
-            </div>
-        </a>
+            </a>
 
-        <a href="https://www.linkedin.com/in/harrystottdev/">
-            <div class="navIcon">
-                <div class="button">
-                    <div class="element-shadow" onpointerenter="buttonHover()">
-                        <i class="lab la-linkedin"></i>
+            <a href="https://www.linkedin.com/in/harrystottdev/">
+                <div class="navIcon">
+                    <div class="button">
+                        <div class="element-shadow" onpointerenter="buttonHover()">
+                            <i class="lab la-linkedin"></i>
+                        </div>
                     </div>
+                    <h3>LinkedIn</h3>
                 </div>
-                <h3>LinkedIn</h3>
-            </div>
-        </a>
+            </a>
 
-        <a href="https://github.com/hstottdev">
-            <div class="navIcon">
-                <div class="button">
-                    <div class="element-shadow" onpointerenter="buttonHover()">
-                        <i class="lab la-github"></i>
+            <a href="https://github.com/hstottdev">
+                <div class="navIcon">
+                    <div class="button">
+                        <div class="element-shadow" onpointerenter="buttonHover()">
+                            <i class="lab la-github"></i>
+                        </div>
                     </div>
+                    <h3>Github</h3>
                 </div>
-                <h3>Github</h3>
-            </div>
-        </a>
+            </a>
 
-        <a href="mailto:contact@harrystott.dev">
-            <div class="navIcon">
-                <div class="button">
-                    <div class="element-shadow" onpointerenter="buttonHover()">
-                        <i class="fa-solid fa-envelope"></i>
+            <a href="mailto:contact@harrystott.dev">
+                <div class="navIcon">
+                    <div class="button">
+                        <div class="element-shadow" onpointerenter="buttonHover()">
+                            <i class="fa-solid fa-envelope"></i>
+                        </div>
                     </div>
+                    <h3>Email Me</h3>
                 </div>
-                <h3>Email Me</h3>
-            </div>
-        </a>
+            </a>
         </div>
 
         <div class="panel" id="status-panel">
@@ -103,84 +103,91 @@
     </header>
 
     <div id="home-page">
-        <!--Project Area -->
-        <div id="project-area">
+        <!--Project Area-->
+        <div id="project-view">
+            <div id="carousel-header">
+                <h2><i class="fa-solid fa-gamepad"></i>Game</h2>
+            </div>
+            <div id="carousel-nav">
+                <button id="carousel-chevron-up">
+                    <i class="fa-solid fa-chevron-up"></i>
+                </button>
+                <button id="carousel-chevron-down">
+                    <i class="fa-solid fa-chevron-down"></i>
+                </button>
+            </div>
 
-            <!--Project Carousel -->
-            <div id="projectCarousel" class="scrollingElement">
-                <div class="projectIcon">
-                    <a href="arjybeasts.html" class="button">
-                        <img src="assets/arjybeasts.gif" class="element-shadow clickable">
-                    </a>
-                    <h3>Arjybeasts</h3>
+            <div id="carousel-view">
+                <!--Project Carousel -->
+                <div class="projectCarousel scrollingElement">
+                    <div class="projectIcon">
+                        <a href="arjybeasts.html" class="button">
+                            <img src="assets/arjybeasts.gif" class="element-shadow clickable">
+                        </a>
+                        <h3>Arjybeasts</h3>
+                    </div>
+
+                    <div class="projectIcon">
+                        <a href="magno-sheep.html" class="button">
+                            <img src="assets/magno.gif" class="element-shadow clickable">
+                        </a>
+                        <h3>Magno Sheep</h3>
+                    </div>
+
+                    <div class="projectIcon">
+                        <a href="whatever-continuum.html" class="button">
+                            <img src="assets/Whatever cover.gif" class="element-shadow clickable">
+                        </a>
+                        <h3>Whatever Continuum</h3>
+                    </div>
+
+                    <div class="projectIcon">
+                        <a href="spwrong.html" class="button">
+                            <img src="assets/spwrong cover.gif" class="element-shadow clickable">
+                        </a>
+                        <h3>Spwrong</h3>
+                    </div>
+
+                    <div class="projectIcon">
+                        <a href="banana-for-scale.html" class="button">
+                            <img src="assets/bfscover.png" class="element-shadow clickable">
+                        </a>
+                        <h3> Banana For Scale</h3>
+                    </div>
+
+                    <div class="projectIcon">
+                        <a href="scatterbody.html" class="button">
+                            <img src="assets/scatterbody cover.gif" class="element-shadow clickable">
+                        </a>
+                        <h3> Scatterbody</h3>
+                    </div>
+
+                    <div class="projectIcon">
+                        <a href="marlas-balloon.html" class="button">
+                            <img src="assets/marlas balloon cover.gif" class="element-shadow clickable">
+                        </a>
+                        <h3>Marla's Balloon</h3>
+                    </div>
                 </div>
 
-                <div class="projectIcon">
-                    <a href="magno-sheep.html" class="button">
-                        <img src="assets/magno.gif" class="element-shadow clickable">
-                    </a>
-                    <h3>Magno Sheep</h3>
-                </div>
+                <!--Project Carousel -->
+                <div class="projectCarousel scrollingElement" style="margin-left: 200vw; justify-content:center;">
+                    <div class="projectIcon">
+                        <a href="this-website.html" class="button">
+                            <img src="assets/portfolio icon.png" class="element-shadow clickable">
+                        </a>
+                        <h3>This Website</h3>
+                    </div>
 
-                <div class="projectIcon">
-                    <a href="whatever-continuum.html" class="button">
-                        <img src="assets/Whatever cover.gif" class="element-shadow clickable">
-                    </a>
-                    <h3>Whatever Continuum</h3>
-                </div>
-
-                <div class="projectIcon">
-                    <a href="spwrong.html" class="button">
-                        <img src="assets/spwrong cover.gif" class="element-shadow clickable">
-                    </a>
-                    <h3>Spwrong</h3>
-                </div>
-
-                <div class="projectIcon">
-                    <a href="banana-for-scale.html" class="button">
-                        <img src="assets/bfscover.png" class="element-shadow clickable">
-                    </a>
-                    <h3> Banana For Scale</h3>
-                </div>
-
-                <div class="projectIcon">
-                    <a href="scatterbody.html" class="button">
-                        <img src="assets/scatterbody cover.gif" class="element-shadow clickable">
-                    </a>
-                    <h3> Scatterbody</h3>
-                </div>
-
-                <div class="projectIcon">
-                    <a href="marlas-balloon.html" class="button">
-                        <img src="assets/marlas balloon cover.gif" class="element-shadow clickable">
-                    </a>
-                    <h3>Marla's Balloon</h3>
-                </div>
-
-                <div class="projectIcon">
-                    <a href="https://hstottdev.github.io/Javascript-Brain" class="button">
-                        <img src="assets/js brain.png" class="element-shadow clickable">
-                    </a>
-                    <h3>My Brain</h3>
+                    <div class="projectIcon">
+                        <a href="https://hstottdev.github.io/Javascript-Brain" class="button">
+                            <img src="assets/js brain.png" class="element-shadow clickable">
+                        </a>
+                        <h3>My Brain</h3>
+                    </div>
                 </div>
             </div>
 
-            <!--Project Carousel -->
-            <div id="projectCarousel" class="scrollingElement">
-                <div class="projectIcon">
-                    <a href="index.html" class="button">
-                        <img src="assets/portfolio icon.png" class="element-shadow clickable">
-                    </a>
-                    <h3>This Website</h3>
-                </div>
-
-                <div class="projectIcon">
-                    <a href="https://hstottdev.github.io/Javascript-Brain" class="button">
-                        <img src="assets/js brain.png" class="element-shadow clickable">
-                    </a>
-                    <h3>My Brain</h3>
-                </div>
-            </div>
         </div>
 
 
@@ -274,6 +281,7 @@
     </footer>
     <script src="https://kit.fontawesome.com/2c1ca0161c.js" crossorigin="anonymous"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="projects-nav.js"></script>
     <script src="script.js"></script>
 </body>
 </html>

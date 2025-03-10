@@ -134,7 +134,7 @@ class DialogueTextPrinter {
     }
 }
 
-// Example usage:
+// assigning listeners
 document.addEventListener('DOMContentLoaded', () => {
     let contactDialogue = [
         "Pssst... come closer...",

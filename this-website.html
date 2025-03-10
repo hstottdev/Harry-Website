@@ -1,0 +1,283 @@
+<!--Getting a bit meta I know, but here is the HTML for this very page-->
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>This Website - Harry Stott</title>
+    <meta charset="UTF-8">
+    <meta name="description" property="og:description" content="Hello. I'm Harry – a passionate Unity Game Developer, and Web Developer">
+    <link rel="stylesheet" href="style sheet.css">
+    <link rel="icon" type="image/x-icon" href="assets/nav icons/headshot.gif">
+    <link rel="stylesheet" href="https://maxst.icons8.com/vue-static/landings/line-awesome/line-awesome/1.3.0/css/line-awesome.min.css">
+
+</head>
+<body>
+    <div id="orientation-warning">
+        <div>
+            <img src="assets/headshot.png" class="element-shadow">
+            <h1>Harry Stott</h1>
+            Portfolio Website
+        </div>
+        <div id="orientation-message">
+            <i class="las la-sync"></i>
+            <h2>Please rotate your device.</h2>
+            <div>This site is best viewed in landscape.</div>
+        </div>
+    </div>
+
+    <header>
+        <div id="title-header">
+            <h1>This Website</h1>
+            <hr class="thick-line">
+        </div>
+    </header>
+
+    <nav id="nav-menu">
+        <div class="button clickable back-arrow">
+            <h3><i class="las la-arrow-left"></i>  Back</h3>
+        </div>
+        <hr>
+        <a href="index.html" class="button clickable">
+            <img src="assets/nav icons/home.png">
+            <h3>Home</h3>
+        </a>
+        <a href="about.html" class="button clickable">
+            <img src="assets/nav icons/headshot.gif">
+            <h3>About Me</h3>
+        </a>
+        <a href="purplpup.html" class="button clickable">
+            <img src="assets/nav icons/purplpup.png">
+            <h3>Purpl Pup</h3>
+        </a>
+        <a href="slimey-hatch.html" class="button clickable">
+            <img src="assets/nav icons/slimey.png">
+            <h3>Slimey Hatch</h3>
+        </a>
+        <a href="skills.html" class="button clickable">
+            <img src="assets/nav icons/star.gif">
+            <h3>Skills</h3>
+        </a>
+        <a href="contact.html" class="button clickable">
+            <img src="assets/nav icons/mr plonky.gif">
+            <h3>Contact</h3>
+        </a>
+    </nav>
+
+    <div id="profile-section">
+
+        <!--OVERVIEW-->
+        <h1>
+            Overview
+        </h1>
+        <hr>
+
+        <div class="description-box">
+            <p>
+                <b>
+                    Around September 2024, I had a messy game development portfolio website, and it didn't wholly reflect all of my abilities.
+                    So, equipped with skills in HTML, CSS, and JavaScript from my training course, I took to making an interesting personal website.
+                    <br><br>
+                    I wanted to give myself a challenge, I love games, so this website is originally based around the Nintendo Switch UI.
+                    This was a great first big project for me, at first there was challenge in attempting to replicate the switch's desolate UI.
+                    Soon though, I realised that I couldn't just replicate it, as most agree that it's not actually very good... So I built upon it,
+                    and made something that was fundamentally... Me.
+                </b>
+            </p>
+        </div>
+
+        <hr>
+
+        <!--Key Developments-->
+        <h1>
+            Key Developments
+        </h1>
+        <hr>
+
+        <div class="grid-descriptions">
+            <div>
+                <img src="assets/this-site/nintendo comparison.png">
+                <h3>Basing On The Nintendo Switch</h3>
+                <div>
+                    <p>
+                        <b>
+                            Firstly, I was basing this website off of the Nintendo Switch UI as stated above. This proved an interesting challenge to get my website interface as similar as possible, and came with many challenges.
+                            I also had to be careful regarding copyright laws and not to directly use any assets that were owned by Nintendo, mainly fonts. However, I was able to use strictly fonts within the public domain.
+                            Later in my development, I further sought to make my own additions, and improve on Nintendo's design, as well as make it feel more like it showcased
+                            who I was.
+                        </b>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/this-site/status.png">
+                <h3>Status Fetching</h3>
+                <div>
+                    <p>
+                        <b>
+                            When replicating the Switch's UI, I had to create something for the status it has in the top right on the home page, so I decided I would attempt to show my current status there.
+                            I successfully did this using a Discord API called Lanyard. Considering my status on Discord usually represents my current status on my computer this works very well, and if you check
+                            you can see what I'm doing right now! This was another big challenge as part of the process but the end result was incredibly satisfying.
+                        </b>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/this-site/code-viewer.png">
+                <h3>Embedding Everything</h3>
+                <div>
+                    <p>
+                        <b>
+                            It was important that I could show people such as yourself all of my handy work. People are busy, I don't want to waste your time! Everything you need to see can be found here.
+                            You can view my scripts, fetched directly from Github, you can play my games, and see my projects right in the pages of this website! No wasting time downloading or tab switching.
+                            The code viewer was the hardest, you can easily fetch from Github raw, but I wanted the text to be highlighted correctly, so I used Highlight.js for this.
+                        </b>
+                    </p>
+                </div>
+            </div>
+
+            <div>
+                <img src="assets/this-site/mobile.png">
+                <h3>Making It Work Everywhere</h3>
+                <div>
+                    <p>
+                        <b>
+                            This was by far the hardest part of developing this website. Every browser is different, every screen is a different size, and I don't have access to all of those devices in order
+                            to test them. The first big issue was portrait mode on phones... The Nintendo Switch UI is locked at landscape, so if I allowed for portrait, it would no longer be the same at all.
+                            The issue is, you can't lock screen orientation reliably on web browsers, so I came up with a simple solution where the user is notified to change orientation themself.
+                        </b>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <!--Code-->
+        <h1>
+            <i class="fa-solid fa-code"></i> Code
+        </h1>
+        <hr>
+        <div id="code-section">
+
+            <div id="script-buttons">
+                <!--My system works by directly referencing the name of the Github script in here-->
+                <!--Then it has all the information it needs to fetch it-->
+                <button class="button clickable">this-website.html</button>
+                <button class="button clickable">code-viewer.js</button>
+                <button class="button clickable">projects-nav.js</button>
+                <button class="button clickable">dialogue.js</button>
+                <a href="https://github.com/hstottdev/Harry-Website/tree/master" target="_blank" class="repo-button">
+                    <i class="fa-brands fa-github"></i> Repo
+                </a>
+            </div>
+
+            <div class="code-viewer">
+                <div id="script-name">Script Not Found</div>
+                <pre>
+                <code id="code" class="language-js"></code>
+                </pre>
+            </div>
+            <hr>
+        </div>
+
+        <hr>
+        <!--KEY SKILLS-->
+        <h1>
+            Key Skills
+        </h1>
+
+        <hr>
+        <div class="key-list">
+            <ul>
+                <li>
+                    Web Design
+                </li>
+                <li>
+                    HTML5
+                </li>
+                <li>
+                    CSS
+                </li>
+                <li>
+                    Github
+                </li>
+                <li>
+                    API Fetching
+                </li>
+                <li>
+                    Domain Name Services
+                </li>
+                <li>
+                    Responsive Design
+                </li>
+                <li>
+                    Visual Studio
+                </li>
+
+            </ul>
+        </div>
+        <hr>
+        <!--bottom of game page-->
+        <br><br><br><br><br>
+    </div>
+    <footer>
+        <div>
+            <hr class="thick-line">
+            <div id="bottom-bar">
+                <div class="control-panel">
+                    <div id="system-icon" class="panel">
+                        <div class="button">
+                            <i class="fa-solid fa-computer"></i>
+                        </div>
+                        <!--<h3>Your System</h3>-->
+                    </div>
+                </div>
+
+                <div class="control-panel">
+
+                    <div class="control-button clickable">
+                        <div class="button back-arrow">
+                            <i class="las la-arrow-left"></i>
+                        </div>
+                    </div>
+
+                    <div class="control-button clickable">
+                        <div class="button forward-arrow">
+                            <i class="las la-arrow-right"></i>
+                        </div>
+                    </div>
+
+                    <a href="index.html">
+                        <div class="control-button clickable">
+                            <div class="button">
+                                <i class="las la-home"></i>
+                            </div>
+                        </div>
+                    </a>
+
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://kit.fontawesome.com/2c1ca0161c.js" crossorigin="anonymous"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="script.js"></script>
+
+    <script src="code-viewer.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/csharp.js"></script>
+
+    <!--Defining the code viewer variables here-->
+    <script>
+        //set the starting file
+        file = "this-website.html";
+        //set the repository path
+        repoPath = "https://raw.githubusercontent.com/hstottdev/Harry-Website/refs/heads/master/";
+    </script>
+
+</body>
+</html>
+
