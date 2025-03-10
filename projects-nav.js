@@ -73,7 +73,7 @@ function scrollToCarousel(index) {
 
     
     //carouselView.scroll(0, carousels[index].getBoundingClientRect().top);
-    carousels[index].scrollIntoView({ behavior: 'smooth'});
+    carousels[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
     carousels[index].scrollLeft = 0;
     console.log("index: " + index);
     console.log(carousels[index].getBoundingClientRect().top);
