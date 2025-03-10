@@ -263,7 +263,7 @@ i{
     margin-top: 1vh;
     margin-bottom: 10vh;
     padding-left: 3vw;
-    margin-left: 100vw;
+    margin-left: 0vw;
     scroll-margin-left: 10vh;
     display: flex;
     flex-direction: row;
