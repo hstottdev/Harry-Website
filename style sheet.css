@@ -251,12 +251,12 @@ i{
     font-size:2.5vh;
 }
 
-#carousel-view{
+#carousel-view {
     margin-top: 7vh;
-    height:38vh;
-    overflow-y: hidden;
-    overflow-x: hidden;
-    scroll-behavior:smooth;
+    height: 38vh;
+    overflow-y: scroll;
+    overflow-x: scroll;
+    scroll-behavior: smooth;
 }
 
 .projectCarousel {
