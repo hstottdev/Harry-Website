@@ -133,12 +133,12 @@ function setDiscordStatus(data){
     document.getElementById("statusTask").innerHTML = myStatus.task;
 
     if(myStatus.online != "offline"){
-        document.getElementById("statusIcon").classList.add('online');
-        document.getElementById("statusIcon").classList.remove('offline');
+        document.getElementById("statusIconOnline").style.display = "block";
+        document.getElementById("statusIconOffline").style.display = "none";
     }
     else{
-        document.getElementById("statusIcon").classList.add('offline');
-        document.getElementById("statusIcon").classList.add('online');
+        document.getElementById("statusIconOnline").style.display = "none";
+        document.getElementById("statusIconOffline").style.display = "block";
     }
 }
 //discord user id

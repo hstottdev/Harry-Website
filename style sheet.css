@@ -26,13 +26,14 @@ body {
     box-shadow: 0px 0px 0.3vw rgba(0, 0, 0, 0.67);
 }
 
-header{
+header {
     flex-direction: row;
     display: flex;
-    width : 100%;
+    width: 100%;
     height: 15vh;
     justify-content: space-between;
-    align-items: top;
+    position: fixed;
+    top: 0vh;
 }
 
 .button{
@@ -80,58 +81,69 @@ header{
 .panel > .button ~ h3 {
     color: #ffffff00;
 }
+a {
+    text-decoration: none;
+}
 
 .profilePicture{
-    margin-left: 3vh;
-    margin-top: 2vh;
+    margin-left: 2vw;
+    margin-top: -1vh;
     align-self: center;
     justify-content: center;
     display: flex;
 }
 
 .profilePicture a {
-    width: 8vh;
-    height: 8vh;
-    overflow:visible;
-    margin-left:3vh;
+    width: 3vw;
+    height: 3vw;
+    overflow: visible;
+    margin-left: 1.5vw;
 }
+
+.social-icon {
+    align-self: center;
+    margin: 0.1vh 0.2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .profilePicture img{   
     width: 60%;
     align-self: center;
-    opacity: 80%;
+    opacity: 50%;
+    color: #00000055
 }
 
 .profilePicture h3 {
     color: #ffffff00;
-}
-
-a {
-    text-decoration: none;
+    width: 200%;
 }
 
 .profilePicture .element-shadow {
-    width: 6vh;
-    height: 6vh;
+    width: 2.5vw;
+    height: 2.5vw;
     border: 5px;
     border-style: solid;
     border-color: #ffffff;
-    background-color: rgb(243, 242, 242);
+    background-color: #00000013;
     border-radius: 999px;
     align-self: center;
     justify-content: center;
     display: flex;
 }
 
-.profilePicture .navIcon i{
-    color:rgb(58, 58, 58);
-    font-size: 4vh;
+.profilePicture i {
+    color: #0000007b;
+    font-size: 1.5vw;
+    padding-top: 0.5vw;
 }
 .profilePicture > h1 {
-    font-size: 3vh;
-    margin: 0px 1vh 0px 0px;
-    padding-top: 2vh;
+    font-size: 1.5vw;
+    margin: 0px 1vw 0px 0px;
+    padding-top: 1vh;
     font-weight: bolder;
-    color: #00000055
+    color: #00000080;
 }
 
 
@@ -140,51 +152,66 @@ a {
     height: 6vh;
 }
 
+    #status-panel i {
+        font-size: 1.5vw;
+    }
 
-i{
-    font-size: 4vh;
-    padding: 10px 10px;
-}
+    i {
+        font-size: 4vh;
+        padding: 0.5vh 0.5vw;
+        margin: 0vh;
+    }
 
 #status-panel *{
     margin: 0px 1vh;
 }
 
+#status-panel .fa-clock {
+    color: #00000098;
+}
 
-.clock{
+.clock {
     font-family: Clock Font;
-    font-size: 4vh;
-    font-weight:bolder;
-    display: inline;
-    align-self: center;  
-}
-
-.location{
-    font-size: 3vh;
+    font-size: 2vw;
     font-weight: bolder;
+    display: inline;
+    align-self: center;
+    color: #0000008b;
 }
 
-.location i{
-    color: rgb(84, 135, 229);
+.location {
+    font-size: 1.5vw;
+    font-weight: bolder;
+    color: #0000008b;
 }
 
-.online{
-    color: rgb(56, 188, 100);
+.location i {
+    color: #00000098;
 }
 
-.offline{
-    color: rgb(151, 151, 151);
+#statusIconOnline{
+    color: rgb(56, 188, 100, 0.80);
 }
 
-.status{
-    font-size: 3vh;
+#statusIconOffline{
+    color: rgb(151, 151, 151, 0.52);
+}
+
+.status {
+    font-size: 1.5vw;
     font-weight: bolder;
     display: flex;
     align-items: center;
 }
 
+#statusTask {
+    color: #0000008b;
+
+}
+
 #home-page{
-    height: 72vh;
+    margin-top: 6vh;
+    height: 75vh;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
@@ -199,14 +226,14 @@ i{
     height: 52vh;
     position: relative;
     border-radius: 5vh;
-    background-image: linear-gradient(#89898900,#a4a4a4ca,#89898900);
+    background-image: linear-gradient(#89898900,#00000031,#89898900);
 }
 
 #carousel-nav button {
     border-radius: 40vh;
     border-color: #1a1a1a44;
     margin: 0vh 1vh;
-    width: 15vw;
+    width: 25vw;
     height: 5vh;
     cursor: pointer;
 }
@@ -247,7 +274,7 @@ i{
     color: black;
     display: flex;
     justify-content: center;
-    color: #1a1a1a44;
+    color: #1a1a1a71;
     font-size:2.5vh;
 }
 
@@ -263,7 +290,7 @@ i{
     margin-top: 1vh;
     margin-bottom: 10vh;
     padding-left: 3vw;
-    margin-left: 0vw;
+    margin-left: 100vw;
     scroll-margin-left: 10vh;
     display: flex;
     flex-direction: row;
@@ -327,14 +354,14 @@ i{
     margin-right: -4vh;
 }
 
-.navIcon{
-    align-self: center; 
-    margin: 0.1vh 0.2vw;
+.navIcon {
     width: 10vh;
     height: 10vh;
-    display:flex;
-    flex-direction:column;
-    align-items:center;
+    align-self: center;
+    margin: 0.1vh 0.2vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 
@@ -379,7 +406,8 @@ footer {
     background-color: #ffffff00;
     background-color: #ffffff00;
     position: absolute;
-    bottom: -500px;
+    bottom: 0px;
+    display: none;
 }
 
 footer > div{
@@ -389,7 +417,9 @@ footer > div{
 @media (pointer: fine) {
 
     footer {
-        position: static;
+        position: fixed;
+        bottom: 0vh;
+        display: block;
     }
 
     body{
@@ -513,7 +543,7 @@ footer > div{
     height: 80vh;
     width: 25vw;
     position: fixed;
-    margin: 0px 0px;
+    margin-top: 14vh;
     margin-bottom: 5vh;
     background-color: #f5f5f51e;
     background-image: linear-gradient(#ffffff00,#fffcfc6c,#ffffff00);
@@ -547,14 +577,16 @@ footer > div{
     color: #000000;
 }
 
-#profile-section{
-    width:  65vw;
+#profile-section {
+    width: 65vw;
     height: 80vh;
     margin-left: 30vw;
     margin-top: 1vh;
-    margin-bottom:5vh;
+    margin-bottom: 5vh;
     align-items: center;
     overflow-y: scroll;
+    position: fixed;
+    top: 14vh;
 }
 
 
@@ -889,6 +921,7 @@ footer > div{
     visibility: hidden;
     text-align: center;
     font-size: 5vw;
+    top: 0px;
 }
 
 #orientation-warning img{
