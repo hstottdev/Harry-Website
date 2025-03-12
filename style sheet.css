@@ -231,17 +231,50 @@ a {
 
 #carousel-nav button {
     border-radius: 40vh;
-    border-color: #1a1a1a44;
+    border: 0.5vh solid #1a1a1a44;
     margin: 0vh 1vh;
     width: 25vw;
     height: 5vh;
     cursor: pointer;
+    justify-content: center;
+    font-family: 'Nintendo Switch';
+}
+
+#carousel-nav button:hover {
+    border-color: #33a7a7;
+}
+
+
+#chevron-up-name {
+    color: #12121244;
+    font-size: 2vh;
+    font-weight: bold;
+    margin: 0.2vh 0.2vh;
+}
+
+#carousel-nav button:hover #chevron-up-name {
+    color: #33a7a7
+}
+
+#chevron-down-name {
+    color: #12121244;
+    font-size: 2vh;
+    font-weight: bold;
+    margin: 0.2vh 0.2vh;
+}
+
+#carousel-nav button:hover #chevron-down-name {
+    color: #33a7a7
 }
 
 #carousel-nav i {
     font-size: 3vh;
     padding: 0.5vh;
     color: #1a1a1a44;
+}
+
+#carousel-nav button:hover i {
+    color: #33a7a7
 }
 
 #carousel-nav {
@@ -320,6 +353,31 @@ a {
     margin-left: -5vh;
     margin-right: -5vh;
     text-align: center;
+}
+
+.projectIcon .game-trailer{
+    position:relative;
+}
+
+.projectIcon .game-trailer img {
+    width: 60vh;
+    height: 33vh;
+    margin-top: 3vh;
+    margin-left: 1vw;
+    margin-right: 1vw;
+    border-radius: 3vh;
+    border: 0.5vh solid #00000093;
+}
+
+.projectIcon .game-trailer h3 {
+    width: 60vh;
+    font-size: 3vh;
+    font-weight: bold;
+    position: absolute;
+    z-index: 2;
+    bottom: 0%;
+    color: white;
+    background-color: #0000006b;
 }
 
 .miniProjectIcon img{
@@ -441,7 +499,8 @@ footer > div{
     flex-direction: row;
     display: flex;
     width : 100%;
-    justify-content: space-between;
+    height: 8vh;
+    justify-content: center;
     align-items: center;
 }
 
@@ -449,6 +508,14 @@ footer > div{
     font-size: 3vh;
     padding: 0.5vh 1vh;
     margin: 0px 0px;
+}
+
+
+#hover-description {
+    color: #000000b6;
+    font-size: 1vw;
+    font-weight: bold;
+    padding: 3vh 0vh;
 }
 
 #system-icon{
@@ -462,6 +529,7 @@ footer > div{
 #system-icon i{
     padding: 0.5vh 1vh;
 }
+
 
 .control-panel{
     font-size: 4vh;
@@ -842,7 +910,8 @@ footer > div{
 }
 
 #dialogue-box img {
-    width: 15vw;
+    height:30vh;
+    max-width: 15vw;
     border-radius: 5vh;
 }
 
@@ -850,7 +919,7 @@ footer > div{
     width:35vw;
     padding: 1vh 4vh 1vh 4vh;
     margin-left: 3vh;
-    font-size: 3.5vh;
+    font-size: 3vh;
     font-family: 'Clock Font', Consolas;
     color: #000000a6;
 }

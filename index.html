@@ -38,7 +38,6 @@
     <!--The Top Bar of the UI -->
     <header>
         <div class="profilePicture">
-            <h1>Harry Stott</h1>
 
             <a href="https://linktr.ee/harrystott">
                 <div class="social-icon">
@@ -111,19 +110,35 @@
                 <h2><i class="fa-solid fa-gamepad"></i>Game</h2>
             </div>
             <div id="carousel-nav">
-                <button id="carousel-chevron-up">
+
+                <button id="carousel-chevron-up" style="display:flex;">
+                    <div id="chevron-up-name">Games</div>
                     <i class="fa-solid fa-chevron-up"></i>
                 </button>
                 <button id="carousel-chevron-down">
+                    <div id="chevron-down-name">Websites</div>
                     <i class="fa-solid fa-chevron-down"></i>
                 </button>
             </div>
 
             <div id="carousel-view">
-                <!--Project Carousel -->
-                <div class="projectCarousel scrollingElement">
+                <!--INTRODUCTION -->
+                <div class="projectCarousel scrollingElement" style=" margin-left: 0vw; margin-right: 100vw; justify-content:center;">
+                    <div class="projectIcon">
+                        <div class="game-trailer">
+                            <img src="assets/Showreel.gif"/>
+                            <h3>Game & Web Developer</h3>
+                        </div>
+                    </div>
+                </div>
+
+                <!--GAMES -->
+                <div class="projectCarousel scrollingElement" style="margin-left: 200vw;">
                     <div class="projectIcon">
                         <a href="arjybeasts.html" class="button">
+                            <div class="preview-description" style="display: none;">
+                                Unity Game Developer & Lead Designer (2022 - Present)
+                            </div>
                             <img src="assets/arjybeasts.gif" class="element-shadow clickable">
                         </a>
                         <h3>Arjybeasts</h3>
@@ -133,6 +148,9 @@
                         <a href="magno-sheep.html" class="button">
                             <img src="assets/magno.gif" class="element-shadow clickable">
                         </a>
+                        <div class="preview-description" style="display: none;">
+                            Unity Game Developer (2025)
+                        </div>
                         <h3>Magno Sheep</h3>
                     </div>
 
@@ -140,6 +158,9 @@
                         <a href="whatever-continuum.html" class="button">
                             <img src="assets/Whatever cover.gif" class="element-shadow clickable">
                         </a>
+                        <div class="preview-description" style="display: none;">
+                            Unity Game Developer (2023-2024)
+                        </div>
                         <h3>Whatever Continuum</h3>
                     </div>
 
@@ -147,6 +168,9 @@
                         <a href="spwrong.html" class="button">
                             <img src="assets/spwrong cover.gif" class="element-shadow clickable">
                         </a>
+                        <div class="preview-description" style="display: none;">
+                            Unity Game Developer (2023)
+                        </div>
                         <h3>Spwrong</h3>
                     </div>
 
@@ -154,6 +178,9 @@
                         <a href="banana-for-scale.html" class="button">
                             <img src="assets/bfscover.png" class="element-shadow clickable">
                         </a>
+                        <div class="preview-description" style="display: none;">
+                            Unity Game Developer (2022-2023)
+                        </div>
                         <h3> Banana For Scale</h3>
                     </div>
 
@@ -161,6 +188,9 @@
                         <a href="scatterbody.html" class="button">
                             <img src="assets/scatterbody cover.gif" class="element-shadow clickable">
                         </a>
+                        <div class="preview-description" style="display: none;">
+                            Lead Game Designer (2022)
+                        </div>
                         <h3> Scatterbody</h3>
                     </div>
 
@@ -168,16 +198,22 @@
                         <a href="marlas-balloon.html" class="button">
                             <img src="assets/marlas balloon cover.gif" class="element-shadow clickable">
                         </a>
+                        <div class="preview-description" style="display: none;">
+                            Unity Game Developer (2021-2022)
+                        </div>
                         <h3>Marla's Balloon</h3>
                     </div>
                 </div>
 
-                <!--Project Carousel -->
-                <div class="projectCarousel scrollingElement" style="margin-left: 200vw; justify-content:center;">
+                <!--WEBSITES -->
+                <div class="projectCarousel scrollingElement" style="margin-left: 0vw; justify-content:center;">
                     <div class="projectIcon">
                         <a href="this-website.html" class="button">
                             <img src="assets/portfolio icon.png" class="element-shadow clickable">
                         </a>
+                        <div class="preview-description" style="display: none;">
+                            Learn about my processes in creating this website! (2024 - Present)
+                        </div>
                         <h3>This Website</h3>
                     </div>
 
@@ -185,6 +221,9 @@
                         <a href="https://hstottdev.github.io/Javascript-Brain" class="button">
                             <img src="assets/js brain.png" class="element-shadow clickable">
                         </a>
+                        <div class="preview-description" style="display: none;">
+                            An art project made with JavaScript (2024)
+                        </div>
                         <h3>My Brain</h3>
                     </div>
                 </div>
@@ -200,6 +239,9 @@
                     <div class="element-shadow clickable">
                         <img src="assets/nav icons/headshot.gif">
                     </div>
+                    <div class="preview-description" style="display: none;">
+                        Learn a bit about me!
+                    </div>
                 </a>
                 <h3>About Me</h3>
             </div>
@@ -208,6 +250,9 @@
                 <a href="purplpup.html" class="button">
                     <div class="element-shadow clickable">
                         <img src="assets/nav icons/purplpup.png">
+                    </div>
+                    <div class="preview-description" style="display: none;">
+                        My solo game developer alias!
                     </div>
                 </a>
                 <h3>Purpl Pup</h3>
@@ -218,6 +263,9 @@
                     <div class="element-shadow clickable">
                         <img src="assets/nav icons/slimey.png">
                     </div>
+                    <div class="preview-description" style="display: none;">
+                        A small games studio I co-founded
+                    </div>
                 </a>
                 <h3>Slimey Hatch</h3>
             </div>
@@ -226,6 +274,9 @@
                 <a href="skills.html" class="button">
                     <div class="element-shadow clickable">
                         <img src="assets/nav icons/star.gif">
+                    </div>
+                    <div class="preview-description" style="display: none;">
+                        My skills and the projects and where I applied them!
                     </div>
                 </a>
                 <h3>Skills</h3>
@@ -237,6 +288,9 @@
                         <img src="assets/nav icons/mr plonky.gif">
                     </div>
                 </a>
+                <div class="preview-description" style="display: none;">
+                    Reach out to me via my "agent".
+                </div>
                 <h3>Contact</h3>
             </div>
 
@@ -247,37 +301,10 @@
             <hr class="thick-line">
             <div id="bottom-bar">
                 <div class="control-panel">
-                    <div id="system-icon" class="panel">
-                        <div class="button">
-                            <i class="fa-solid fa-computer"></i>
-                        </div>
-                        <!--<h3>Your System</h3>-->
+                    <div id="hover-description" class="panel">
+
                     </div>
-                </div>
-
-                <div class="control-panel">
-
-                    <div class="control-button clickable">
-                        <div class="button back-arrow">
-                            <i class="las la-arrow-left"></i>
-                        </div>
-                    </div>
-
-                    <div class="control-button clickable">
-                        <div class="button forward-arrow">
-                            <i class="las la-arrow-right"></i>
-                        </div>
-                    </div>
-
-                    <a href="index.html">
-                        <div class="control-button clickable">
-                            <div class="button">
-                                <i class="las la-home"></i>
-                            </div>
-                        </div>
-                    </a>
-
-                </div>
+                </div>              
             </div>
         </div>
     </footer>
@@ -285,5 +312,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
     <script src="projects-nav.js"></script>
     <script src="script.js"></script>
+    <script src="hover-description.js"></script>
 </body>
 </html>

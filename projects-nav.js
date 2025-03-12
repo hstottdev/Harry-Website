@@ -1,13 +1,14 @@
 let carouselIndex = 0;
-let carouselHeaders = ["Games", "Websites"];
-let carouselIcons = ["fa-solid fa-gamepad", "fa-solid fa-window-maximize"];
+let carouselHeaders = ["Harry Stott", "Game Projects", "Website Projects"];
+let carouselNames = ["Welcome", "Game Projects", "Website Projects"];
+let carouselIcons = ["","fa-solid fa-gamepad", "fa-solid fa-window-maximize"];
 
-$(document).ready(function () {
+$(document).ready(function () {   
+    carouselIndex = getCarouselIndex();
+
     carouselScrollHandler();
-    assignCarouselVariables();
     assignCarouselNavEvents();
     scrollToCarousel(carouselIndex);
-    //setInterval(updateCarouselScroll, 1000);
 })
 
 function updateCarouselScroll() {
@@ -22,7 +23,8 @@ window.addEventListener('resize', function (event) {
 
 //handles horizontal scrolling along projects
 function carouselScrollHandler() {
-    const el = document.getElementsByClassName("projectCarousel");
+    const carouselView = document.getElementById("carousel-view");
+    const carousels = carouselView.children;
 
     const windowWidth = $(window).width();
     // How far away from the screen edge to trigger our scroll
@@ -33,20 +35,34 @@ function carouselScrollHandler() {
         const mouseX = e.pageX;
         // If it gets within x distance from the left, scroll left
         if (mouseX < distanceFromEdge) {
-            el[0].scrollLeft -= 40;
+            carousels[carouselIndex].scrollLeft -= 40;
         }
 
         // If it gets within x distance from the right, scroll right
         if (mouseX > windowWidth - distanceFromEdge) {
-            el[0].scrollLeft += 40;
+            carousels[carouselIndex].scrollLeft += 40;
         }
     });
 }
 
-function assignCarouselVariables() {
-    const carouselView = document.getElementById("carousel-view");
-    const carousels = carouselView.children;
-    carouselIndex = 0;
+function getCarouselIndex() {
+    // is localStorage available?
+    if (typeof window.localStorage != 'undefined') {
+        // retrieve
+        let i = localStorage.getItem('carouselIndex');
+        //if null set to 0
+        if (!i) {
+            i = 0;
+        };
+        //if out of range, reset to 0
+        if (i < 0 || i > maximumCarouselIndex()) {
+            console.log(i);
+            i = 0;           
+        }
+        updateLocalStorage(i);
+        return parseInt(i);
+    }
+    return 0;
 }
 
 function assignCarouselNavEvents() {
@@ -59,18 +75,27 @@ function assignCarouselNavEvents() {
 
 function carouselDown() {
     carouselIndex += 1;
+    updateLocalStorage(carouselIndex);
     scrollToCarousel(carouselIndex);
 }
 
 function carouselUp() {
     carouselIndex -= 1;
+    updateLocalStorage(carouselIndex);
     scrollToCarousel(carouselIndex);
+}
+
+function updateLocalStorage(newIndex) {
+    // is localStorage available?
+    if (typeof window.localStorage != 'undefined') {
+        localStorage.setItem('carouselIndex', newIndex.toString());
+        console.log("updating carousel Index to " + newIndex);
+    }
 }
 
 function scrollToCarousel(index) {
     const carouselView = document.getElementById("carousel-view");
     const carousels = carouselView.children;
-
     
     //carouselView.scroll(0, carousels[index].getBoundingClientRect().top);
     setTimeout(() => {
@@ -78,11 +103,10 @@ function scrollToCarousel(index) {
     }, 100);
 
     carousels[index].scrollLeft = 0;
-    console.log("index: " + index);
-    console.log(carousels[index].getBoundingClientRect().top);
 
     setCarouselHeader();
     chevronToggleCheck();
+    setChevronNames();
 }
 
 function setCarouselHeader() {
@@ -106,20 +130,34 @@ function chevronToggleCheck() {
         carouselUpButton.style.display = "none";
     }
     else {
-        carouselUpButton.style.display = "block";
+        carouselUpButton.style.display = "flex";
     }
 
-    //the down button is harder, we need to figure out the maximum index first
-    const carouselView = document.getElementById("carousel-view");
-    const carousels = carouselView.children;
-    const maximumCarouselIndex = carousels.length - 1;
-
     //If index is maximum, we can't go any further down.
-    if (carouselIndex == maximumCarouselIndex) {
+    if (carouselIndex == maximumCarouselIndex()) {
         carouselDownButton.style.display = "none";
     }
     else {
-        carouselDownButton.style.display = "block";
+        carouselDownButton.style.display = "flex";
+    }
+}
+
+function maximumCarouselIndex() {
+    const carouselView = document.getElementById("carousel-view");
+    const carousels = carouselView.children;
+
+    return carousels.length - 1;
+}
+
+function setChevronNames() {
+    const chevronUpName = document.getElementById("chevron-up-name");
+    const chevronDownName = document.getElementById("chevron-down-name");
+
+    if (carouselIndex > 0) {
+        chevronUpName.textContent = carouselNames[carouselIndex - 1];
     }
 
+    if (carouselIndex < maximumCarouselIndex()) {
+        chevronDownName.textContent = carouselNames[carouselIndex + 1];
+    }
 }
