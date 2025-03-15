@@ -1,3 +1,5 @@
+let statusScrollSpeed = "7s";
+
 $(document).ready(function () {
     function update() {
         updateTime();
@@ -93,7 +95,8 @@ function getDiscordData(){
 		fetch(url)
 		.then((res) => res.json())
 		.then((res) => {
-			setDiscordStatus(res.data);
+            setDiscordStatus(res.data);
+            setScrollingStatus();
 		});
 }
 
@@ -106,6 +109,9 @@ class discord_status {
                 let activity = data.activities[0].name;
                 if(activity == "Code"){
                     this.task = "Writing Code...";
+                }
+                else if (activity == "Aseprite") {
+                    this.task = `Drawing in ${activity}...`;
                 }
                 else{
                     this.task =  `Playing ${activity}...`;
@@ -141,6 +147,19 @@ function setDiscordStatus(data){
         document.getElementById("statusIconOffline").style.display = "block";
     }
 }
+
+function setScrollingStatus() {
+    const statusTask = document.getElementById("statusTask");
+    if (statusTask.textContent.length > 7) {
+        statusTask.style.animationDuration = statusScrollSpeed;
+        statusTask.style.webkitAnimationDuration = statusScrollSpeed;
+    }
+    else {
+        statusTask.style.animationDuration = "0s";
+        statusTask.style.webkitAnimationDuration = "0s";
+    }
+}
+
 //discord user id
 // https://api.lanyard.rest/v1/users/
 

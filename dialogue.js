@@ -148,10 +148,10 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactDialogueBox = new DialogueTextPrinter('contact-dialogue', contactDialogue);
 
     let aboutDialogue = [
-        "Hi There, I'm Harry - A Unity Game Developer, and Web Developer currently based in South-East London.",
+        "Hi There, I'm Harry - A Game Developer & Web Engineer currently based in South-East London.",
         "I'm passionate about my work, hopefully you can tell by exploring my Portfolio.",
         "I love being creative and making projects that challenge my abilities...",
-        "I have a First-Class Honours degree in Game Development, and I'm skilled in Unity, Game Design, and Web Development.",
+        "I have a First-Class Honours degree in Game Development, and I'm skilled in Unity, Game Design, and Web Technologies like React.js",
         "I find enjoyment in solo projects, but I get much further when collaborating with others.",
         "So, sit back, relax, and explore my work on this site.",
     ];

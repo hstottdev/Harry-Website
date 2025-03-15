@@ -143,24 +143,39 @@ a {
     margin: 0px 1vw 0px 0px;
     padding-top: 1vh;
     font-weight: bolder;
+    height: 100%;
     color: #00000080;
 }
 
+#job-title {    
+    height: 100%;
+    display:flex;
+    align-items:center;
+    justify-self:center;
+}
+
+#job-title h1 {
+    font-size: 1.2vw;
+    background-color: #c3c3c380;
+    border-radius: 0.4vw;
+    padding: 0.25vw;
+    color: #9b9a9a;
+}
 
 #status-panel{
     flex-direction: column;
     height: 6vh;
 }
 
-    #status-panel i {
-        font-size: 1.5vw;
-    }
+#status-panel i {
+    font-size: 1.5vw;
+}
 
-    i {
-        font-size: 4vh;
-        padding: 0.5vh 0.5vw;
-        margin: 0vh;
-    }
+i {
+    font-size: 4vh;
+    padding: 0.5vh 0.5vw;
+    margin: 0vh;
+}
 
 #status-panel *{
     margin: 0px 1vh;
@@ -204,9 +219,52 @@ a {
     align-items: center;
 }
 
+@keyframes slide {
+    from {
+        left: 100%;
+        transform: translate(0, 0);
+    }
+
+    to {
+        left: -100%;
+        transform: translate(-100%, 0);
+    }
+}
+
+@-webkit-keyframes slide {
+    from {
+        left: 100%;
+        transform: translate(0, 0);
+    }
+
+    to {
+        left: -100%;
+        transform: translate(-100%, 0);
+    }
+}
+
+#status-task-container {
+    overflow: hidden;
+    position: relative;
+    width: 7vw;
+    height: 2vw;
+    line-height: 2vw;
+}
+
 #statusTask {
     color: #0000008b;
-
+    position: absolute;
+    top: 0;
+    white-space: nowrap;
+    height: 2vw;
+    animation-name: slide;
+    animation-duration: 0s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+    -webkit-animation-name: slide;
+    -webkit-animation-duration: 0s;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-iteration-count: infinite;
 }
 
 #home-page{
