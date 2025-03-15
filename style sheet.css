@@ -428,15 +428,15 @@ i {
 }
 
 .projectIcon .game-trailer h3 {
-width: 60vh;
-font-size: 2vh;
-font-weight: bold;
-position: absolute;
-z-index: 2;
-top: 1.4vh;
-color: white;
-border-radius: 3vh;
-background-color: #626262ff;
+    width: 60vh;
+    font-size: 2vh;
+    font-weight: bold;
+    position: absolute;
+    z-index: 2;
+    top: 1.4vh;
+    color: white;
+    border-radius: 3vh;
+    background-color: #626262ff;
 }
 
 .projectCarousel .navButtons {
