@@ -1094,10 +1094,6 @@ footer > div{
 
 @media (pointer: fine) {
 
-    .projectCarousel {
-        overflow-x: hidden;
-    }
-
     #profile-section {
         height: 70vh;
     }

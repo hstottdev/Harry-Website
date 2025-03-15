@@ -95,8 +95,7 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
               "WhenOpened": "2025-02-24T12:07:28.94Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Document",
@@ -106,7 +105,7 @@
               "RelativeDocumentMoniker": "style sheet.css",
               "ToolTip": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\style sheet.css",
               "RelativeToolTip": "style sheet.css",
-              "ViewState": "AgIAAHsAAAAAAAAAAAAAAJEAAAARAAAAAAAAAA==",
+              "ViewState": "AgIAADkEAAAAAAAAAAAMwEYEAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-02-11T12:27:22.781Z",
               "IsPinned": true,
@@ -124,7 +123,7 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAFYAAAAzAAAAAAAAAA==",
+              "ViewState": "AgIAAEgAAAAAAAAAAAAAAFYAAAAaAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-02-11T11:59:01.179Z",
               "EditorCaption": ""
@@ -199,8 +198,7 @@
               "RelativeToolTip": "scatterbody.html",
               "ViewState": "AgIAAMMAAAAAAAAAAAAuwMQAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-03-12T18:15:18.458Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T18:15:18.458Z"
             },
             {
               "$type": "Document",
@@ -212,8 +210,7 @@
               "RelativeToolTip": "about.html",
               "ViewState": "AgIAAFMAAAAAAAAAAAAAAG0AAAAQAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-11T12:11:08.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-11T12:11:08.312Z"
             },
             {
               "$type": "Document",
