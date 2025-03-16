@@ -97,7 +97,7 @@ a {
     width: 3vw;
     height: 3vw;
     overflow: visible;
-    margin-left: 1.5vw;
+    margin-left: 1.2vw;
 }
 
 .social-icon {
@@ -157,7 +157,7 @@ a {
 #job-title h1 {
     font-size: 1.2vw;
     background-color: #c3c3c380;
-    border-radius: 0.4vw;
+    border-radius: 0.8vw;
     padding: 0.25vw;
     color: #9b9a9a;
 }
