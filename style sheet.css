@@ -147,28 +147,31 @@ a {
     color: #00000080;
 }
 
-#job-title {    
-    height: 100%;
+#job-title {   
+    height: 11vh;
     display:flex;
     align-items:center;
-    justify-self:center;
+    justify-content:center;
+    position: fixed;
+    width:100%;
 }
 
 #job-title h1 {
     font-size: 1.2vw;
     background-color: #c3c3c380;
     border-radius: 0.8vw;
-    padding: 0.25vw;
+    padding: 0.25vw 0.35vw;
     color: #9b9a9a;
 }
 
 #status-panel{
+    display:flex;
     flex-direction: column;
     height: 6vh;
 }
 
 #status-panel i {
-    font-size: 1.5vw;
+    font-size: 1.3vw;
 }
 
 i {
@@ -178,7 +181,7 @@ i {
 }
 
 #status-panel *{
-    margin: 0px 1vh;
+    margin: 0px 0.2vw;
 }
 
 #status-panel .fa-clock {
@@ -187,7 +190,7 @@ i {
 
 .clock {
     font-family: Clock Font;
-    font-size: 2vw;
+    font-size: 1.6vw;
     font-weight: bolder;
     display: inline;
     align-self: center;
@@ -195,7 +198,7 @@ i {
 }
 
 .location {
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     font-weight: bolder;
     color: #0000008b;
 }
@@ -213,7 +216,7 @@ i {
 }
 
 .status {
-    font-size: 1.5vw;
+    font-size: 1.4vw;
     font-weight: bolder;
     display: flex;
     align-items: center;
