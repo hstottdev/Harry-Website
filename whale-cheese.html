@@ -2,7 +2,7 @@
 
 <html>
 <head>
-    <title>Spwrong - Harry Stott</title>
+    <title>WHALe CHEESe - Harry Stott</title>
     <meta charset="UTF-8">
     <meta name="description" content="Arjybeasts is a Turn-based RPG where colour means everything! Draw your own PNG, battle and delete other images, open chests and make space so that HE can install things.">
     <link rel="stylesheet" href="style sheet.css">
@@ -13,8 +13,7 @@
     <script src="script.js"></script>
     <style>
         html {
-            background-image: url("assets/spwrong/background.png");
-            background-size: 100vw 100vh;
+            background-image: url("assets/whale/background.gif");
         }
     </style>
 
@@ -35,7 +34,7 @@
 
     <header>
         <div id="game-header">
-            <img src="assets/spwrong/spwrong header.gif" alt="Spwrong">
+            <img src="assets/whale/banner.gif" alt="Spwrong">
             <hr class="thick-line">
         </div>
     </header>
@@ -74,15 +73,12 @@
     <div id="profile-section">
 
         <div class="game-buttons">
-            <a href="https://github.com/hstottdev/spwrong-code/tree/main" class="button clickable">
-                <img src="assets/github code button.png">
-            </a>
 
             <a href="purplpup.html" class="button clickable">
                 <img src="assets/purpl button.png">
             </a>
 
-            <a href="https://purplpup.itch.io/spwrong" class="button clickable">
+            <a href="https://purplpup.itch.io/whale-cheese" class="button clickable">
                 <img src="assets/itchio.png" />
             </a>
         </div>
@@ -94,15 +90,14 @@
         <hr>
 
         <div class="game-embed">
-            <iframe frameborder="0" src="https://itch.io/embed-upload/8531217?color=d767d6" allowfullscreen="" width="965" height="650"><a href="https://purplpup.itch.io/spwrong">Play SPWRONG on itch.io</a></iframe>
+            <iframe frameborder="0" src="https://itch.io/embed-upload/10728026?color=4d227f" allowfullscreen="" width="960" height="640"><a href="https://purplpup.itch.io/whale-cheese">Play WHALe CHEESe on itch.io</a></iframe>
         </div>
         <hr>
 
         <div class="screenshot-carousel">
-            <img src="assets/spwrong/screenshot1.png">
-            <img src="assets/spwrong/screenshot2.png">
-            <img src="assets/spwrong/screenshot3.png">
-            <img src="assets/spwrong/screenshot4.png">
+            <img src="assets/whale/screenshot1.png">
+            <img src="assets/whale/screenshot3.png">
+            <img src="assets/whale/screenshot2.png">
         </div>
         <hr>
 
@@ -115,92 +110,110 @@
         <div class="description-box">
             <p>
                 <b>
-                    Spwrong is a 2D Platformer in which the player must fix visual errors in their sprite at each level. The player can check their hitbox,
-                    and swap sprites with other objects to find the correct one. The player must also avoid physical errors in the form of moving spike blocks.
-                    Swapping with an incorrect sprite or touching an error causes the player to lose hearts.
+                    'WHALe CHEESe' is a 3D Puzzle game developed with Unity. The player controls Ditzy, a hungry whale who is after some cheese.
+                     Ditzy must be guided to the Red Ocean Cheese in a limited number of moves. However, Ditzy's controls are ever changing, and the
+                    player must figure out the best combination of controls to reach the cheese.
                     <br><br>
-                    This was a solo project for a 4-day summer game jam, in which this game won. I felt as though this was my first project in a while
-                    that I was really proud of, and I still learned a lesson or two in such a short time.
+                    This began as a solo project for an ACM summer game jam, the theme was 'Out of Control', which I myself selected as a result of winning
+                    the previous game jam with Spwrong.
                 </b>
             </p>
         </div>
 
         <hr>
 
-        <!--RESPONSIBILITIES-->
+        <!--Key Contributions-->
         <h1>
-            Responsibilities
+            Key Developments
         </h1>
         <hr>
 
         <div class="grid-descriptions">
             <div>
-                <img src="assets/spwrong/hitbox-revealing.png">
-                <h3>Hitbox Revealing</h3>
+                <img src="assets/whale/grid movement.png">
+                <h3>Grid-Based Movement</h3>
                 <div>
                     <p>
                         <b>
-                            One initial realisation that nearly stopped me with this idea was that the player
-                            being visually incorrect would likely result in annoyance with your hitbox not
-                            matching your sprite. So, with this game, I added a system whereby the player
-                            can check their hitbox by pressing 'Shift'. This was a modular system which was
-                            referring to the size of the actual collider in Unity, and then setting a
-                            sliced sprite rectangle to be the same size.
+                            I quickly realized that for a puzzle game such as this, I would need a snappy grid-based movement system.
+                            The smooth end result comes from separting the front and back end of the grid system. When moving around,
+                            there is a target grid position in the back-end, then Ditzy is consistently moving towards that target position.
+                            There is then raycast detection for checking for walls to prevent any kind of clipping through barriers.
                         </b>
                     </p>
                 </div>
             </div>
 
             <div>
-                <img src="assets/spwrong/visual-style.png">
-                <h3>Striking Visual Style</h3>
+                <img src="assets/whale/control queue.png">
+                <h3>Dynamic Control System</h3>
                 <div>
                     <p>
                         <b>
-                            Initially, the game started by looking very normal, this change can even be seen
-                            in the fake-out main menu of 'Normal Farming Game'. But, after playing around with the
-                            'Convolution Matrix' on Aseprite, I managed to warp all the art to adopt a greenish-pink style which
-                            I felt was retro and indicative of the 'buggy' nature of the game. The game was almost entirely shades
-                            of green and pink, except for the use of red in order to stand out and represent errors to the player!
+                            The entire idea of this game is that the area containing controls can be anything. There is a dynamic system whereby
+                            there are 6 simple actions that can be queued to Ditzy; UP, DOWN, LEFT, RIGHT, UNDO, and RESET. This works in a great modular way
+                            where Ditzy's movement is not entangled with the controls. The controls can be anything, and they could queue actions in basically
+                            ANY way within the limitations of the control box.
                         </b>
                     </p>
                 </div>
             </div>
 
             <div>
-                <img src="assets/spwrong/simple-ui.png">
-                <h3>Simple UI</h3>
+                <img src="assets/whale/ui.png">
+                <h3>Clear and Direct UI</h3>
                 <div>
                     <p>
                         <b>
-                            I had to create a simple UI, that would show to the player in a simple but stylistic way, that their sprite was incorrect.
-                            Some players may not be familiar with the term 'sprite', so I also referred to this as an 'image' error. Due to this being
-                            a project on my own, I had the challenge and worry of players not understanding such a concept. I had no access to playtesters,
-                            and had to hope that people would understand the concept through only the clarity of the UI, and the beginning instruction
-                            of 'Fix the Sprite of your Character!'
+                            For this project the UI was an interesting task, the focus of the game was split down the middle. There's Ditzy and the cheese, and then
+                            equal focus on the controls, which are sometimes in constant flux. Then I had to find room for the history of Ditzy's moves, and being
+                            able to quit and return to the menu. The end result is a clear and direct UI that makes things easy for players.
                         </b>
                     </p>
                 </div>
             </div>
 
             <div>
-                <img src="assets/spwrong/level-design.png">
+                <img src="assets/whale/level design.png">
                 <h3>Level Design</h3>
                 <div>
                     <p>
                         <b>
-                            This game is significantly lacking in levels & content due to the minimal time that I had. However,
-                            I spent a good amount of time getting the levels I had to be just right. I ensured the player would
-                            be taught that they aren't always a person, the player visually looks like a cow to begin with to
-                            get the player familiar with this. Levels also show various objects to the player along the way,
-                            some are red herrings and are used to fool the player. They must check their hitbox and compare
-                            it with other objects to find the correct one.
+                            For this project I had to build levels around the idea of the constantly changing controls, as well as the limitation of only 10 actions.
+                            Some levels I designed to require undoing, which made for interesting puzzles. Currently there are 9 different levels to check out and
+                            beat.
                         </b>
                     </p>
                 </div>
             </div>
         </div>
         <hr>
+        <!--Code-->
+        <h1>
+            <i class="fa-solid fa-code"></i> Code
+        </h1>
+        <hr>
+        <div id="code-section">
+            <div id="script-buttons">
+                <button class="button clickable">PlayerController.cs</button>
+                <button class="button clickable">Action.cs</button>
+                <button class="button clickable">ActionManager.cs</button>
+                <button class="button clickable">ActionSlotUI.cs</button>
+                <button class="button clickable">Minigame.cs</button>
+                <button class="button clickable">MinigameManager.cs</button>
+                <a href="https://github.com/hstottdev/whale-cheese-code" target="_blank" class="repo-button">
+                    <i class="fa-brands fa-github"></i> Repo
+                </a>
+            </div>
+
+            <div class="code-viewer">
+                <div id="script-name">DraggableWindow.cs</div>
+                <pre>
+                <code id="code" class="language-csharp"></code>
+        </pre>
+            </div>
+            <hr>
+        </div>
 
         <!--KEY SKILLS-->
         <h1>
@@ -225,6 +238,9 @@
                     C#
                 </li>
                 <li>
+                    Game Programming
+                </li>
+                <li>
                     Version Control (Plastic SCM)
                 </li>
                 <li>
@@ -234,7 +250,10 @@
                     Trello
                 </li>
                 <li>
-                    2D Art
+                    3D Modelling
+                </li>
+                <li>
+                    Texturing
                 </li>
             </ul>
         </div>
@@ -246,40 +265,23 @@
             <hr class="thick-line">
             <div id="bottom-bar">
                 <div class="control-panel">
-                    <div id="system-icon" class="panel">
-                        <div class="button">
-                            <i class="fa-solid fa-computer"></i>
-                        </div>
-                        <!--<h3>Your System</h3>-->
+                    <div id="hover-description" class="panel">
+                        Unity Game Developer (2023)
                     </div>
-                </div>
-
-                <div class="control-panel">
-
-                    <div class="control-button clickable">
-                        <div class="button back-arrow">
-                            <i class="las la-arrow-left"></i>
-                        </div>
-                    </div>
-
-                    <div class="control-button clickable">
-                        <div class="button forward-arrow">
-                            <i class="las la-arrow-right"></i>
-                        </div>
-                    </div>
-
-                    <a href="index.html">
-                        <div class="control-button clickable">
-                            <div class="button">
-                                <i class="las la-home"></i>
-                            </div>
-                        </div>
-                    </a>
-
                 </div>
             </div>
         </div>
     </footer>
+
+    <script src="code-viewer.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/styles/default.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/highlight.min.js"></script>
+    <!-- and it's easy to individually load additional languages -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/11.9.0/languages/csharp.js"></script>
+
+    <script>
+        file = "PlayerController.cs";
+        repoPath = "https://raw.githubusercontent.com/hstottdev/whale-cheese-code/refs/heads/main/";
+    </script>
 </body>
 </html>
-
