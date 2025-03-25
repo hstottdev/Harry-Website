@@ -107,7 +107,7 @@ class discord_status {
        
             if(data.activities.length > 0){
                 let activity = data.activities[0].name;
-                if(activity == "Code"){
+                if (activity == "Code" || activity == "Visual Studio"){
                     this.task = "Writing Code...";
                 }
                 else if (activity == "Aseprite") {
