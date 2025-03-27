@@ -310,7 +310,7 @@ i {
 #chevron-up-name {
     color: #12121244;
     font-size: 2vh;
-    font-weight: bolder;
+    font-weight: bold;
     margin: 0.2vh 0.2vh;
 }
 
@@ -321,7 +321,7 @@ i {
 #chevron-down-name {
     color: #12121244;
     font-size: 2vh;
-    font-weight: bolder;
+    font-weight: bold;
     margin: 0.2vh 0.2vh;
 }
 
@@ -389,7 +389,7 @@ i {
     display: flex;
     flex-direction: row;
     width: 100%;
-    overflow-x: auto;
+    overflow-x: scroll;
     overflow-y: visible;
 }
 
@@ -468,7 +468,7 @@ i {
     display: flex;
     flex-direction: row;
     justify-content: space-around;
-    width:45vh;
+    width:83vh;
 }
 
 .navButtons h3 {

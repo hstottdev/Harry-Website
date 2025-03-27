@@ -1,7 +1,7 @@
 let carouselIndex = 0;
-let carouselHeaders = ["Game Projects", "Web Projects","More"];
-let carouselNames = ["Games","Websites","More"]
-let carouselIcons = ["fa-solid fa-gamepad", "fa-solid fa-window-maximize", "fa-solid fa-plus"];
+let carouselHeaders = ["Game Projects", "Web Projects"];
+let carouselNames = ["Game Projects", "Web Projects"];
+let carouselIcons = ["fa-solid fa-gamepad", "fa-solid fa-window-maximize"];
 
 $(document).ready(function () {   
     carouselIndex = getCarouselIndex();
