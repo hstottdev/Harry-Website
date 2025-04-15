@@ -158,11 +158,11 @@ a {
 }
 
 #job-title h1 {
-    font-size: 1.2vw;
-    background-color: #c3c3c380;
+    font-size: 1.4vw;
     border-radius: 0.8vw;
-    padding: 0.25vw 0.35vw;
-    color: #9b9a9a;
+    padding: 0.35vw 0.35vw;
+    color: #9f9f9f;
+    text-decoration: underline;
 }
 
 #status-panel{
