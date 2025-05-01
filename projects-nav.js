@@ -1,7 +1,7 @@
 let carouselIndex = 0;
-let carouselHeaders = ["Game Projects", "Web Projects","More"];
-let carouselNames = ["Games","Websites","More"]
-let carouselIcons = ["las la-gamepad", "las la-laptop-code", "fa-solid fa-plus"];
+let carouselHeaders = ["Game Projects", "Web Projects", "Working On...","More"];
+let carouselNames = ["Game Projects", "Web Projects", "Working On...", "More"];
+let carouselIcons = ["las la-gamepad", "las la-laptop-code", "las la-gamepad", "las la-comment-dots"];
 
 $(document).ready(function () {   
     carouselIndex = getCarouselIndex();
@@ -9,6 +9,7 @@ $(document).ready(function () {
     carouselScrollHandler();
     assignCarouselNavEvents();
     scrollToCarousel(carouselIndex);
+    document.getElementById("carousel-header").scrollTo();
 })
 
 function updateCarouselScroll() {
@@ -74,12 +75,18 @@ function assignCarouselNavEvents() {
 }
 
 function carouselDown() {
+    //return if limit reached
+    if (carouselIndex >= maximumCarouselIndex()) return;
+
     carouselIndex += 1;
     updateLocalStorage(carouselIndex);
     scrollToCarousel(carouselIndex);
 }
 
 function carouselUp() {
+    //return if limit reached
+    if (carouselIndex <= 0) return;
+
     carouselIndex -= 1;
     updateLocalStorage(carouselIndex);
     scrollToCarousel(carouselIndex);
@@ -126,19 +133,24 @@ function chevronToggleCheck() {
     carouselDownButton = document.getElementById("carousel-chevron-down");
     carouselUpButton = document.getElementById("carousel-chevron-up");
     //If index is 0, we can't go any further up.
-    if (carouselIndex == 0) {
-        carouselUpButton.style.display = "none";
+    if (carouselIndex > 0) {
+        carouselUpButton.style.display = 'flex';
+        carouselDownButton.style.width = '16vw';
     }
     else {
-        carouselUpButton.style.display = "flex";
+        carouselUpButton.style.display = 'none';
+        carouselDownButton.style.width = '32vw';
+
     }
 
     //If index is maximum, we can't go any further down.
-    if (carouselIndex == maximumCarouselIndex()) {
-        carouselDownButton.style.display = "none";
+    if (carouselIndex < maximumCarouselIndex()) {
+        carouselDownButton.style.display = 'flex';
+        carouselUpButton.style.width = '16vw';
     }
     else {
-        carouselDownButton.style.display = "flex";
+        carouselDownButton.style.display = 'none';
+        carouselUpButton.style.width = '32vw';
     }
 }
 
@@ -156,8 +168,14 @@ function setChevronNames() {
     if (carouselIndex > 0) {
         chevronUpName.textContent = carouselNames[carouselIndex - 1];
     }
+    else {
+        chevronUpName.textContent = "";
+    }
 
     if (carouselIndex < maximumCarouselIndex()) {
         chevronDownName.textContent = carouselNames[carouselIndex + 1];
+    }
+    else {
+        chevronDownName.textContent = "";
     }
 }

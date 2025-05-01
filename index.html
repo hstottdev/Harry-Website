@@ -7,7 +7,7 @@
     <meta name="title" property="og:title" content="Harry Stott - Portfolio Website">
     <meta content="https://www.harrystott.dev" property="og:url" />
     <meta name="og:site_name" content="Portfolio Website">
-    <meta name="description" property="og:description" content="Hello. I'm Harry – a passionate Game Developer, and Web Engineer">
+    <meta name="description" property="og:description" content="Hello. I'm Harry – a Game Developer with both technical and design capabilities">
     <meta name="image" property="og:image" content="https://www.harrystott.dev/assets/meta cover.png">
     <meta name="twitter:card" property="og:image" content="https://www.harrystott.dev/assets/meta cover.png">
     <meta content="#bb8de3" data-react-helmet="true" name="theme-color"/>
@@ -18,6 +18,10 @@
     <style>
         header {
             height: 10vh;
+        }
+
+        html{
+            background-size: 100vw 100vh;
         }
     </style>
 </head>
@@ -83,9 +87,9 @@
             </a>
         </div>
         <div id="job-title">
-            <!--<h1> Game Developer & Web Engineer</h1>-->
+            <!--<h1> Game Developer</h1>-->
         </div>
-        
+
         <div class="panel" id="status-panel">
             <div class="button">
                 <i class="fa-solid fa-clock"></i>
@@ -108,194 +112,200 @@
     </header>
 
     <div id="home-page">
-        <!--Project Area-->
-        <div id="project-view">
-            <div id="carousel-header">
-                <h2><i class="fa-solid fa-gamepad"></i>Hello</h2>
-            </div>
-            <div id="carousel-nav">
+        <div id="home-page-view">
+            <div id="page-view">
+                <div id="about-section">
+                    <div class="section-header" id="about-header">
+                        <h2>About Me</h2>
+                    </div>
 
-                <button id="carousel-chevron-up" style="display:flex;">
-                    <div id="chevron-up-name">Games</div>
-                    <i class="fa-solid fa-chevron-up"></i>
-                </button>
-                <button id="carousel-chevron-down">
-                    <div id="chevron-down-name">Websites</div>
-                    <i class="fa-solid fa-chevron-down"></i>
-                </button>
+                    <div id="dialogue-box">
+                        <img src="assets/about-harry.jpg" />
+                        <div>
+                            <h2 id="contact-man-name">
+                                Hello!
+                            </h2>
+                            <div class="dialogue-text" id="about-dialogue"></div>
+                        </div>
+                    </div>
+                </div>
             </div>
 
-            <div id="carousel-view">
-                <!--GAMES -->
-                <div class="projectCarousel scrollingElement" style="margin-left: 200vw;">
-                    <div class="projectIcon">
-                        <a href="arjybeasts.html" class="button">
+            <!--Project Area-->
+            <div id="page-view">
+                <div class="section-header" id="carousel-header">
+                    <h2><i class="fa-solid fa-gamepad"></i>Hello</h2>
+                </div>
+                <div id="carousel-nav">
+
+                    <button id="carousel-chevron-up" style="display:flex;">
+                        <div id="chevron-up-name">Games</div>
+                        <i class="fa-solid fa-chevron-up"></i>
+                    </button>
+                    <button id="carousel-chevron-down">
+                        <div id="chevron-down-name">Websites</div>
+                        <i class="fa-solid fa-chevron-down"></i>
+                    </button>
+                </div>
+
+                <div id="carousel-view">
+                    <!--GAMES -->
+                    <div class="projectCarousel scrollingElement" style="margin-left: 200vw;">
+                        <div class="projectIcon">
+                            <a href="magno-sheep.html" class="button">
+                                <img src="assets/magno.gif" class="element-shadow clickable">
+                            </a>
                             <div class="preview-description" style="display: none;">
-                                Unity Game Developer & Lead Designer (2022 - Present)
+                                Unity Game Developer (2025)
                             </div>
-                            <img src="assets/arjybeasts.gif" class="element-shadow clickable">
-                        </a>
-                        <h3>Arjybeasts</h3>
+                            <h3>Magno Sheep</h3>
+                        </div>
+                        <div class="projectIcon">
+                            <a href="whale-cheese.html" class="button">
+                                <img src="assets/whale cover.gif" class="element-shadow clickable">
+                            </a>
+                            <div class="preview-description" style="display: none;">
+                                Unity Game Developer (2024)
+                            </div>
+                            <h3>WHALe CHEESe</h3>
+                        </div>
+                        <div class="projectIcon">
+                            <a href="whatever-continuum.html" class="button">
+                                <img src="assets/Whatever cover.gif" class="element-shadow clickable">
+                            </a>
+                            <div class="preview-description" style="display: none;">
+                                Unity Game Developer (2023-2024)
+                            </div>
+                            <h3>Whatever Continuum</h3>
+                        </div>
+
+                        <div class="projectIcon">
+                            <a href="banana-for-scale.html" class="button">
+                                <img src="assets/bfscover.png" class="element-shadow clickable">
+                            </a>
+                            <div class="preview-description" style="display: none;">
+                                Unity Game Developer (2022-2023)
+                            </div>
+                            <h3> Banana For Scale</h3>
+                        </div>
+
+                        <div class="projectIcon">
+                            <a href="spwrong.html" class="button">
+                                <img src="assets/spwrong cover.gif" class="element-shadow clickable">
+                            </a>
+                            <div class="preview-description" style="display: none;">
+                                Unity Game Developer (2023)
+                            </div>
+                            <h3>Spwrong</h3>
+                        </div>
+
+                        <div class="projectIcon">
+                            <a href="scatterbody.html" class="button">
+                                <img src="assets/scatterbody cover.gif" class="element-shadow clickable">
+                            </a>
+                            <div class="preview-description" style="display: none;">
+                                Lead Game Designer (2022)
+                            </div>
+                            <h3> Scatterbody</h3>
+                        </div>
+
+                        <div class="projectIcon">
+                            <a href="marlas-balloon.html" class="button">
+                                <img src="assets/marlas balloon cover.gif" class="element-shadow clickable">
+                            </a>
+                            <div class="preview-description" style="display: none;">
+                                Unity Game Developer (2021-2022)
+                            </div>
+                            <h3>Marla's Balloon</h3>
+                        </div>
                     </div>
 
-                    <div class="projectIcon">
-                        <a href="magno-sheep.html" class="button">
-                            <img src="assets/magno.gif" class="element-shadow clickable">
-                        </a>
-                        <div class="preview-description" style="display: none;">
-                            Unity Game Developer (2025)
+                    <!--WEBSITES -->
+                    <div class="projectCarousel scrollingElement" style="margin-left: 0vw; justify-content:center;">
+                        <div class="projectIcon">
+                            <a href="this-website.html" class="button">
+                                <img src="assets/portfolio icon.png" class="element-shadow clickable">
+                            </a>
+                            <div class="preview-description" style="display: none;">
+                                Learn about my processes in creating this website! (2024 - Present)
+                            </div>
+                            <h3>This Website</h3>
                         </div>
-                        <h3>Magno Sheep</h3>
+
+                        <div class="projectIcon">
+                            <a href="https://hstottdev.github.io/Javascript-Brain" class="button">
+                                <img src="assets/js brain.png" class="element-shadow clickable">
+                            </a>
+                            <div class="preview-description" style="display: none;">
+                                An art project made with JavaScript (2024)
+                            </div>
+                            <h3>My Brain</h3>
+                        </div>
                     </div>
 
-                    <div class="projectIcon">
-                        <a href="whale-cheese.html" class="button">
-                            <img src="assets/whale cover.gif" class="element-shadow clickable">
-                        </a>
-                        <div class="preview-description" style="display: none;">
-                            Unity Game Developer (2024)
+
+                    <!--Working On-->
+                    <div class="projectCarousel scrollingElement" style="margin-left: 200vw; justify-content: center;">
+                        <div class="projectIcon">
+                            <a href="arjybeasts.html" class="button">
+                                <div class="preview-description" style="display: none;">
+                                    Unity Game Developer & Lead Designer (2022 - Present)
+                                </div>
+                                <img src="assets/arjybeasts.gif" class="element-shadow clickable">
+                            </a>
+                            <h3>Arjybeasts</h3>
                         </div>
-                        <h3>WHALe CHEESe</h3>
                     </div>
 
-                    <div class="projectIcon">
-                        <a href="whatever-continuum.html" class="button">
-                            <img src="assets/Whatever cover.gif" class="element-shadow clickable">
-                        </a>
-                        <div class="preview-description" style="display: none;">
-                            Unity Game Developer (2023-2024)
+                    <!--MORE-->
+                    <div class="projectCarousel scrollingElement" style="margin-left: 100vw; justify-content:center;">
+                        <div class="projectIcon">
+                            <a href="purplpup.html" class="button">
+                                <img src="assets/purplpup.png" class="element-shadow clickable">
+                            </a>
+                            <div class="preview-description" style="display: none;">
+                                My solo game developer alias!
+                            </div>
+                            <h3>PURPL PUP</h3>
                         </div>
-                        <h3>Whatever Continuum</h3>
-                    </div>
-
-                    <div class="projectIcon">
-                        <a href="spwrong.html" class="button">
-                            <img src="assets/spwrong cover.gif" class="element-shadow clickable">
-                        </a>
-                        <div class="preview-description" style="display: none;">
-                            Unity Game Developer (2023)
+                        <div class="projectIcon">
+                            <a href="slimey-hatch.html" class="button">
+                                <img src="assets/slimeyhatch cover.png" class="element-shadow clickable">
+                            </a>
+                            <div class="preview-description" style="display: none;">
+                                A small games studio I co-founded
+                            </div>
+                            <h3>Slimey Hatch Studios</h3>
                         </div>
-                        <h3>Spwrong</h3>
-                    </div>
-
-                    <div class="projectIcon">
-                        <a href="banana-for-scale.html" class="button">
-                            <img src="assets/bfscover.png" class="element-shadow clickable">
-                        </a>
-                        <div class="preview-description" style="display: none;">
-                            Unity Game Developer (2022-2023)
-                        </div>
-                        <h3> Banana For Scale</h3>
-                    </div>
-
-                    <div class="projectIcon">
-                        <a href="scatterbody.html" class="button">
-                            <img src="assets/scatterbody cover.gif" class="element-shadow clickable">
-                        </a>
-                        <div class="preview-description" style="display: none;">
-                            Lead Game Designer (2022)
-                        </div>
-                        <h3> Scatterbody</h3>
-                    </div>
-
-                    <div class="projectIcon">
-                        <a href="marlas-balloon.html" class="button">
-                            <img src="assets/marlas balloon cover.gif" class="element-shadow clickable">
-                        </a>
-                        <div class="preview-description" style="display: none;">
-                            Unity Game Developer (2021-2022)
-                        </div>
-                        <h3>Marla's Balloon</h3>
-                    </div>
-                </div>
-
-                <!--WEBSITES -->
-                <div class="projectCarousel scrollingElement" style="margin-left: 0vw; justify-content:center;">
-                    <div class="projectIcon">
-                        <a href="this-website.html" class="button">
-                            <img src="assets/portfolio icon.png" class="element-shadow clickable">
-                        </a>
-                        <div class="preview-description" style="display: none;">
-                            Learn about my processes in creating this website! (2024 - Present)
-                        </div>
-                        <h3>This Website</h3>
-                    </div>
-
-                    <div class="projectIcon">
-                        <a href="https://hstottdev.github.io/Javascript-Brain" class="button">
-                            <img src="assets/js brain.png" class="element-shadow clickable">
-                        </a>
-                        <div class="preview-description" style="display: none;">
-                            An art project made with JavaScript (2024)
-                        </div>
-                        <h3>My Brain</h3>
-                    </div>
-                </div>
-
-                <!--MORE-->
-                <div class="projectCarousel scrollingElement" style="margin-left: 100vw; justify-content:center;">
-                    <div class="projectIcon">
-                        <a href="purplpup.html" class="button">
-                            <img src="assets/purplpup.png" class="element-shadow clickable">
-                        </a>
-                        <div class="preview-description" style="display: none;">
-                            My solo game developer alias!
-                        </div>
-                        <h3>PURPL PUP</h3>
-                    </div>
-                    <div class="projectIcon">
-                        <a href="slimey-hatch.html" class="button">
-                            <img src="assets/slimeyhatch cover.png" class="element-shadow clickable">
-                        </a>
-                        <div class="preview-description" style="display: none;">
-                            A small games studio I co-founded
-                        </div>
-                        <h3>Slimey Hatch Studios</h3>
                     </div>
                 </div>
             </div>
-
         </div>
-
 
         <nav class="navButtons">
 
             <div class="navIcon">
-                <a href="about.html" class="button">
+                <a href="index.html#about-header" class="button">
                     <div class="clickable">
-                        <i class="las la-user-circle"></i>
+                        <i class="las la-question-circle"></i>
                     </div>
                     <div class="preview-description" style="display: none;">
                         Learn a bit about me!
                     </div>
                 </a>
-                <h3>About Me</h3>
+                <h3>Me</h3>
             </div>
 
-
             <div class="navIcon">
-                <a href="about.html" class="button">
-                    <div class="clickable">
-                        <i class="las la-gamepad"></i>
-                    </div>
-                    <div class="preview-description" style="display: none;">
-                        Take a look at some of my game projects...
-                    </div>
-                </a>
-                <h3>Games</h3>
-            </div>
-
-
-            <div class="navIcon">
-                <a href="about.html" class="button">
+                <a href="index.html#carousel-header" class="button">
                     <div class="clickable">
                         <i class="las la-laptop-code"></i>
                     </div>
                     <div class="preview-description" style="display: none;">
-                        Take a look at some of my website projects...
+                        Take a look at some of my projects...
                     </div>
                 </a>
-                <h3>Websites</h3>
+                <h3>My Work</h3>
             </div>
 
             <div class="navIcon">
@@ -307,7 +317,7 @@
                         My skills and the projects and where I applied them!
                     </div>
                 </a>
-                <h3>Skills</h3>
+                <h3>My Skills</h3>
             </div>
 
             <div class="navIcon">
@@ -319,7 +329,7 @@
                 <div class="preview-description" style="display: none;">
                     Reach out to me via my "agent".
                 </div>
-                <h3>Contact</h3>
+                <h3>Contact Me</h3>
             </div>
 
         </nav>
@@ -332,7 +342,7 @@
                     <div id="hover-description" class="panel">
 
                     </div>
-                </div>              
+                </div>
             </div>
         </div>
     </footer>
@@ -341,5 +351,6 @@
     <script src="projects-nav.js"></script>
     <script src="script.js"></script>
     <script src="hover-description.js"></script>
+    <script src="dialogue.js"></script>
 </body>
 </html>

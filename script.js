@@ -94,7 +94,8 @@ function getDiscordData(){
 
 		fetch(url)
 		.then((res) => res.json())
-		.then((res) => {
+            .then((res) => {
+                console.log(res.data);
             setDiscordStatus(res.data);
             setScrollingStatus();
 		});
@@ -108,10 +109,10 @@ class discord_status {
             if(data.activities.length > 0){
                 let activity = data.activities[0].name;
                 if (activity == "Code" || activity == "Visual Studio"){
-                    this.task = "Writing Code...";
+                    this.task = "Coding in Visual Studio...";
                 }
-                else if (activity == "Aseprite") {
-                    this.task = `Drawing in ${activity}...`;
+                else if (activity == "Aseprite" || activity == "Unity") {
+                    this.task = `Using ${activity}...`;
                 }
                 else{
                     this.task =  `Playing ${activity}...`;
