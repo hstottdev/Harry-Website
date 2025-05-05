@@ -1,4 +1,5 @@
 let carouselIndex = 0;
+let pageSectionId = "landing-header";
 let carouselHeaders = ["Game Projects", "Web Projects", "Working On...","More"];
 let carouselNames = ["Game Projects", "Web Projects", "Working On...", "More"];
 let carouselIcons = ["las la-gamepad", "las la-laptop-code", "las la-gamepad", "las la-comment-dots"];
@@ -8,12 +9,12 @@ $(document).ready(function () {
 
     carouselScrollHandler();
     assignCarouselNavEvents();
-    scrollToCarousel(carouselIndex);
+    scrollToCarousel(carouselIndex,true);
     document.getElementById("carousel-header").scrollTo();
 })
 
 function updateCarouselScroll() {
-    scrollToCarousel(carouselIndex);
+    scrollToCarousel(carouselIndex,true);
 }
 
 //update carousel scroll when resizing the window
@@ -100,13 +101,16 @@ function updateLocalStorage(newIndex) {
     }
 }
 
-function scrollToCarousel(index) {
+function scrollToCarousel(index, scrollToPageView = false) {
     const carouselView = document.getElementById("carousel-view");
     const carousels = carouselView.children;
     
-    //carouselView.scroll(0, carousels[index].getBoundingClientRect().top);
     setTimeout(() => {
         carousels[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })
+        //scroll to current page view?
+        if (scrollToPageView) {
+            document.getElementById(pageSectionId).scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+        }
     }, 100);
 
     carousels[index].scrollLeft = 0;

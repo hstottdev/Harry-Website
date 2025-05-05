@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\dialogue.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dialogue.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\style sheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:style sheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
@@ -25,10 +29,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\this-website.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:this-website.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\dialogue.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:dialogue.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\about.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -90,7 +90,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 7,
           "Children": [
             {
               "$type": "Document",
@@ -107,17 +107,16 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "style sheet.css",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\style sheet.css",
               "RelativeDocumentMoniker": "style sheet.css",
               "ToolTip": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\style sheet.css",
               "RelativeToolTip": "style sheet.css",
-              "ViewState": "AgIAAGIBAAAAAAAAAAAuwIQBAAAFAAAAAAAAAA==",
+              "ViewState": "AgIAAFMBAAAAAAAAAAAWwD4BAAANAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-02-11T12:27:22.781Z",
-              "IsPinned": true,
-              "EditorCaption": ""
+              "IsPinned": true
             },
             {
               "$type": "Bookmark",
@@ -125,20 +124,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "index.html",
-              "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\index.html",
-              "RelativeDocumentMoniker": "index.html",
-              "ToolTip": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\index.html",
-              "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAHwAAAAmAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-11T11:59:01.179Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "arjybeasts.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\arjybeasts.html",
               "RelativeDocumentMoniker": "arjybeasts.html",
@@ -146,12 +132,11 @@
               "RelativeToolTip": "arjybeasts.html",
               "ViewState": "AgIAACEAAAAAAAAAAAAAADYAAAAWAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-11T16:14:29.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-11T16:14:29.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "projects-nav.js",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\projects-nav.js",
               "RelativeDocumentMoniker": "projects-nav.js",
@@ -159,8 +144,7 @@
               "RelativeToolTip": "projects-nav.js",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAsAAAA6AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-03-26T15:45:45.145Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-26T15:45:45.145Z"
             },
             {
               "$type": "Document",
@@ -185,6 +169,31 @@
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-03-12T18:15:18.458Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "dialogue.js",
+              "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\dialogue.js",
+              "RelativeDocumentMoniker": "dialogue.js",
+              "ToolTip": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\dialogue.js",
+              "RelativeToolTip": "dialogue.js",
+              "ViewState": "AgIAAIgAAAAAAAAAAAAgwJkAAABKAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
+              "WhenOpened": "2025-03-10T15:12:28.071Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "index.html",
+              "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\index.html",
+              "RelativeDocumentMoniker": "index.html",
+              "ToolTip": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\index.html",
+              "RelativeToolTip": "index.html",
+              "ViewState": "AgIAAGMAAAAAAAAAAAAAAHwAAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
+              "WhenOpened": "2025-02-11T11:59:01.179Z"
             },
             {
               "$type": "Document",
@@ -248,7 +257,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "this-website.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\this-website.html",
               "RelativeDocumentMoniker": "this-website.html",
@@ -256,8 +265,7 @@
               "RelativeToolTip": "this-website.html",
               "ViewState": "AgIAAIEAAAAAAAAAAAAAAJIAAADFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-03-10T14:00:18.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T14:00:18.618Z"
             },
             {
               "$type": "Document",
@@ -273,18 +281,6 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "dialogue.js",
-              "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\dialogue.js",
-              "RelativeDocumentMoniker": "dialogue.js",
-              "ToolTip": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\dialogue.js",
-              "RelativeToolTip": "dialogue.js",
-              "ViewState": "AgIAAIgAAAAAAAAAAAAgwJsAAAAfAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001646|",
-              "WhenOpened": "2025-03-10T15:12:28.071Z"
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 11,
               "Title": "marlas-balloon.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\marlas-balloon.html",
@@ -297,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "contact.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\contact.html",
               "RelativeDocumentMoniker": "contact.html",
@@ -305,8 +301,7 @@
               "RelativeToolTip": "contact.html",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAA9AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-26T15:59:30.106Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-26T15:59:30.106Z"
             },
             {
               "$type": "Document",

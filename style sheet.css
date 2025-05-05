@@ -148,23 +148,7 @@ a {
     color: #00000080;
 }
 
-#job-title {   
-    height: 11vh;
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    position: fixed;
-    z-index: -1;
-    width:100%;
-}
 
-#job-title h1 {
-    font-size: 1.2vw;
-    background-color: #c3c3c380;
-    border-radius: 0.8vw;
-    padding: 0.25vw 0.35vw;
-    color: #9b9a9a;
-}
 
 #status-panel{
     display:flex;
@@ -289,16 +273,15 @@ i {
     overflow-x: hidden;
     border-radius: 5vh;
     background-image: linear-gradient(#89898900,#00000031,#89898900);
-    padding-top: 20vh;
     scroll-behavior:smooth;
+    padding-top: 15vh;
 }
 
 #page-view {
     width: 100vw;
     height: fit-content;
     position: relative;
-    margin-bottom: 20vh;
-
+    margin-bottom: 30vh;
 }
 
 #about-section {
@@ -313,15 +296,12 @@ i {
     #about-section img {
         width: 15vw;
         border-radius: 999px;
-        border: 0.5vh solid #1a1a1a44;
     }
 
 #dialogue-box {
-    width: 40vw;
-    height: 12vw;
+    width: 35vw;
+    height: 15vw;
     max-height: 30vh;
-    background-color: #0000000b;
-    border-radius: 5vh;
     cursor: pointer;
     display: flex;
 }
@@ -332,15 +312,24 @@ i {
     }
 
 .dialogue-text {
-    width: 90%;
-    padding: 1vh 4vh 1vh 4vh;
-    margin:auto;
+    width: 35vw;
+    min-height: 10vw;
+    padding: 2vh 4vh 2vh 4vh;
+    background-color: #ffffff92;
+    border-radius: 5vh;
+    margin: auto;
     font-size: 1.2vw;
     color: #000000a6;
+    display:flex;
+    flex-direction:column;
+    justify-content:center;
 }
 
 .dialogue-text p {
     margin: 0px;
+    min-height:8vw;
+    display:contents;
+    text-align:center;
 }
 
 
@@ -357,13 +346,14 @@ i {
     }
 
 #contact-man-name {
-    margin: 1vh 1vh 1vh 1vh;
-    width: 40vw;
-    text-align: center;
+    margin: 1vh 1vh 2vh 1vh;
+    padding: 1vh 2vh;
+    width: fit-content;
+    background-color: #ffffff92;
+    border-radius: 5vh;
     font-size: 1.5vw;
     color: #00000099;
     font-weight: bolder;
-    text-decoration: underline;
 }
 
 .section-header {
@@ -372,12 +362,11 @@ i {
     position: absolute;
     z-index: -1;
     top: -10vh;
-    color: black;
     display: flex;
     justify-content: center;
     color: #1a1a1a71;
     font-size: 2.5vh;
-    padding-top: 2vh;
+    padding-top: 5vh;
 }
 
     .section-header h2 {
@@ -386,6 +375,71 @@ i {
 
     .section-header i {
         font-size: 4.5vh;
+    }
+
+#landing-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+}
+    #landing-section .showreel {
+        border: 0.5vh solid #8080808c;
+        width: 100%;
+    }
+
+
+    #landing-section .showreel img {
+        opacity: 8%;
+        width: 100%;
+    }
+
+#landing-header {
+    padding-top: 8vh;
+    top: -18vh;
+}
+
+.showreel {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+    .showreel img {
+        border-radius: 50px;
+        height: 50vh;
+    }
+
+#name-header {
+    font-size: 5vh;
+    position: absolute;
+    z-index: 1;
+    top: 10vh;
+    display: flex;
+    justify-content: center;
+    color: #717171ff;
+}
+
+#job-title {
+    top: 25vh;
+    position: absolute;
+    z-index: 1;
+
+    height: 11vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+    #job-title h3 {
+        font-size: 3vh;
+        padding: 1vh 0vh;
+        color: #717171ff;
+        width: 100%;
+        text-align: center;
+        text-decoration: overline;
     }
 
 .null-chevron {
