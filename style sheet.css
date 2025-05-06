@@ -34,6 +34,7 @@ header {
     height: 15vh;
     justify-content: space-between;
     position: fixed;
+    z-index: 999;
     top: 0vh;
 }
 
@@ -284,7 +285,7 @@ i {
     margin-bottom: 30vh;
 }
 
-#about-section {
+.dialogue-view {
     width: 100vw;
     display: flex;
     align-items: center;
@@ -293,13 +294,12 @@ i {
     gap: 3vh;
 }
 
-    #about-section img {
+    .dialogue-view img {
         width: 15vw;
         border-radius: 999px;
     }
 
 #dialogue-box {
-    width: 35vw;
     height: 15vw;
     max-height: 30vh;
     cursor: pointer;
@@ -308,7 +308,7 @@ i {
 
     #dialogue-box img {
         height: 100%;
-        border-radius: 5vh;
+        border-radius: 999px;
     }
 
 .dialogue-text {
@@ -441,6 +441,60 @@ i {
         text-align: center;
         text-decoration: overline;
     }
+
+#contact-section {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+#fcf-form-id {
+    margin-left: 3vh;
+    margin-top: 10vh;
+    font-size: 2vh;
+    color: #00000099;
+}
+
+.fcf-form-row {
+    display: flex;
+}
+
+.fcf-form-group {
+    margin-right: 3vh;
+}
+
+#fcf-form-id input {
+    width: 45vh;
+    max-width: 27.5vw;
+    height: 4vh;
+    font-size: 3vh;
+    font-family: 'Clock Font', Consolas;
+    border: 0.5vh solid #0000006f;
+    background-color: #ffffff39;
+    border-radius: 1vh;
+}
+
+#fcf-form-id textarea {
+    width: 100vh;
+    max-width: 55vw;
+    font-size: 3vh;
+    font-family: 'Clock Font', Consolas;
+    border: 0.5vh solid #0000006f;
+    background-color: #ffffff39;
+    border-radius: 1vh;
+}
+
+#fcf-form-id button {
+    font-size: 2.5vh;
+    font-family: 'Clock Font', Consolas;
+    border: 0.5vh solid #0000006f;
+    border-radius: 1vh;
+    color: #00000099;
+    border-radius: 1vh;
+    min-width: 25vh;
+    height: 4vh;
+}
 
 .null-chevron {
     border-color: #1a1a1a0e !important;
@@ -1104,53 +1158,6 @@ footer > div{
     margin: 0px;
     overflow: scroll;
     scroll-behavior:smooth;
-}
-
-#fcf-form-id {
-    margin-left: 3vh;
-    margin-top: 2vh;
-    font-size: 3vh;
-    font-family: 'Clock Font', Consolas;
-    color: #00000099;
-}
-.fcf-form-row{
-    display:flex;
-}
-
-.fcf-form-group{
-    margin-right: 3vh;
-}
-
-#fcf-form-id input {
-    width: 45vh;
-    max-width: 27.5vw;
-    height: 4vh;
-    font-size: 3vh;
-    font-family: 'Clock Font', Consolas;
-    border: 0.5vh solid #0000006f;
-    background-color: #ffffff39;
-    border-radius: 1vh;
-}
-
-#fcf-form-id textarea {
-    width: 100vh;
-    max-width: 55vw;
-    font-size: 3vh;
-    font-family: 'Clock Font', Consolas;
-    border: 0.5vh solid #0000006f;
-    background-color: #ffffff39;
-    border-radius: 1vh;
-}
-
-#fcf-form-id button {
-    font-size: 2.5vh;
-    font-family: 'Clock Font', Consolas;
-    border: 0.5vh solid #0000006f;
-    border-radius: 1vh;
-    color: #00000099;
-    border-radius: 1vh;
-    min-width:25vh;
-    height: 4vh;
 }
 
 #orientation-warning {

@@ -131,7 +131,7 @@
 
             <!--About Section-->
             <div id="page-view">
-                <div id="about-section">
+                <div id="about-section" class="dialogue-view">
                     <div class="section-header" id="about-header">
                         <h2>About Me</h2>
                     </div>
@@ -297,6 +297,101 @@
                 </div>
             </div>
 
+            <!--Contact Section-->
+            <div id="page-view">
+                <div id="contact-section">
+                    <div class="section-header" id="contact-header">
+                        <h2>Contact</h2>
+                    </div>
+                    <div class="dialogue-view">
+                        <img src="assets/mr contact portrait.gif" />
+                        <div id="dialogue-box">
+                            <div>
+                                <h2 id="contact-man-name">
+                                    Mr. Plonky
+                                </h2>
+                                <div class="dialogue-text" id="contact-dialogue"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <form id="fcf-form-id" class="fcf-form-class" method="POST" action="https://formspree.io/f/mgvoglzj">
+                        <div class="fcf-form-row">
+                            <div class="fcf-form-group">
+                                <label for="Name" class="fcf-label">Your Name</label>
+                                <div class="fcf-input-group">
+                                    <input type="text" id="Name" name="Name" class="fcf-form-control" required>
+                                </div>
+                            </div>
+
+                            <div class="fcf-form-group">
+                                <label for="Email" class="fcf-label">Your Email Address</label>
+                                <div class="fcf-input-group">
+                                    <input type="email" id="Email" name="Email" class="fcf-form-control" required>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="fcf-form-group">
+                            <label for="Message" class="fcf-label">Your Message</label>
+                            <div class="fcf-input-group">
+                                <textarea id="Message" name="Message" class="fcf-form-control" rows="6" maxlength="3000" required></textarea>
+                            </div>
+                        </div>
+
+                        <div class="fcf-form-group">
+                            <button type="submit" id="fcf-button" class="fcf-btn fcf-btn-primary fcf-btn-lg fcf-btn-block">Send Message</button>
+                        </div>
+                    </form>
+                    <hr>
+                    <div class="profilePicture" style="justify-content:left;">
+                        <a href="https://linktr.ee/harrystott">
+                            <div class="social-icon">
+                                <div class="button">
+                                    <div class="element-shadow">
+                                        <img src="assets/social icons/linktree.webp">
+                                    </div>
+                                </div>
+                                <h3>Linktree</h3>
+                            </div>
+                        </a>
+
+                        <a href="https://www.linkedin.com/in/harrystottdev/">
+                            <div class="social-icon">
+                                <div class="button">
+                                    <div class="element-shadow" onpointerenter="buttonHover()">
+                                        <i class="lab la-linkedin"></i>
+                                    </div>
+                                </div>
+                                <h3>LinkedIn</h3>
+                            </div>
+                        </a>
+
+                        <a href="https://github.com/hstottdev">
+                            <div class="social-icon">
+                                <div class="button">
+                                    <div class="element-shadow" onpointerenter="buttonHover()">
+                                        <i class="lab la-github"></i>
+                                    </div>
+                                </div>
+                                <h3>Github</h3>
+                            </div>
+                        </a>
+
+                        <a href="mailto:contact@harrystott.dev">
+                            <div class="social-icon">
+                                <div class="button">
+                                    <div class="element-shadow" onpointerenter="buttonHover()">
+                                        <i class="fa-regular fa-envelope"></i>
+                                    </div>
+                                </div>
+                                <h3>Email Me</h3>
+                            </div>
+                        </a>
+                    </div>
+                </div>              
+            </div>
+
             <!--Skills Section-->
             <div id="page-view">
                 <div class="section-header" id="skills-header">
@@ -308,6 +403,18 @@
         <nav class="navButtons">
 
             <div class="navIcon">
+                <a href="index.html#landing-header" class="button">
+                    <div class="clickable">
+                        <i class="las la-home"></i>
+                    </div>
+                    <div class="preview-description" style="display: none;">
+                        Welcome to my website!
+                    </div>
+                </a>
+                <h3>Home</h3>
+            </div>
+
+            <div class="navIcon">
                 <a href="index.html#about-header" class="button">
                     <div class="clickable">
                         <i class="las la-question-circle"></i>
@@ -316,7 +423,7 @@
                         Learn a bit about me!
                     </div>
                 </a>
-                <h3>Me</h3>
+                <h3>About Me</h3>
             </div>
 
             <div class="navIcon">
@@ -344,7 +451,7 @@
             </div>
 
             <div class="navIcon">
-                <a href="contact.html" class="button">
+                <a href="index.html#contact-header" class="button">
                     <div class="clickable">
                         <i class="las la-paper-plane"></i>
                     </div>

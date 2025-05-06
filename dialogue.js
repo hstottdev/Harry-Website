@@ -11,7 +11,6 @@ class DialogueTextPrinter {
     constructor(dialogueId, paragraphs) {
         // Find or create the dialogue element
         this.dialogueElement = document.getElementById(dialogueId);
-        this.dialogueBox = document.getElementById('dialogue-box');
         if (!this.dialogueElement) {
             return;
         }
@@ -25,7 +24,7 @@ class DialogueTextPrinter {
         this.indicatorElement = null;
 
         // Set up click event
-        this.dialogueBox.addEventListener('click', () => this.handleClick());
+        this.dialogueElement.addEventListener('click', () => this.handleClick());
 
         // Start the first paragraph
         this.startParagraph();
