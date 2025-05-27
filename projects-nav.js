@@ -1,8 +1,8 @@
 let carouselIndex = 0;
 let pageSectionId = "landing-header";
-let carouselHeaders = ["Game Projects", "Web Projects", "Working On...","More"];
-let carouselNames = ["Game Projects", "Web Projects", "Working On...", "More"];
-let carouselIcons = ["las la-gamepad", "las la-laptop-code", "las la-gamepad", "las la-comment-dots"];
+let carouselHeaders = ["Game Projects", "Web Projects", "In Development","More"];
+let carouselNames = ["Game Projects", "Web Projects", "In Development", "More"];
+let carouselIcons = ["las la-gamepad", "las la-laptop-code", "las la-terminal", "las la-comment-dots"];
 
 $(document).ready(function () {   
     carouselIndex = getCarouselIndex();

@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactDialogueBox = new DialogueTextPrinter('contact-dialogue', contactDialogue);
 
     let aboutDialogue = [
-        "Hi. I'm Harry. Welcome to my website! Please take your shoes off - it's very clean in here as I've just hoovered.",
+        "Hi, I'm Harry. Welcome to my website! Please take your shoes off - I've just hoovered so it's very clean in here.",
         "I'm a Game Developer with an interest in unique gameplay experiences and unconventional visual styles.",
         "I'm a recent graduate from July 2024 with a First-Class Honours degree in Game Development and Futures from Middlesex University.",
         "I'm skilled across both Game Design, and Programming in Unity and Web Technologies (HTML/CSS/JS/React)",
