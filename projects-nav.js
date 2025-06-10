@@ -1,18 +1,20 @@
 let carouselIndex = 0;
-let carouselHeaders = ["Game Projects", "Web Projects"];
-let carouselNames = ["Game Projects", "Web Projects"];
-let carouselIcons = ["fa-solid fa-gamepad", "fa-solid fa-window-maximize"];
+let pageSectionId = "landing-header";
+let carouselHeaders = ["Game Projects", "Web Projects", "In Development","More"];
+let carouselNames = ["Game Projects", "Web Projects", "In Development", "More"];
+let carouselIcons = ["las la-gamepad", "las la-laptop-code", "las la-terminal", "las la-comment-dots"];
 
 $(document).ready(function () {   
     carouselIndex = getCarouselIndex();
 
     carouselScrollHandler();
     assignCarouselNavEvents();
-    scrollToCarousel(carouselIndex);
+    scrollToCarousel(carouselIndex,true);
+    document.getElementById("carousel-header").scrollTo();
 })
 
 function updateCarouselScroll() {
-    scrollToCarousel(carouselIndex);
+    scrollToCarousel(carouselIndex,true);
 }
 
 //update carousel scroll when resizing the window
@@ -74,12 +76,18 @@ function assignCarouselNavEvents() {
 }
 
 function carouselDown() {
+    //return if limit reached
+    if (carouselIndex >= maximumCarouselIndex()) return;
+
     carouselIndex += 1;
     updateLocalStorage(carouselIndex);
     scrollToCarousel(carouselIndex);
 }
 
 function carouselUp() {
+    //return if limit reached
+    if (carouselIndex <= 0) return;
+
     carouselIndex -= 1;
     updateLocalStorage(carouselIndex);
     scrollToCarousel(carouselIndex);
@@ -93,13 +101,16 @@ function updateLocalStorage(newIndex) {
     }
 }
 
-function scrollToCarousel(index) {
+function scrollToCarousel(index, scrollToPageView = false) {
     const carouselView = document.getElementById("carousel-view");
     const carousels = carouselView.children;
     
-    //carouselView.scroll(0, carousels[index].getBoundingClientRect().top);
     setTimeout(() => {
         carousels[index].scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' })
+        //scroll to current page view?
+        if (scrollToPageView) {
+            document.getElementById(pageSectionId).scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'start' });
+        }
     }, 100);
 
     carousels[index].scrollLeft = 0;
@@ -126,19 +137,24 @@ function chevronToggleCheck() {
     carouselDownButton = document.getElementById("carousel-chevron-down");
     carouselUpButton = document.getElementById("carousel-chevron-up");
     //If index is 0, we can't go any further up.
-    if (carouselIndex == 0) {
-        carouselUpButton.style.display = "none";
+    if (carouselIndex > 0) {
+        carouselUpButton.style.display = 'flex';
+        carouselDownButton.style.width = '16vw';
     }
     else {
-        carouselUpButton.style.display = "flex";
+        carouselUpButton.style.display = 'none';
+        carouselDownButton.style.width = '32vw';
+
     }
 
     //If index is maximum, we can't go any further down.
-    if (carouselIndex == maximumCarouselIndex()) {
-        carouselDownButton.style.display = "none";
+    if (carouselIndex < maximumCarouselIndex()) {
+        carouselDownButton.style.display = 'flex';
+        carouselUpButton.style.width = '16vw';
     }
     else {
-        carouselDownButton.style.display = "flex";
+        carouselDownButton.style.display = 'none';
+        carouselUpButton.style.width = '32vw';
     }
 }
 
@@ -156,8 +172,14 @@ function setChevronNames() {
     if (carouselIndex > 0) {
         chevronUpName.textContent = carouselNames[carouselIndex - 1];
     }
+    else {
+        chevronUpName.textContent = "";
+    }
 
     if (carouselIndex < maximumCarouselIndex()) {
         chevronDownName.textContent = carouselNames[carouselIndex + 1];
+    }
+    else {
+        chevronDownName.textContent = "";
     }
 }

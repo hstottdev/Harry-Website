@@ -11,7 +11,6 @@ class DialogueTextPrinter {
     constructor(dialogueId, paragraphs) {
         // Find or create the dialogue element
         this.dialogueElement = document.getElementById(dialogueId);
-        this.dialogueBox = document.getElementById('dialogue-box');
         if (!this.dialogueElement) {
             return;
         }
@@ -25,7 +24,7 @@ class DialogueTextPrinter {
         this.indicatorElement = null;
 
         // Set up click event
-        this.dialogueBox.addEventListener('click', () => this.handleClick());
+        this.dialogueElement.addEventListener('click', () => this.handleClick());
 
         // Start the first paragraph
         this.startParagraph();
@@ -123,10 +122,10 @@ class DialogueTextPrinter {
         // Create new indicator
         this.indicatorElement = document.createElement('div');
         this.indicatorElement.textContent = this.currentParagraphIndex < this.paragraphs.length ?
-            'Click to continue...' : 'Click to restart...';
-        this.indicatorElement.style.fontSize = '2vh';
+            'Interact to continue...' : 'Interact to restart...';
+        this.indicatorElement.style.fontSize = '1vw';
         this.indicatorElement.style.color = '#777';
-        this.indicatorElement.style.marginTop = '1.5vh';
+        this.indicatorElement.style.marginTop = '0.5vw';
         this.indicatorElement.style.textAlign = 'right';
 
         // Add it to the dialogue
@@ -148,12 +147,12 @@ document.addEventListener('DOMContentLoaded', () => {
     const contactDialogueBox = new DialogueTextPrinter('contact-dialogue', contactDialogue);
 
     let aboutDialogue = [
-        "Hi There, I'm Harry - A Game Developer & Web Engineer currently based in South-East London.",
-        "I'm passionate about my work, hopefully you can tell by exploring my Portfolio.",
-        "I love being creative and making projects that challenge my abilities...",
-        "I have a First-Class Honours degree in Game Development, and I'm skilled in Unity, Game Design, and Web Technologies like React.js",
-        "I find enjoyment in solo projects, but I get much further when collaborating with others.",
-        "So, sit back, relax, and explore my work on this site.",
+        "Hi, I'm Harry. Welcome to my website! Please take your shoes off - I've just hoovered so it's very clean in here.",
+        "I'm a Game Developer with an interest in unique gameplay experiences and unconventional visual styles.",
+        "I'm a recent graduate from July 2024 with a First-Class Honours degree in Game Development and Futures from Middlesex University.",
+        "I'm skilled across both Game Design, and Programming in Unity and Web Technologies (HTML/CSS/JS/React)",
+        "I love creating projects that not only push my skills and abilities, but also feel fresh and surprise people.",
+        "I find enjoyment in both solo projects and collaborative settings, with an understanding of the benefits to each.",
     ];
     const aboutDialogueBox = new DialogueTextPrinter('about-dialogue', aboutDialogue);
 });
