@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\whatever-continuum.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:whatever-continuum.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\style sheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:style sheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\whale-cheese.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:whale-cheese.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\purplpup.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:purplpup.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\index.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -17,6 +17,14 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:contact.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\whatever-continuum.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:whatever-continuum.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\whale-cheese.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:whale-cheese.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\banana-for-scale.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
@@ -47,10 +55,6 @@
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:slimey-hatch.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\purplpup.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:purplpup.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\magno-sheep.html||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:magno-sheep.html||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -65,10 +69,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\project-popup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
       "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:project-popup.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\style sheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}",
-      "RelativeMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|solutionrelative:style sheet.css||{A5401142-F49D-43DB-90B1-F57BA349E55C}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A2FE74E1-B743-11D0-AE1A-00A0C90FFFC3}|\u003CMiscFiles\u003E|C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\projects-nav.js||{14D17961-FE51-464D-9111-C4AF11D7D99A}",
@@ -94,7 +94,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 6,
+          "SelectedChildIndex": 1,
           "Children": [
             {
               "$type": "Document",
@@ -111,16 +111,17 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 0,
               "Title": "style sheet.css",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\style sheet.css",
               "RelativeDocumentMoniker": "style sheet.css",
               "ToolTip": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\style sheet.css",
               "RelativeToolTip": "style sheet.css",
-              "ViewState": "AgIAAGADAAAAAAAAAAAhwH4DAAATAAAAAAAAAA==",
+              "ViewState": "AgIAANsEAAAAAAAAAAAhwO4EAAAiAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
               "WhenOpened": "2025-02-11T12:27:22.781Z",
-              "IsPinned": true
+              "IsPinned": true,
+              "EditorCaption": ""
             },
             {
               "$type": "Bookmark",
@@ -147,14 +148,14 @@
               "RelativeDocumentMoniker": "index.html",
               "ToolTip": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\index.html",
               "RelativeToolTip": "index.html",
-              "ViewState": "AgIAAGYAAAAAAAAAAAAAACEAAAAgAAAAAAAAAA==",
+              "ViewState": "AgIAAA8BAAAAAAAAAAAUwCUBAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
               "WhenOpened": "2025-02-11T11:59:01.179Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 5,
               "Title": "whale-cheese.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\whale-cheese.html",
               "RelativeDocumentMoniker": "whale-cheese.html",
@@ -162,12 +163,11 @@
               "RelativeToolTip": "whale-cheese.html",
               "ViewState": "AgIAACQAAAAAAAAAAAAAAC4AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-03-17T17:15:02.585Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-17T17:15:02.585Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 4,
               "Title": "whatever-continuum.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\whatever-continuum.html",
               "RelativeDocumentMoniker": "whatever-continuum.html",
@@ -180,7 +180,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 6,
               "Title": "banana-for-scale.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\banana-for-scale.html",
               "RelativeDocumentMoniker": "banana-for-scale.html",
@@ -188,12 +188,11 @@
               "RelativeToolTip": "banana-for-scale.html",
               "ViewState": "AgIAABwAAAAAAAAAAAAjwDAAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-20T14:35:57.337Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-20T14:35:57.337Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 7,
               "Title": "arjybeasts.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\arjybeasts.html",
               "RelativeDocumentMoniker": "arjybeasts.html",
@@ -201,12 +200,11 @@
               "RelativeToolTip": "arjybeasts.html",
               "ViewState": "AgIAACEAAAAAAAAAAAAAAC0AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-11T16:14:29.935Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-11T16:14:29.935Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 8,
               "Title": "this-website.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\this-website.html",
               "RelativeDocumentMoniker": "this-website.html",
@@ -214,12 +212,11 @@
               "RelativeToolTip": "this-website.html",
               "ViewState": "AgIAABsAAAAAAAAAAAAAACcAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-03-10T14:00:18.618Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-10T14:00:18.618Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 9,
               "Title": "about.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\about.html",
               "RelativeDocumentMoniker": "about.html",
@@ -227,12 +224,11 @@
               "RelativeToolTip": "about.html",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAACYAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-11T12:11:08.312Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-11T12:11:08.312Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "skills.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\skills.html",
               "RelativeDocumentMoniker": "skills.html",
@@ -240,12 +236,11 @@
               "RelativeToolTip": "skills.html",
               "ViewState": "AgIAABgAAAAAAAAAAAAAACkAAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-11T16:14:30.098Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-11T16:14:30.098Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "scatterbody.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\scatterbody.html",
               "RelativeDocumentMoniker": "scatterbody.html",
@@ -253,12 +248,11 @@
               "RelativeToolTip": "scatterbody.html",
               "ViewState": "AgIAACQAAAAAAAAAAAAAAC8AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-03-12T18:15:18.458Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-12T18:15:18.458Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "slimey-hatch.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\slimey-hatch.html",
               "RelativeDocumentMoniker": "slimey-hatch.html",
@@ -266,12 +260,11 @@
               "RelativeToolTip": "slimey-hatch.html",
               "ViewState": "AgIAAB4AAAAAAAAAAAAAAC8AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-24T23:08:05.936Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T23:08:05.936Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 1,
               "Title": "purplpup.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\purplpup.html",
               "RelativeDocumentMoniker": "purplpup.html",
@@ -284,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "magno-sheep.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\magno-sheep.html",
               "RelativeDocumentMoniker": "magno-sheep.html",
@@ -292,12 +285,11 @@
               "RelativeToolTip": "magno-sheep.html",
               "ViewState": "AgIAACQAAAAAAAAAAAAAACwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-03-06T11:39:25.65Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-03-06T11:39:25.65Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "marlas-balloon.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\marlas-balloon.html",
               "RelativeDocumentMoniker": "marlas-balloon.html",
@@ -305,12 +297,11 @@
               "RelativeToolTip": "marlas-balloon.html",
               "ViewState": "AgIAABgAAAAAAAAAAAAjwC8AAAAKAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-24T13:16:31.036Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-24T13:16:31.036Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "spwrong.html",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\spwrong.html",
               "RelativeDocumentMoniker": "spwrong.html",
@@ -318,8 +309,7 @@
               "RelativeToolTip": "spwrong.html",
               "ViewState": "AgIAALoAAAAAAAAAAAAAwPIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001512|",
-              "WhenOpened": "2025-02-18T17:33:48.369Z",
-              "EditorCaption": ""
+              "WhenOpened": "2025-02-18T17:33:48.369Z"
             },
             {
               "$type": "Document",
@@ -335,7 +325,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "project-popup.js",
               "DocumentMoniker": "C:\\Users\\harry\\Desktop\\Websites\\Harry Website\\project-popup.js",
               "RelativeDocumentMoniker": "project-popup.js",
